@@ -1,6 +1,0 @@
-Lmod without flat naming scheme:
-
-    https://github.com/spack/spack/issues/10946
-
-sqlite commands:
-    select appname, GROUP_CONCAT( appver||'-'||compname||'-'||compver, ", ") as ver FROM apps group by appname;
