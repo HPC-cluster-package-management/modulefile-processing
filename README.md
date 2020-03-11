@@ -40,6 +40,6 @@ python gen_json.py
     - `apps.jon` was created as an example from Hoffman2-based `apps.db`.
     -  `apps.json.example` was an abbreviated version of `apps.json` for showing in the extended abstract and the full-sized paper.
 - Some misc files:
-     - `tcl2lua.tcl` is the script to convert TCL/C module file to Lua-based Lmod module file. 
+     - `tcl2lua.tcl` is the script to convert TCL/C module file to Lua-based Lmod module file from [Lmod source](https://github.com/TACC/Lmod/blob/master/src/tcl2lua.tcl)
      - `notes` is for documenting the side-note discussion information.
 
