@@ -1,6 +1,6 @@
 # Module File Processing
 
-This gitlab repo contains the source code for the python codes to process module files. The detailed work will be described in the poster or the "State of the Practice" talk in SC'20.
+This repo contains the source code for the python codes to process module files. The detailed work will be described in the poster or the "State of the Practice" talk in SC'20.
 
 ## Requirements
 Python 3.5 or later is needed to run the scripts `modulefilter.py` and `gen_json.py`
@@ -31,8 +31,6 @@ python gen_json.py
 
 - The example module files in `tar` files:
      -  `spack-modulefiles.tar.gz` contains the module files generated from Spack on UCLA Hoffman2 Cluster.
-     - `tacc-modulefiles.tar.gz` contains the module files in TACC as a reference.
-     -  `comet-modulefiles.tar.gz` contains the module files in Comet as a reference.
 - The python script `modulefilter.py` to import Spack-generated module files and generate the sqlite database and process/export to the new module path directory.
     - It reads the configuration file `settings.ini` which is specific to every deployment. User should copy the `settings.ini.template` content to a file named `settings.ini` and modify the path information as needed.
     - It will generate/re-create an sqlite database named as `apps.db` under the repo directory. 
