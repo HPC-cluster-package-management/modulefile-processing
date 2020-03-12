@@ -22,8 +22,8 @@ spack_tar = tarfile.open('spack-modulefiles.tar.gz')
 spack_tar.extractall(spackmodule_all)
 spack_tar.close()
 
-tclpath_all = spackmodule_all+"/spackmodules/modules/linux-centos7-x86_64/"
-luapath_all = spackmodule_all+"/spackmodules/lmod/linux-centos7-x86_64/"
+tclpath_all = spackmodule_all+"/modules/linux-centos7-x86_64/"
+luapath_all = spackmodule_all+"/lmod/linux-centos7-x86_64/"
 
 # Recreate/reset the sqlite3 database
 import sqlite3
@@ -44,7 +44,6 @@ def check(jsondata, appname, appver, compname='gcc', compver='4.8.5'):
     if appname in jsondata.keys() :
         ver = appver+'-'+compname+'-'+compver
         if ver in jsondata[appname]['version'] :
-            #if ver == jsondata[appname]['default'] :
             if jsondata[appname]['default'] in ver :
                 return 2
             else:

@@ -1,11 +1,11 @@
 # Module File Processing
 
-This gitlab repo contains the source code for the python codes to process module files. 
+This gitlab repo contains the source code for the python codes to process module files. The detailed work will be described in the poster or the "State of the Practice" talk in SC'20.
 
 ## Requirements
-Python 3.5 or later is needed to run the script `modulefilter.py`
+Python 3.5 or later is needed to run the scripts `modulefilter.py` and `gen_json.py`
 
-A deployment of a group of software packaged has to be built through Spack. The Spack's module file configuration has to enable both `tcl` and `lmod` block in its `modules.yaml` file. A simple example of configuration can be checked in Spack's [module tutorial](https://spack-tutorial.readthedocs.io/en/latest/tutorial_modules.html).
+A deployment of a group of software packaged has to be built through Spack before the module file processing. The Spack's module file configuration has to enable both `tcl` and `lmod` block in its `modules.yaml` file. An example of configuration can be checked in Spack's [module tutorial](https://spack-tutorial.readthedocs.io/en/latest/tutorial_modules.html). The module files from Spack in both `lmod` and `modules` folders (together with the 2 folders) have to be tar-zipped into the tar file `spack-modulefiles.tar.gz` and replace it in the repo. The default loacation of 2 folders will be in `$SPACK_ROOT/share/spack/` if the configuration of Spack module files is not customized. 
 
 ## Quick Start
 After cloning, you need to specify the corresponding module file root path information in `settings.ini` by modifying the content in `settings.ini.template`:
@@ -15,19 +15,19 @@ cp settings.ini.template settings.ini
 vi settings.ini
 ```
 
-To process the module files, just simply run the command below:
+To process the module files, simply run the command below:
 
 ```console
 python modulefilter.py
 ```
 
-To generate the json template of packages for the later-editing work to specify the to-be-supported packages, just simply run the command:
+To generate the json template of packages for system admins' later-editing work to specify the to-be-supported packages, simply run the command:
 
 ```console
 python gen_json.py
 ```
 
-## File summary in the repository
+## Additional description about the files in the repository
 
 - The example module files in `tar` files:
      -  `spack-modulefiles.tar.gz` contains the module files generated from Spack on UCLA Hoffman2 Cluster.
@@ -40,6 +40,6 @@ python gen_json.py
     - `apps.jon` was created as an example from Hoffman2-based `apps.db`.
     -  `apps.json.example` was an abbreviated version of `apps.json` for showing in the extended abstract and the full-sized paper.
 - Some misc files:
-     - `tcl2lua.tcl` is the script to convert TCL/C module file to Lua-based Lmod module file from [Lmod source](https://github.com/TACC/Lmod/blob/master/src/tcl2lua.tcl)
+     - `tcl2lua.tcl` is the script to convert TCL/C module file to Lua-based Lmod module file copied from [Lmod source](https://github.com/TACC/Lmod/blob/master/src/tcl2lua.tcl)
      - `notes` is for documenting the side-note discussion information.
 
