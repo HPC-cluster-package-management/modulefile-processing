@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:27.779350
+##
+## htslib@1.9%gcc@5.5.0 arch=linux-centos7-x86_64 /47qnpuu
+##
+
+
+module-whatis "C library for high-throughput sequencing data formats."
+
+proc ModulesHelp { } {
+puts stderr "C library for high-throughput sequencing data formats."
+}
+
+conflict htslib
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/htslib-1.9-47qnpuuqt3q3bpvzclrbocmdqjdznxsg/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/htslib-1.9-47qnpuuqt3q3bpvzclrbocmdqjdznxsg/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/htslib-1.9-47qnpuuqt3q3bpvzclrbocmdqjdznxsg/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/htslib-1.9-47qnpuuqt3q3bpvzclrbocmdqjdznxsg/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/htslib-1.9-47qnpuuqt3q3bpvzclrbocmdqjdznxsg/"
+

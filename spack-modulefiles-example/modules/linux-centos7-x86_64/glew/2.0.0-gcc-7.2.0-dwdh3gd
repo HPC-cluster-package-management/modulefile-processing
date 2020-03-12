@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:09.338276
+##
+## glew@2.0.0%gcc@7.2.0 arch=linux-centos7-x86_64 /dwdh3gd
+##
+
+
+module-whatis "The OpenGL Extension Wrangler Library."
+
+proc ModulesHelp { } {
+puts stderr "The OpenGL Extension Wrangler Library."
+}
+
+conflict glew
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glew-2.0.0-dwdh3gdy5v6yiyqzvuwbpvvpxtl4wv3i/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glew-2.0.0-dwdh3gdy5v6yiyqzvuwbpvvpxtl4wv3i/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glew-2.0.0-dwdh3gdy5v6yiyqzvuwbpvvpxtl4wv3i/lib64/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glew-2.0.0-dwdh3gdy5v6yiyqzvuwbpvvpxtl4wv3i/"
+

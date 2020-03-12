@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:14.637443
+##
+## go-bootstrap@1.4-bootstrap-20171003%gcc@4.8.5 arch=linux-centos7-x86_64 /l3gxydf
+##
+
+
+module-whatis "Old C-bootstrapped go to bootstrap real go"
+
+proc ModulesHelp { } {
+puts stderr "Old C-bootstrapped go to bootstrap real go"
+}
+
+conflict go-bootstrap
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-bootstrap-1.4-bootstrap-20171003-l3gxydfrcxqymslf2i3j2gnn4qtebifs/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-bootstrap-1.4-bootstrap-20171003-l3gxydfrcxqymslf2i3j2gnn4qtebifs/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-bootstrap-1.4-bootstrap-20171003-l3gxydfrcxqymslf2i3j2gnn4qtebifs/"
+

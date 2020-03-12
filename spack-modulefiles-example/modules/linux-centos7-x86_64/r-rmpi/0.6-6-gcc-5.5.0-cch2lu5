@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:35.414621
+##
+## r-rmpi@0.6-6%gcc@5.5.0 arch=linux-centos7-x86_64 /cch2lu5
+##
+## Configure options: --with-Rmpi-type=MPICH2 --with-mpi=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi
+##
+
+
+module-whatis "An interface (wrapper) to MPI APIs. It also provides interactive R manager and worker environment."
+
+proc ModulesHelp { } {
+puts stderr "An interface (wrapper) to MPI APIs. It also provides interactive R"
+puts stderr "manager and worker environment."
+}
+
+conflict r-rmpi
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmpi-0.6-6-cch2lu5clycizyzdakj47wasjf5d6dnb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmpi-0.6-6-cch2lu5clycizyzdakj47wasjf5d6dnb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmpi-0.6-6-cch2lu5clycizyzdakj47wasjf5d6dnb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

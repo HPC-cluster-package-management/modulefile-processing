@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:16.659947
+##
+## r-stringr@1.2.0%gcc@7.2.0 arch=linux-centos7-x86_64 /amdylfw
+##
+
+
+module-whatis "A consistent, simple and easy to use set of wrappers around the fantastic 'stringi' package. All function and argument names (and positions) are consistent, all functions deal with 'NA''s and zero length vectors in the same way, and the output from one function is easy to feed into the input of another."
+
+proc ModulesHelp { } {
+puts stderr "A consistent, simple and easy to use set of wrappers around the"
+puts stderr "fantastic 'stringi' package. All function and argument names (and"
+puts stderr "positions) are consistent, all functions deal with "NA"'s and zero"
+puts stderr "length vectors in the same way, and the output from one function is easy"
+puts stderr "to feed into the input of another."
+}
+
+conflict r-stringr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-stringr-1.2.0-amdylfwujjlo2eksvhsmfn4pdh3vbyhk/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-stringr-1.2.0-amdylfwujjlo2eksvhsmfn4pdh3vbyhk/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-stringr-1.2.0-amdylfwujjlo2eksvhsmfn4pdh3vbyhk/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

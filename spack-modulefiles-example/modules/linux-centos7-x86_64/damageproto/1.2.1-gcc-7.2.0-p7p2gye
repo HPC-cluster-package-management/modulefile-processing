@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:53.999068
+##
+## damageproto@1.2.1%gcc@7.2.0 arch=linux-centos7-x86_64 /p7p2gye
+##
+
+
+module-whatis "X Damage Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Damage Extension. This package contains header files and documentation"
+puts stderr "for the X Damage extension. Library and server implementations are"
+puts stderr "separate."
+}
+
+conflict damageproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/damageproto-1.2.1-p7p2gyeuy2aw4kwevv3b7pasfuzh7fqq/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/damageproto-1.2.1-p7p2gyeuy2aw4kwevv3b7pasfuzh7fqq/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/damageproto-1.2.1-p7p2gyeuy2aw4kwevv3b7pasfuzh7fqq/"
+

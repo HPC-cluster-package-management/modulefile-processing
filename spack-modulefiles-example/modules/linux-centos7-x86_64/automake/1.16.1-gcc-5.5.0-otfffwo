@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:42.944456
+##
+## automake@1.16.1%gcc@5.5.0 arch=linux-centos7-x86_64 /otfffwo
+##
+
+
+module-whatis "Automake -- make file builder part of autotools"
+
+proc ModulesHelp { } {
+puts stderr "Automake -- make file builder part of autotools"
+}
+
+conflict automake
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/automake-1.16.1-otfffwojkuz6savothi3oefhvd2ou6lk/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/automake-1.16.1-otfffwojkuz6savothi3oefhvd2ou6lk/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/automake-1.16.1-otfffwojkuz6savothi3oefhvd2ou6lk/share/aclocal"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/automake-1.16.1-otfffwojkuz6savothi3oefhvd2ou6lk/"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:17.733838
+##
+## perl-xml-parser@2.44%gcc@7.2.0 arch=linux-centos7-x86_64 /4tgrzm5
+##
+## Configure options: EXPATLIBPATH=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/lib EXPATINCPATH=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/include
+##
+
+
+module-whatis "XML::Parser - A perl module for parsing XML documents"
+
+proc ModulesHelp { } {
+puts stderr "XML::Parser - A perl module for parsing XML documents"
+}
+
+conflict perl-xml-parser
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/perl-xml-parser-2.44-4tgrzm5jvuohlagepmd6xed6ma5a7my6/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/perl-xml-parser-2.44-4tgrzm5jvuohlagepmd6xed6ma5a7my6/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/perl-xml-parser-2.44-4tgrzm5jvuohlagepmd6xed6ma5a7my6/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/perl-xml-parser-2.44-4tgrzm5jvuohlagepmd6xed6ma5a7my6/bin"
+prepend-path PERL5LIB "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/perl-xml-parser-2.44-4tgrzm5jvuohlagepmd6xed6ma5a7my6/lib/perl5"
+

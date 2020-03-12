@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:29.999782
+##
+## py-pycparser@2.18%gcc@7.2.0 arch=linux-centos7-x86_64 /reh72ha
+##
+
+
+module-whatis "A complete parser of the C language, written in pure python."
+
+proc ModulesHelp { } {
+puts stderr "A complete parser of the C language, written in pure python."
+}
+
+conflict py-pycparser
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pycparser-2.18-reh72havezpcywm6ni3r22onri6ieezq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pycparser-2.18-reh72havezpcywm6ni3r22onri6ieezq/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pycparser-2.18-reh72havezpcywm6ni3r22onri6ieezq/lib/python2.7/site-packages"
+

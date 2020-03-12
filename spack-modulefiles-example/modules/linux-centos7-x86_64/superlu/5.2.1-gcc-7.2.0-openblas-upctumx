@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:08.762687
+##
+## superlu@5.2.1%gcc@7.2.0+pic arch=linux-centos7-x86_64 /upctumx
+##
+
+
+module-whatis "SuperLU is a general purpose library for the direct solution of large, sparse, nonsymmetric systems of linear equations on high performance machines. SuperLU is designed for sequential machines."
+
+proc ModulesHelp { } {
+puts stderr "SuperLU is a general purpose library for the direct solution of large,"
+puts stderr "sparse, nonsymmetric systems of linear equations on high performance"
+puts stderr "machines. SuperLU is designed for sequential machines."
+}
+
+conflict superlu
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/superlu-5.2.1-upctumxow7z2iy3ayxknj6i26ivw5bho/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/superlu-5.2.1-upctumxow7z2iy3ayxknj6i26ivw5bho/"
+

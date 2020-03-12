@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:49.276065
+##
+## libxt@1.1.5%gcc@7.2.0 arch=linux-centos7-x86_64 /7idwvql
+##
+
+
+module-whatis "libXt - X Toolkit Intrinsics library."
+
+proc ModulesHelp { } {
+puts stderr "libXt - X Toolkit Intrinsics library."
+}
+
+conflict libxt
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxt-1.1.5-7idwvqlnhe4v2ooyh7nprcqmkb4rkjr7/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxt-1.1.5-7idwvqlnhe4v2ooyh7nprcqmkb4rkjr7/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxt-1.1.5-7idwvqlnhe4v2ooyh7nprcqmkb4rkjr7/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxt-1.1.5-7idwvqlnhe4v2ooyh7nprcqmkb4rkjr7/"
+

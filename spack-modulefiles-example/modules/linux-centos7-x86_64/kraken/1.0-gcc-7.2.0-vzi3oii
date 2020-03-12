@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:33.174245
+##
+## kraken@1.0%gcc@7.2.0 arch=linux-centos7-x86_64 /vzi3oii
+##
+
+
+module-whatis "Kraken is a system for assigning taxonomic labels to short DNA sequences, usually obtained through metagenomic studies."
+
+proc ModulesHelp { } {
+puts stderr "Kraken is a system for assigning taxonomic labels to short DNA"
+puts stderr "sequences, usually obtained through metagenomic studies."
+}
+
+conflict kraken
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kraken-1.0-vzi3oiij2wp3bod6hqil6fcqhlm7v3va/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kraken-1.0-vzi3oiij2wp3bod6hqil6fcqhlm7v3va/"
+

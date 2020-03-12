@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.765849
+##
+## libctl@3.2.2%gcc@7.2.0 arch=linux-centos7-x86_64 /vwihyq7
+##
+## Configure options: --enable-shared GUILE=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/bin/guile GUILE_CONFIG=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/bin/guile-config
+##
+
+
+module-whatis "libctl is a free Guile-based library implementing flexible control files for scientific simulations."
+
+proc ModulesHelp { } {
+puts stderr "libctl is a free Guile-based library implementing flexible control files"
+puts stderr "for scientific simulations."
+}
+
+conflict libctl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libctl-3.2.2-vwihyq77zaliy4tqv6fltbo75tcvznrz/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libctl-3.2.2-vwihyq77zaliy4tqv6fltbo75tcvznrz/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libctl-3.2.2-vwihyq77zaliy4tqv6fltbo75tcvznrz/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libctl-3.2.2-vwihyq77zaliy4tqv6fltbo75tcvznrz/"
+

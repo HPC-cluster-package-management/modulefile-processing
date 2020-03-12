@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.448696
+##
+## sqlite@3.23.1%gcc@7.2.0~functions arch=linux-centos7-x86_64 /66jprvk
+##
+
+
+module-whatis "SQLite3 is an SQL database engine in a C library. Programs that link the SQLite3 library can have SQL database access without running a separate RDBMS process. "
+
+proc ModulesHelp { } {
+puts stderr "SQLite3 is an SQL database engine in a C library. Programs that link the"
+puts stderr "SQLite3 library can have SQL database access without running a separate"
+puts stderr "RDBMS process."
+}
+
+conflict sqlite
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sqlite-3.23.1-66jprvkbihczxtmngbz4hsjatfrgrxzg/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sqlite-3.23.1-66jprvkbihczxtmngbz4hsjatfrgrxzg/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sqlite-3.23.1-66jprvkbihczxtmngbz4hsjatfrgrxzg/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sqlite-3.23.1-66jprvkbihczxtmngbz4hsjatfrgrxzg/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sqlite-3.23.1-66jprvkbihczxtmngbz4hsjatfrgrxzg/"
+

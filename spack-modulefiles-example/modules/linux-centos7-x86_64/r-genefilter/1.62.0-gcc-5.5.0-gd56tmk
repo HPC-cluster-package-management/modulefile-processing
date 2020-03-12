@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:38.989260
+##
+## r-genefilter@1.62.0%gcc@5.5.0 arch=linux-centos7-x86_64 /gd56tmk
+##
+
+
+module-whatis "Some basic functions for filtering genes"
+
+proc ModulesHelp { } {
+puts stderr "Some basic functions for filtering genes"
+}
+
+conflict r-genefilter
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genefilter-1.62.0-gd56tmkdonpdqacdqjucblat2odmzi25/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genefilter-1.62.0-gd56tmkdonpdqacdqjucblat2odmzi25/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genefilter-1.62.0-gd56tmkdonpdqacdqjucblat2odmzi25/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

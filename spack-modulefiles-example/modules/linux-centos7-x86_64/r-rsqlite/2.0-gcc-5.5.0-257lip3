@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:45.375996
+##
+## r-rsqlite@2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /257lip3
+##
+
+
+module-whatis "This package embeds the SQLite database engine in R and provides an interface compliant with the DBI package. The source for the SQLite engine (version 3.8.6) is included."
+
+proc ModulesHelp { } {
+puts stderr "This package embeds the SQLite database engine in R and provides an"
+puts stderr "interface compliant with the DBI package. The source for the SQLite"
+puts stderr "engine (version 3.8.6) is included."
+}
+
+conflict r-rsqlite
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsqlite-2.0-257lip3qwwvui7sid6ojvzuwix3a3g2y/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsqlite-2.0-257lip3qwwvui7sid6ojvzuwix3a3g2y/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsqlite-2.0-257lip3qwwvui7sid6ojvzuwix3a3g2y/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

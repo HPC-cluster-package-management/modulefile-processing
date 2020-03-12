@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:09.719997
+##
+## r-biobase@2.40.0%gcc@7.2.0 arch=linux-centos7-x86_64 /u2vhg3j
+##
+
+
+module-whatis "Functions that are needed by many other packages or which replace R functions."
+
+proc ModulesHelp { } {
+puts stderr "Functions that are needed by many other packages or which replace R"
+puts stderr "functions."
+}
+
+conflict r-biobase
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-biobase-2.40.0-u2vhg3jf2s6zmkwjdmvbbvq5rmvfyzbq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-biobase-2.40.0-u2vhg3jf2s6zmkwjdmvbbvq5rmvfyzbq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-biobase-2.40.0-u2vhg3jf2s6zmkwjdmvbbvq5rmvfyzbq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

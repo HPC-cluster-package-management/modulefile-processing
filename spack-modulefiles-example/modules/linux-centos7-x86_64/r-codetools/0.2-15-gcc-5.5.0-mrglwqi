@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:41.849691
+##
+## r-codetools@0.2-15%gcc@5.5.0 arch=linux-centos7-x86_64 /mrglwqi
+##
+
+
+module-whatis "Code analysis tools for R."
+
+proc ModulesHelp { } {
+puts stderr "Code analysis tools for R."
+}
+
+conflict r-codetools
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-codetools-0.2-15-mrglwqit7sxuwn2rsznacrl47dpwwtwk/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-codetools-0.2-15-mrglwqit7sxuwn2rsznacrl47dpwwtwk/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-codetools-0.2-15-mrglwqit7sxuwn2rsznacrl47dpwwtwk/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

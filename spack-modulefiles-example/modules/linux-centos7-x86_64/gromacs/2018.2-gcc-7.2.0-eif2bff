@@ -1,0 +1,31 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:18.280495
+##
+## gromacs@2018.2%gcc@7.2.0 build_type=RelWithDebInfo ~cuda~double+mpi~plumed+shared arch=linux-centos7-x86_64 /eif2bff
+##
+## Configure options: -DGMX_MPI:BOOL=ON
+##
+
+
+module-whatis "GROMACS (GROningen MAchine for Chemical Simulations) is a molecular dynamics package primarily designed for simulations of proteins, lipids and nucleic acids. It was originally developed in the Biophysical Chemistry department of University of Groningen, and is now maintained by contributors in universities and research centers across the world."
+
+proc ModulesHelp { } {
+puts stderr "GROMACS (GROningen MAchine for Chemical Simulations) is a molecular"
+puts stderr "dynamics package primarily designed for simulations of proteins, lipids"
+puts stderr "and nucleic acids. It was originally developed in the Biophysical"
+puts stderr "Chemistry department of University of Groningen, and is now maintained"
+puts stderr "by contributors in universities and research centers across the world."
+puts stderr "GROMACS is one of the fastest and most popular software packages"
+puts stderr "available and can run on CPUs as well as GPUs. It is free, open source"
+puts stderr "released under the GNU General Public License. Starting from version"
+puts stderr "4.6, GROMACS is released under the GNU Lesser General Public License."
+}
+
+conflict gromacs
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gromacs-2018.2-eif2bfft3br23ylsg3u6laspptr4u466/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gromacs-2018.2-eif2bfft3br23ylsg3u6laspptr4u466/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gromacs-2018.2-eif2bfft3br23ylsg3u6laspptr4u466/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gromacs-2018.2-eif2bfft3br23ylsg3u6laspptr4u466/lib64/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gromacs-2018.2-eif2bfft3br23ylsg3u6laspptr4u466/"
+

@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:53.768124
+##
+## curl@7.60.0%gcc@7.2.0~darwinssl~libssh~libssh2~nghttp2 arch=linux-centos7-x86_64 /niacz5o
+##
+## Configure options: --with-zlib=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/zlib-1.2.11-fuwbsyd4h6milgbzfi362t25s46hd75r --with-ssl=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openssl-1.0.2o-nv33oqhhpsudjex22r5kbltnkvqaxxcd --without-nghttp2 --without-libssh2 --without-libssh
+##
+
+
+module-whatis "cURL is an open source command line tool and library for transferring data with URL syntax"
+
+proc ModulesHelp { } {
+puts stderr "cURL is an open source command line tool and library for transferring"
+puts stderr "data with URL syntax"
+}
+
+conflict curl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/curl-7.60.0-niacz5oiyobseqerh7nrsrh2pbj44viz/"
+

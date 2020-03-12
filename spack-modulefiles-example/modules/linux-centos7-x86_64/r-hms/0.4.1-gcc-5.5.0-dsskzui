@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:36.401019
+##
+## r-hms@0.4.1%gcc@5.5.0 arch=linux-centos7-x86_64 /dsskzui
+##
+
+
+module-whatis "Implements an S3 class for storing and formatting time-of-day values, based on the 'difftime' class."
+
+proc ModulesHelp { } {
+puts stderr "Implements an S3 class for storing and formatting time-of-day values,"
+puts stderr "based on the 'difftime' class."
+}
+
+conflict r-hms
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-hms-0.4.1-dsskzuikc2mlifz7ye5t4ldg6vdvf5c2/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-hms-0.4.1-dsskzuikc2mlifz7ye5t4ldg6vdvf5c2/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-hms-0.4.1-dsskzuikc2mlifz7ye5t4ldg6vdvf5c2/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

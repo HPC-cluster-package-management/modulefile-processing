@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:28.349113
+##
+## r-highr@0.6%gcc@7.2.0 arch=linux-centos7-x86_64 /mssbqhi
+##
+
+
+module-whatis "Provides syntax highlighting for R source code. Currently it supports LaTeX and HTML output. Source code of other languages is supported via Andre Simon's highlight package."
+
+proc ModulesHelp { } {
+puts stderr "Provides syntax highlighting for R source code. Currently it supports"
+puts stderr "LaTeX and HTML output. Source code of other languages is supported via"
+puts stderr "Andre Simon's highlight package."
+}
+
+conflict r-highr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-highr-0.6-mssbqhik32h4qghyjelcin73u2jbizun/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-highr-0.6-mssbqhik32h4qghyjelcin73u2jbizun/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-highr-0.6-mssbqhik32h4qghyjelcin73u2jbizun/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

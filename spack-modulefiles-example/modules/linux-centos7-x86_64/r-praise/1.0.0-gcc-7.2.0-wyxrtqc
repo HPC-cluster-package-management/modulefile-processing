@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:56.189168
+##
+## r-praise@1.0.0%gcc@7.2.0 arch=linux-centos7-x86_64 /wyxrtqc
+##
+
+
+module-whatis "Build friendly R packages that praise their users if they have done something good, or they just need it to feel better."
+
+proc ModulesHelp { } {
+puts stderr "Build friendly R packages that praise their users if they have done"
+puts stderr "something good, or they just need it to feel better."
+}
+
+conflict r-praise
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-praise-1.0.0-wyxrtqchs73s2f7bmxsqjqgwybgk5bhe/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-praise-1.0.0-wyxrtqchs73s2f7bmxsqjqgwybgk5bhe/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-praise-1.0.0-wyxrtqchs73s2f7bmxsqjqgwybgk5bhe/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

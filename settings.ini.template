@@ -1,4 +1,6 @@
-[ModulePATH]
-SpackModulePATH = /tmp/moduleroot
-NewModulePATH = /tmp/moduleroot/newmodules
+[Mode]
+UseSpackExample = yes
 
+[ModulePATH]
+SpackModulePATH = /tmp/moduleroot/spackmodules
+NewModulePATH = /tmp/moduleroot/newmodules

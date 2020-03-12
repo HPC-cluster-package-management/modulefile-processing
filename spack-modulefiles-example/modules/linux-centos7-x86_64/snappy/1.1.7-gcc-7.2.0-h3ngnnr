@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:06.944591
+##
+## snappy@1.1.7%gcc@7.2.0 build_type=RelWithDebInfo patches=c9cfecb1f7a623418590cf4e00ae7d308d1c3faeb15046c2e5090e38221da7cd +pic+shared arch=linux-centos7-x86_64 /h3ngnnr
+##
+## Configure options: -DCMAKE_INSTALL_LIBDIR:PATH=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/snappy-1.1.7-h3ngnnrgsg7r7h5jcvih7hdj523fjm6f/lib -DBUILD_SHARED_LIBS:BOOL=ON -DSNAPPY_BUILD_TESTS:BOOL=OFF
+##
+
+
+module-whatis "A fast compressor/decompressor: https://code.google.com/p/snappy"
+
+proc ModulesHelp { } {
+puts stderr "A fast compressor/decompressor: https://code.google.com/p/snappy"
+}
+
+conflict snappy
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/snappy-1.1.7-h3ngnnrgsg7r7h5jcvih7hdj523fjm6f/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/snappy-1.1.7-h3ngnnrgsg7r7h5jcvih7hdj523fjm6f/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/snappy-1.1.7-h3ngnnrgsg7r7h5jcvih7hdj523fjm6f/"
+

@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:44.396066
+##
+## r-htmlwidgets@0.9%gcc@5.5.0 arch=linux-centos7-x86_64 /otzzcld
+##
+
+
+module-whatis "A framework for creating HTML widgets that render in various contexts including the R console, 'R Markdown' documents, and 'Shiny' web applications."
+
+proc ModulesHelp { } {
+puts stderr "A framework for creating HTML widgets that render in various contexts"
+puts stderr "including the R console, 'R Markdown' documents, and 'Shiny' web"
+puts stderr "applications."
+}
+
+conflict r-htmlwidgets
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-htmlwidgets-0.9-otzzcldvi5hyv7k6bmxbgusohbjuxulx/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-htmlwidgets-0.9-otzzcldvi5hyv7k6bmxbgusohbjuxulx/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-htmlwidgets-0.9-otzzcldvi5hyv7k6bmxbgusohbjuxulx/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

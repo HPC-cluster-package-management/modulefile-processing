@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.470435
+##
+## fastphase@2016-03-30%gcc@7.2.0 arch=linux-centos7-x86_64 /eybnzor
+##
+
+
+module-whatis "Software for haplotype reconstruction, and estimating missing genotypes from population data."
+
+proc ModulesHelp { } {
+puts stderr "Software for haplotype reconstruction, and estimating missing genotypes"
+puts stderr "from population data."
+}
+
+conflict fastphase
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastphase-2016-03-30-eybnzortjgrpu2syjeet2a4gfq6wi5lf/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastphase-2016-03-30-eybnzortjgrpu2syjeet2a4gfq6wi5lf/"
+

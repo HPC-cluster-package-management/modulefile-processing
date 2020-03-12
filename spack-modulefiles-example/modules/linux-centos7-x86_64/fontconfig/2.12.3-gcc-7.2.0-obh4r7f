@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:01.142881
+##
+## fontconfig@2.12.3%gcc@7.2.0 arch=linux-centos7-x86_64 /obh4r7f
+##
+## Configure options: --enable-libxml2 --disable-docs --with-default-fonts=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/font-util-1.3.1-6kve7liuipanbxoxec2kintpythf2hw7/share/fonts
+##
+
+
+module-whatis "Fontconfig is a library for configuring/customizing font access"
+
+proc ModulesHelp { } {
+puts stderr "Fontconfig is a library for configuring/customizing font access"
+}
+
+conflict fontconfig
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fontconfig-2.12.3-obh4r7fmqrnd4sb4dn3gvwsync5ozk7j/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fontconfig-2.12.3-obh4r7fmqrnd4sb4dn3gvwsync5ozk7j/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fontconfig-2.12.3-obh4r7fmqrnd4sb4dn3gvwsync5ozk7j/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fontconfig-2.12.3-obh4r7fmqrnd4sb4dn3gvwsync5ozk7j/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:42.773929
+##
+## r-genelendatabase@1.16.0%gcc@5.5.0 arch=linux-centos7-x86_64 /5spz3sc
+##
+
+
+module-whatis "Length of mRNA transcripts for a number of genomes and gene ID formats, largely based on UCSC table browser"
+
+proc ModulesHelp { } {
+puts stderr "Length of mRNA transcripts for a number of genomes and gene ID formats,"
+puts stderr "largely based on UCSC table browser"
+}
+
+conflict r-genelendatabase
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genelendatabase-1.16.0-5spz3scthbzhgxgcxl4ekz7z6gsk4t3y/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genelendatabase-1.16.0-5spz3scthbzhgxgcxl4ekz7z6gsk4t3y/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genelendatabase-1.16.0-5spz3scthbzhgxgcxl4ekz7z6gsk4t3y/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:11.903976
+##
+## glog@0.3.5%gcc@7.2.0 arch=linux-centos7-x86_64 /n7e4kkj
+##
+
+
+module-whatis "C++ implementation of the Google logging module."
+
+proc ModulesHelp { } {
+puts stderr "C++ implementation of the Google logging module."
+}
+
+conflict glog
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glog-0.3.5-n7e4kkjd3m7t6xitq43up4qv7fzrzubi/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glog-0.3.5-n7e4kkjd3m7t6xitq43up4qv7fzrzubi/"
+

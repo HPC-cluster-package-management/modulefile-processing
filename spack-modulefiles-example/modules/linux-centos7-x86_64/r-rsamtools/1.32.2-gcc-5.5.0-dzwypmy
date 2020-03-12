@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:43.269558
+##
+## r-rsamtools@1.32.2%gcc@5.5.0 arch=linux-centos7-x86_64 /dzwypmy
+##
+
+
+module-whatis "This package provides an interface to the 'samtools', 'bcftools', and 'tabix' utilities (see 'LICENCE') for manipulating SAM (Sequence Alignment / Map), FASTA, binary variant call (BCF) and compressed indexed tab-delimited (tabix) files."
+
+proc ModulesHelp { } {
+puts stderr "This package provides an interface to the 'samtools', 'bcftools', and"
+puts stderr "'tabix' utilities (see 'LICENCE') for manipulating SAM (Sequence"
+puts stderr "Alignment / Map), FASTA, binary variant call (BCF) and compressed"
+puts stderr "indexed tab-delimited (tabix) files."
+}
+
+conflict r-rsamtools
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsamtools-1.32.2-dzwypmyajykc3qehb6domki3j3jxzlf7/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsamtools-1.32.2-dzwypmyajykc3qehb6domki3j3jxzlf7/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rsamtools-1.32.2-dzwypmyajykc3qehb6domki3j3jxzlf7/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

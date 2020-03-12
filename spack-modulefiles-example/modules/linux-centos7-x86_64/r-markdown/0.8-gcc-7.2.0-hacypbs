@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:20.927765
+##
+## r-markdown@0.8%gcc@7.2.0 arch=linux-centos7-x86_64 /hacypbs
+##
+
+
+module-whatis "Provides R bindings to the 'Sundown' 'Markdown' rendering library (https://github.com/vmg/sundown). 'Markdown' is a plain-text formatting syntax that can be converted to 'XHTML' or other formats. See http://en.wikipedia.org/wiki/Markdown for more information about 'Markdown'."
+
+proc ModulesHelp { } {
+puts stderr "Provides R bindings to the 'Sundown' 'Markdown' rendering library"
+puts stderr "(https://github.com/vmg/sundown). 'Markdown' is a plain-text formatting"
+puts stderr "syntax that can be converted to 'XHTML' or other formats. See"
+puts stderr "http://en.wikipedia.org/wiki/Markdown for more information about"
+puts stderr "'Markdown'."
+}
+
+conflict r-markdown
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-markdown-0.8-hacypbspqgck2qixkqzrdmtp2u5hrxg2/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-markdown-0.8-hacypbspqgck2qixkqzrdmtp2u5hrxg2/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-markdown-0.8-hacypbspqgck2qixkqzrdmtp2u5hrxg2/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

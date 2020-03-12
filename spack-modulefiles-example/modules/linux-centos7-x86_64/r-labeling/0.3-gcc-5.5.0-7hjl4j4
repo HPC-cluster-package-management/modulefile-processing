@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:00.134467
+##
+## r-labeling@0.3%gcc@5.5.0 arch=linux-centos7-x86_64 /7hjl4j4
+##
+
+
+module-whatis "Provides a range of axis labeling algorithms."
+
+proc ModulesHelp { } {
+puts stderr "Provides a range of axis labeling algorithms."
+}
+
+conflict r-labeling
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-labeling-0.3-7hjl4j46crptkev4xkklycyrd6htk5nz/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-labeling-0.3-7hjl4j46crptkev4xkklycyrd6htk5nz/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-labeling-0.3-7hjl4j46crptkev4xkklycyrd6htk5nz/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

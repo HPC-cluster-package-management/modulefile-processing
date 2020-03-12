@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:05.531775
+##
+## r-ggplot2@2.2.1%gcc@5.5.0 arch=linux-centos7-x86_64 /yzuojl4
+##
+
+
+module-whatis "An implementation of the grammar of graphics in R. It combines the advantages of both base and lattice graphics: conditioning and shared axes are handled automatically, and you can still build up a plot step by step from multiple data sources. It also implements a sophisticated multidimensional conditioning system and a consistent interface to map data to aesthetic attributes. See http://ggplot2.org for more information, documentation and examples."
+
+proc ModulesHelp { } {
+puts stderr "An implementation of the grammar of graphics in R. It combines the"
+puts stderr "advantages of both base and lattice graphics: conditioning and shared"
+puts stderr "axes are handled automatically, and you can still build up a plot step"
+puts stderr "by step from multiple data sources. It also implements a sophisticated"
+puts stderr "multidimensional conditioning system and a consistent interface to map"
+puts stderr "data to aesthetic attributes. See http://ggplot2.org for more"
+puts stderr "information, documentation and examples."
+}
+
+conflict r-ggplot2
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggplot2-2.2.1-yzuojl4m3lezqh6h4skqdk4vit4uay3e/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggplot2-2.2.1-yzuojl4m3lezqh6h4skqdk4vit4uay3e/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggplot2-2.2.1-yzuojl4m3lezqh6h4skqdk4vit4uay3e/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:19.743411
+##
+## r-summarizedexperiment@1.10.0%gcc@7.2.0 arch=linux-centos7-x86_64 /ibde3bq
+##
+
+
+module-whatis "The SummarizedExperiment container contains one or more assays, each represented by a matrix-like object of numeric or other mode. The rows typically represent genomic ranges of interest and the columns represent samples."
+
+proc ModulesHelp { } {
+puts stderr "The SummarizedExperiment container contains one or more assays, each"
+puts stderr "represented by a matrix-like object of numeric or other mode. The rows"
+puts stderr "typically represent genomic ranges of interest and the columns represent"
+puts stderr "samples."
+}
+
+conflict r-summarizedexperiment
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-summarizedexperiment-1.10.0-ibde3bqsgslabjoa5m5qgpfpc4dhd5h3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-summarizedexperiment-1.10.0-ibde3bqsgslabjoa5m5qgpfpc4dhd5h3/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-summarizedexperiment-1.10.0-ibde3bqsgslabjoa5m5qgpfpc4dhd5h3/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

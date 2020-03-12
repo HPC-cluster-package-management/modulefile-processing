@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:39.359704
+##
+## r-munsell@0.4.3%gcc@5.5.0 arch=linux-centos7-x86_64 /imhgvq4
+##
+
+
+module-whatis "Provides easy access to, and manipulation of, the Munsell colours. Provides a mapping between Munsell's original notation (e.g. '5R 5/10') and hexadecimal strings suitable for use directly in R graphics. Also provides utilities to explore slices through the Munsell colour tree, to transform Munsell colours and display colour palettes."
+
+proc ModulesHelp { } {
+puts stderr "Provides easy access to, and manipulation of, the Munsell colours."
+puts stderr "Provides a mapping between Munsell's original notation (e.g. "5R 5/10")"
+puts stderr "and hexadecimal strings suitable for use directly in R graphics. Also"
+puts stderr "provides utilities to explore slices through the Munsell colour tree, to"
+puts stderr "transform Munsell colours and display colour palettes."
+}
+
+conflict r-munsell
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-munsell-0.4.3-imhgvq4zar3ho7j2hgse7cqdpsryrnuh/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-munsell-0.4.3-imhgvq4zar3ho7j2hgse7cqdpsryrnuh/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-munsell-0.4.3-imhgvq4zar3ho7j2hgse7cqdpsryrnuh/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

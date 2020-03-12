@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:50.626045
+##
+## r-iranges@2.14.10%gcc@5.5.0 arch=linux-centos7-x86_64 /ee6nnmu
+##
+
+
+module-whatis "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames."
+
+proc ModulesHelp { } {
+puts stderr "Provides efficient low-level and highly reusable S4 classes for storing,"
+puts stderr "manipulating and aggregating over annotated ranges of integers."
+puts stderr "Implements an algebra of range operations, including efficient"
+puts stderr "algorithms for finding overlaps and nearest neighbors. Defines efficient"
+puts stderr "list-like classes for storing, transforming and aggregating large"
+puts stderr "grouped data, i.e., collections of atomic vectors and DataFrames."
+}
+
+conflict r-iranges
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-iranges-2.14.10-ee6nnmutesfyosew2ruz2ljssoedy66p/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-iranges-2.14.10-ee6nnmutesfyosew2ruz2ljssoedy66p/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-iranges-2.14.10-ee6nnmutesfyosew2ruz2ljssoedy66p/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:01.348056
+##
+## freebayes@1.1.0%gcc@4.8.5 arch=linux-centos7-x86_64 /7ma3rsa
+##
+
+
+module-whatis "Bayesian haplotype-based genetic polymorphism discovery and genotyping."
+
+proc ModulesHelp { } {
+puts stderr "Bayesian haplotype-based genetic polymorphism discovery and genotyping."
+}
+
+conflict freebayes
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/freebayes-1.1.0-7ma3rsayd6hyzouzo7tukbgb3clu5hik/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/freebayes-1.1.0-7ma3rsayd6hyzouzo7tukbgb3clu5hik/"
+

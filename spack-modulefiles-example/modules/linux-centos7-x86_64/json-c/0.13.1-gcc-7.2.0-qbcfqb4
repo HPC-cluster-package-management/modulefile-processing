@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:31.864370
+##
+## json-c@0.13.1%gcc@7.2.0 arch=linux-centos7-x86_64 /qbcfqb4
+##
+
+
+module-whatis "A JSON implementation in C."
+
+proc ModulesHelp { } {
+puts stderr "A JSON implementation in C."
+}
+
+conflict json-c
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/json-c-0.13.1-qbcfqb4rozqtz6jwwuxzy53w5izkfmyc/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/json-c-0.13.1-qbcfqb4rozqtz6jwwuxzy53w5izkfmyc/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/json-c-0.13.1-qbcfqb4rozqtz6jwwuxzy53w5izkfmyc/"
+

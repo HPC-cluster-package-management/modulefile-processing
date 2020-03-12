@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:08.122499
+##
+## r-latticeextra@0.6-28%gcc@7.2.0 arch=linux-centos7-x86_64 /itstryk
+##
+
+
+module-whatis "Building on the infrastructure provided by the lattice package, this package provides several new high-level functions and methods, as well as additional utilities such as panel and axis annotation functions."
+
+proc ModulesHelp { } {
+puts stderr "Building on the infrastructure provided by the lattice package, this"
+puts stderr "package provides several new high-level functions and methods, as well"
+puts stderr "as additional utilities such as panel and axis annotation functions."
+}
+
+conflict r-latticeextra
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-latticeextra-0.6-28-itstrykcju2wljldtmpdojmr4v7iieus/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-latticeextra-0.6-28-itstrykcju2wljldtmpdojmr4v7iieus/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-latticeextra-0.6-28-itstrykcju2wljldtmpdojmr4v7iieus/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

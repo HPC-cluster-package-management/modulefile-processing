@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:27.322004
+##
+## xextproto@7.3.0%gcc@7.2.0 arch=linux-centos7-x86_64 /g7gt42f
+##
+
+
+module-whatis "X Protocol Extensions."
+
+proc ModulesHelp { } {
+puts stderr "X Protocol Extensions."
+}
+
+conflict xextproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xextproto-7.3.0-g7gt42frvtnltq5zjyvpheuniohjr6ox/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xextproto-7.3.0-g7gt42frvtnltq5zjyvpheuniohjr6ox/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xextproto-7.3.0-g7gt42frvtnltq5zjyvpheuniohjr6ox/"
+

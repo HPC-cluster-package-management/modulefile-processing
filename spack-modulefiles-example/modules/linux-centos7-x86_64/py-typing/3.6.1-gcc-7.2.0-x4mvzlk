@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:32.802784
+##
+## py-typing@3.6.1%gcc@7.2.0 arch=linux-centos7-x86_64 /x4mvzlk
+##
+
+
+module-whatis "This is a backport of the standard library typing module to Python versions older than 3.6."
+
+proc ModulesHelp { } {
+puts stderr "This is a backport of the standard library typing module to Python"
+puts stderr "versions older than 3.6."
+}
+
+conflict py-typing
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-typing-3.6.1-x4mvzlkuovala4v442tqm43pkq75csha/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-typing-3.6.1-x4mvzlkuovala4v442tqm43pkq75csha/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-typing-3.6.1-x4mvzlkuovala4v442tqm43pkq75csha/lib/python2.7/site-packages"
+

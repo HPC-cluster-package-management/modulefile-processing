@@ -1,0 +1,51 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:29.268053
+##
+## intel-parallel-studio@cluster.2018.3%intel@18.0.3~advisor~clck+daal~gdb~ilp64~inspector+ipp~itac+mkl+mpi~newdtags+rpath+shared+tbb threads=none ~vtune arch=linux-centos7-x86_64 /35ityo3
+##
+
+
+module-whatis "Intel Parallel Studio."
+
+proc ModulesHelp { } {
+puts stderr "Intel Parallel Studio."
+}
+
+conflict intel-parallel-studio
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/"
+unsetenv PS1
+prepend-path CLASSPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/daal/lib/daal.jar"
+prepend-path CLASSPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi/intel64/lib/mpi.jar"
+setenv DAALROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/daal"
+append-path INTEL_LICENSE_FILE "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/licenses"
+append-path INTEL_LICENSE_FILE "/opt/intel/licenses"
+append-path INTEL_LICENSE_FILE "/u/home/staff1/cusgunx/intel/licenses"
+prepend-path INTEL_LICENSE_FILE "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/licenses"
+setenv IPPROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/ipp"
+setenv I_MPI_ROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/daal/lib/intel64_lin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.7"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.7"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mkl/lib/intel64_lin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64_lin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/ipp/lib/intel64"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi/mic/lib"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi/intel64/lib"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64_lin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi/man"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/man/common"
+setenv MKLROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mkl"
+prepend-path NLSPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mkl/lib/intel64_lin/locale/%l_%t/%N"
+prepend-path NLSPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/locale/%l_%t/%N"
+append-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/parallel_studio_xe_2018.3.051/bin"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mpi/intel64/bin"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/bin/intel64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/mkl/bin/pkgconfig"
+setenv PSTLROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/pstl"
+setenv TBBROOT "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/intel-18.0.3/intel-parallel-studio-cluster.2018.3-35ityo3mbfsfhgvtlodnkslmaryj5ezp/compilers_and_libraries_2018.3.222/linux/tbb"
+

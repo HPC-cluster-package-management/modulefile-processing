@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:00.434382
+##
+## r-zlibbioc@1.26.0%gcc@7.2.0 arch=linux-centos7-x86_64 /qweu4f7
+##
+
+
+module-whatis "This package uses the source code of zlib-1.2.5 to create libraries for systems that do not have these available via other means (most Linux and Mac users should have system-level access to zlib, and no direct need for this package). See the vignette for instructions on use."
+
+proc ModulesHelp { } {
+puts stderr "This package uses the source code of zlib-1.2.5 to create libraries for"
+puts stderr "systems that do not have these available via other means (most Linux and"
+puts stderr "Mac users should have system-level access to zlib, and no direct need"
+puts stderr "for this package). See the vignette for instructions on use."
+}
+
+conflict r-zlibbioc
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-zlibbioc-1.26.0-qweu4f7fjz2melhaqptzw7v4xtvz2yo3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-zlibbioc-1.26.0-qweu4f7fjz2melhaqptzw7v4xtvz2yo3/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-zlibbioc-1.26.0-qweu4f7fjz2melhaqptzw7v4xtvz2yo3/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

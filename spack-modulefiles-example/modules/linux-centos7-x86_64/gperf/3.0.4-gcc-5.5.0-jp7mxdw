@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:17.371359
+##
+## gperf@3.0.4%gcc@5.5.0 arch=linux-centos7-x86_64 /jp7mxdw
+##
+
+
+module-whatis "GNU gperf is a perfect hash function generator. For a given list of strings, it produces a hash function and hash table, in form of C or C++ code, for looking up a value depending on the input string. The hash function is perfect, which means that the hash table has no collisions, and the hash table lookup needs a single string comparison only."
+
+proc ModulesHelp { } {
+puts stderr "GNU gperf is a perfect hash function generator. For a given list of"
+puts stderr "strings, it produces a hash function and hash table, in form of C or C++"
+puts stderr "code, for looking up a value depending on the input string. The hash"
+puts stderr "function is perfect, which means that the hash table has no collisions,"
+puts stderr "and the hash table lookup needs a single string comparison only."
+}
+
+conflict gperf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gperf-3.0.4-jp7mxdwtgvxlpsd64xgy2wbyqyvdjw5f/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gperf-3.0.4-jp7mxdwtgvxlpsd64xgy2wbyqyvdjw5f/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gperf-3.0.4-jp7mxdwtgvxlpsd64xgy2wbyqyvdjw5f/"
+

@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:42.249207
+##
+## autoconf@2.69%gcc@4.8.5 arch=linux-centos7-x86_64 /jjggmli
+##
+
+
+module-whatis "Autoconf -- system configuration part of autotools"
+
+proc ModulesHelp { } {
+puts stderr "Autoconf -- system configuration part of autotools"
+}
+
+conflict autoconf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/autoconf-2.69-jjggmlijhph5fq352jrgzti3xhnh2bqq/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/autoconf-2.69-jjggmlijhph5fq352jrgzti3xhnh2bqq/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/autoconf-2.69-jjggmlijhph5fq352jrgzti3xhnh2bqq/"
+

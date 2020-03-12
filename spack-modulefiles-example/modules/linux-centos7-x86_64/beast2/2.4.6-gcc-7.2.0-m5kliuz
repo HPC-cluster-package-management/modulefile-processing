@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:44.176664
+##
+## beast2@2.4.6%gcc@7.2.0 arch=linux-centos7-x86_64 /m5kliuz
+##
+
+
+module-whatis "BEAST is a cross-platform program for Bayesian inference using MCMC of molecular sequences. It is entirely orientated towards rooted, time-measured phylogenies inferred using strict or relaxed molecular clock models. It can be used as a method of reconstructing phylogenies but is also a framework for testing evolutionary hypotheses without conditioning on a single tree topology."
+
+proc ModulesHelp { } {
+puts stderr "BEAST is a cross-platform program for Bayesian inference using MCMC of"
+puts stderr "molecular sequences. It is entirely orientated towards rooted, time-"
+puts stderr "measured phylogenies inferred using strict or relaxed molecular clock"
+puts stderr "models. It can be used as a method of reconstructing phylogenies but is"
+puts stderr "also a framework for testing evolutionary hypotheses without"
+puts stderr "conditioning on a single tree topology."
+}
+
+conflict beast2
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/beast2-2.4.6-m5kliuzwmb62pyp3oujjd3ve6256edpu/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/beast2-2.4.6-m5kliuzwmb62pyp3oujjd3ve6256edpu/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/beast2-2.4.6-m5kliuzwmb62pyp3oujjd3ve6256edpu/"
+setenv BEAST "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/beast2-2.4.6-m5kliuzwmb62pyp3oujjd3ve6256edpu"
+

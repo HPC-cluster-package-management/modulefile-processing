@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:51.802892
+##
+## lua@5.3.4%gcc@4.8.5 arch=linux-centos7-x86_64 /fmnxcwk
+##
+
+
+module-whatis "The Lua programming language interpreter and library."
+
+proc ModulesHelp { } {
+puts stderr "The Lua programming language interpreter and library."
+}
+
+conflict lua
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/"
+prepend-path --delim ";" LUA_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/share/lua/5.3/?.lua"
+prepend-path --delim ";" LUA_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/share/lua/5.3/?/init.lua"
+prepend-path --delim ";" LUA_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/lib/lua/5.3/?.lua"
+prepend-path --delim ";" LUA_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/lib/lua/5.3/?/init.lua"
+prepend-path --delim ";" LUA_CPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lua-5.3.4-fmnxcwkmwacfljeceseiyqdbba6xlwis/lib/lua/5.3/?.so"
+

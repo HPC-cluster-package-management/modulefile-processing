@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:04.322881
+##
+## r-sm@2.2-5.5%gcc@5.5.0 arch=linux-centos7-x86_64 /hb5b4ck
+##
+
+
+module-whatis "This is software linked to the book 'Applied Smoothing Techniques for Data Analysis - The Kernel Approach with S-Plus Illustrations' Oxford University Press."
+
+proc ModulesHelp { } {
+puts stderr "This is software linked to the book 'Applied Smoothing Techniques for"
+puts stderr "Data Analysis - The Kernel Approach with S-Plus Illustrations' Oxford"
+puts stderr "University Press."
+}
+
+conflict r-sm
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sm-2.2-5.5-hb5b4cktfmfxdy6skunnbcp43usdhtwi/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sm-2.2-5.5-hb5b4cktfmfxdy6skunnbcp43usdhtwi/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sm-2.2-5.5-hb5b4cktfmfxdy6skunnbcp43usdhtwi/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

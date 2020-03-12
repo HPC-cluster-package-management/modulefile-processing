@@ -1,0 +1,17 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:37.415110
+##
+## aida@3.2.1%gcc@7.2.0 arch=linux-centos7-x86_64 /ulwtk4b
+##
+
+
+module-whatis "Abstract Interfaces for Data Analysis"
+
+proc ModulesHelp { } {
+puts stderr "Abstract Interfaces for Data Analysis"
+}
+
+conflict aida
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/aida-3.2.1-ulwtk4bf6ul43p7o26w57qt6sbrkki5z/"
+

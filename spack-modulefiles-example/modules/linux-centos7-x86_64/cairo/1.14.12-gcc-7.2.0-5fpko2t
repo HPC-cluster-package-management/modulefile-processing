@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:50.369451
+##
+## cairo@1.14.12%gcc@7.2.0+X arch=linux-centos7-x86_64 /5fpko2t
+##
+## Configure options: --disable-trace --enable-tee --enable-xlib --enable-xcb
+##
+
+
+module-whatis "Cairo is a 2D graphics library with support for multiple output devices."
+
+proc ModulesHelp { } {
+puts stderr "Cairo is a 2D graphics library with support for multiple output devices."
+}
+
+conflict cairo
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cairo-1.14.12-5fpko2tkk4xbzw7t32qu5hwpoypyno63/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cairo-1.14.12-5fpko2tkk4xbzw7t32qu5hwpoypyno63/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cairo-1.14.12-5fpko2tkk4xbzw7t32qu5hwpoypyno63/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cairo-1.14.12-5fpko2tkk4xbzw7t32qu5hwpoypyno63/"
+

@@ -1,0 +1,17 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:08.458321
+##
+## ghostscript-fonts@8.11%gcc@7.2.0 arch=linux-centos7-x86_64 /elfjmp2
+##
+
+
+module-whatis "Ghostscript Fonts"
+
+proc ModulesHelp { } {
+puts stderr "Ghostscript Fonts"
+}
+
+conflict ghostscript-fonts
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ghostscript-fonts-8.11-elfjmp2nvhq3tgvarlexb73ofo5tgh76/"
+

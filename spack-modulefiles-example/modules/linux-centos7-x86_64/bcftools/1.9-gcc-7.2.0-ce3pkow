@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:43.513718
+##
+## bcftools@1.9%gcc@7.2.0 arch=linux-centos7-x86_64 /ce3pkow
+##
+
+
+module-whatis "BCFtools is a set of utilities that manipulate variant calls in the Variant Call Format (VCF) and its binary counterpart BCF. All commands work transparently with both VCFs and BCFs, both uncompressed and BGZF-compressed."
+
+proc ModulesHelp { } {
+puts stderr "BCFtools is a set of utilities that manipulate variant calls in the"
+puts stderr "Variant Call Format (VCF) and its binary counterpart BCF. All commands"
+puts stderr "work transparently with both VCFs and BCFs, both uncompressed and BGZF-"
+puts stderr "compressed."
+}
+
+conflict bcftools
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bcftools-1.9-ce3pkowrczv72eztr6r4gxi25phzxqww/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bcftools-1.9-ce3pkowrczv72eztr6r4gxi25phzxqww/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bcftools-1.9-ce3pkowrczv72eztr6r4gxi25phzxqww/"
+

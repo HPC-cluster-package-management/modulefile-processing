@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:57.083415
+##
+## microbiomeutil@20110519%gcc@7.2.0 arch=linux-centos7-x86_64 /62wiwa7
+##
+
+
+module-whatis "Microbiome analysis utilities"
+
+proc ModulesHelp { } {
+puts stderr "Microbiome analysis utilities"
+}
+
+conflict microbiomeutil
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/microbiomeutil-20110519-62wiwa73wpg2rg2pkxepiafmuz6rwx7o/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/microbiomeutil-20110519-62wiwa73wpg2rg2pkxepiafmuz6rwx7o/ChimeraSlayer"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/microbiomeutil-20110519-62wiwa73wpg2rg2pkxepiafmuz6rwx7o/NAST-iEr"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/microbiomeutil-20110519-62wiwa73wpg2rg2pkxepiafmuz6rwx7o/TreeChopper"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/microbiomeutil-20110519-62wiwa73wpg2rg2pkxepiafmuz6rwx7o/WigeoN"
+

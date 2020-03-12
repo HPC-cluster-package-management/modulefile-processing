@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:21.703680
+##
+## r-evaluate@0.10.1%gcc@7.2.0 arch=linux-centos7-x86_64 /way3q2o
+##
+
+
+module-whatis "Parsing and evaluation tools that make it easy to recreate the command line behaviour of R."
+
+proc ModulesHelp { } {
+puts stderr "Parsing and evaluation tools that make it easy to recreate the command"
+puts stderr "line behaviour of R."
+}
+
+conflict r-evaluate
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-evaluate-0.10.1-way3q2oorzoboingtxxpmhqtwgkge2vr/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-evaluate-0.10.1-way3q2oorzoboingtxxpmhqtwgkge2vr/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-evaluate-0.10.1-way3q2oorzoboingtxxpmhqtwgkge2vr/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

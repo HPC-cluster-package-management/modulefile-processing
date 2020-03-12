@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:11.540574
+##
+## r-dichromat@2.0-0%gcc@5.5.0 arch=linux-centos7-x86_64 /jkoypcs
+##
+
+
+module-whatis "Collapse red-green or green-blue distinctions to simulate the effects of different types of color-blindness."
+
+proc ModulesHelp { } {
+puts stderr "Collapse red-green or green-blue distinctions to simulate the effects of"
+puts stderr "different types of color-blindness."
+}
+
+conflict r-dichromat
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dichromat-2.0-0-jkoypcshfegrhshewa6cqbexpiqmkmh6/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dichromat-2.0-0-jkoypcshfegrhshewa6cqbexpiqmkmh6/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dichromat-2.0-0-jkoypcshfegrhshewa6cqbexpiqmkmh6/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

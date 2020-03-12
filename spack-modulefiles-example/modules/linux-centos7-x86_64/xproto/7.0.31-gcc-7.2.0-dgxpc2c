@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:28.193962
+##
+## xproto@7.0.31%gcc@7.2.0 arch=linux-centos7-x86_64 /dgxpc2c
+##
+
+
+module-whatis "X Window System Core Protocol."
+
+proc ModulesHelp { } {
+puts stderr "X Window System Core Protocol. This package provides the headers and"
+puts stderr "specification documents defining the X Window System Core Protocol,"
+puts stderr "Version 11. It also includes a number of headers that aren't purely"
+puts stderr "protocol related, but are depended upon by many other X Window System"
+puts stderr "packages to provide common definitions and porting layer."
+}
+
+conflict xproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xproto-7.0.31-dgxpc2csiybtqqqq443uxfqzgf4pzeas/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xproto-7.0.31-dgxpc2csiybtqqqq443uxfqzgf4pzeas/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xproto-7.0.31-dgxpc2csiybtqqqq443uxfqzgf4pzeas/"
+

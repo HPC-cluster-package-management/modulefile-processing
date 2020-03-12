@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:10.444440
+##
+## r-rcolorbrewer@1.1-2%gcc@5.5.0 arch=linux-centos7-x86_64 /wfmn5lb
+##
+
+
+module-whatis "Provides color schemes for maps (and other graphics) designed by Cynthia Brewer as described at http://colorbrewer2.org"
+
+proc ModulesHelp { } {
+puts stderr "Provides color schemes for maps (and other graphics) designed by Cynthia"
+puts stderr "Brewer as described at http://colorbrewer2.org"
+}
+
+conflict r-rcolorbrewer
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rcolorbrewer-1.1-2-wfmn5lblznfxwf2aj5u7jofot3orwvsk/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rcolorbrewer-1.1-2-wfmn5lblznfxwf2aj5u7jofot3orwvsk/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rcolorbrewer-1.1-2-wfmn5lblznfxwf2aj5u7jofot3orwvsk/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

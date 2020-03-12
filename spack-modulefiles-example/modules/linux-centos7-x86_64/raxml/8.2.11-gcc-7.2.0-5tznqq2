@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:01.570187
+##
+## raxml@8.2.11%gcc@7.2.0~avx+mpi~pthreads+sse arch=linux-centos7-x86_64 /5tznqq2
+##
+
+
+module-whatis "RAxML (Randomized Axelerated Maximum Likelihood) is a program for sequential and parallel Maximum Likelihood based inference of large phylogenetic trees."
+
+proc ModulesHelp { } {
+puts stderr "RAxML (Randomized Axelerated Maximum Likelihood) is a program for"
+puts stderr "sequential and parallel Maximum Likelihood based inference of large"
+puts stderr "phylogenetic trees."
+}
+
+conflict raxml
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/raxml-8.2.11-5tznqq2qu7qd5ylhhaongbv3w3u2wsls/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/raxml-8.2.11-5tznqq2qu7qd5ylhhaongbv3w3u2wsls/"
+

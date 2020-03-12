@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:21.049793
+##
+## pkgconf@1.4.2%gcc@5.5.0 arch=linux-centos7-x86_64 /qdgufjf
+##
+
+
+module-whatis "pkgconf is a program which helps to configure compiler and linker flags for development frameworks. It is similar to pkg-config from freedesktop.org, providing additional functionality while also maintaining compatibility."
+
+proc ModulesHelp { } {
+puts stderr "pkgconf is a program which helps to configure compiler and linker flags"
+puts stderr "for development frameworks. It is similar to pkg-config from"
+puts stderr "freedesktop.org, providing additional functionality while also"
+puts stderr "maintaining compatibility."
+}
+
+conflict pkgconf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pkgconf-1.4.2-qdgufjfqbe2vs373ajvynvzsjutxs7av/"
+

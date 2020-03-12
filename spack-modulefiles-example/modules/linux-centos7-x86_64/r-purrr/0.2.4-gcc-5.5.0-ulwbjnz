@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:05.057063
+##
+## r-purrr@0.2.4%gcc@5.5.0 arch=linux-centos7-x86_64 /ulwbjnz
+##
+
+
+module-whatis "A complete and consistent functional programming toolkit for R."
+
+proc ModulesHelp { } {
+puts stderr "A complete and consistent functional programming toolkit for R."
+}
+
+conflict r-purrr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-purrr-0.2.4-ulwbjnz2s24kkqebdywslwctmxply5or/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-purrr-0.2.4-ulwbjnz2s24kkqebdywslwctmxply5or/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-purrr-0.2.4-ulwbjnz2s24kkqebdywslwctmxply5or/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

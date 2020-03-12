@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:13.859044
+##
+## r-locfit@1.5-9.1%gcc@5.5.0 arch=linux-centos7-x86_64 /lecxyz5
+##
+
+
+module-whatis "Local regression, likelihood and density estimation."
+
+proc ModulesHelp { } {
+puts stderr "Local regression, likelihood and density estimation."
+}
+
+conflict r-locfit
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-locfit-1.5-9.1-lecxyz57hnqk3sbrcuaj2toisszc7itk/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-locfit-1.5-9.1-lecxyz57hnqk3sbrcuaj2toisszc7itk/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-locfit-1.5-9.1-lecxyz57hnqk3sbrcuaj2toisszc7itk/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

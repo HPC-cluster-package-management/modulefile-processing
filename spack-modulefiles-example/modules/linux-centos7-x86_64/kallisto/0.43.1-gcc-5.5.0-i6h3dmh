@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:32.859550
+##
+## kallisto@0.43.1%gcc@5.5.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /i6h3dmh
+##
+
+
+module-whatis "kallisto is a program for quantifying abundances of transcripts from RNA-Seq data."
+
+proc ModulesHelp { } {
+puts stderr "kallisto is a program for quantifying abundances of transcripts from"
+puts stderr "RNA-Seq data."
+}
+
+conflict kallisto
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/kallisto-0.43.1-i6h3dmhx4sfxqda63rxxt2xl6riq6ot2/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/kallisto-0.43.1-i6h3dmhx4sfxqda63rxxt2xl6riq6ot2/"
+

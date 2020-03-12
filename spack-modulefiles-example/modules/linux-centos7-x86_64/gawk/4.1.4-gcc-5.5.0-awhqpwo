@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:03.803177
+##
+## gawk@4.1.4%gcc@5.5.0 arch=linux-centos7-x86_64 /awhqpwo
+##
+
+
+module-whatis "If you are like many computer users, you would frequently like to make changes in various text files wherever certain patterns appear, or extract data from parts of certain lines while discarding the rest. To write a program to do this in a language such as C or Pascal is a time-consuming inconvenience that may take many lines of code. The job is easy with awk, especially the GNU implementation: gawk."
+
+proc ModulesHelp { } {
+puts stderr "If you are like many computer users, you would frequently like to make"
+puts stderr "changes in various text files wherever certain patterns appear, or"
+puts stderr "extract data from parts of certain lines while discarding the rest. To"
+puts stderr "write a program to do this in a language such as C or Pascal is a time-"
+puts stderr "consuming inconvenience that may take many lines of code. The job is"
+puts stderr "easy with awk, especially the GNU implementation: gawk. The awk utility"
+puts stderr "interprets a special-purpose programming language that makes it possible"
+puts stderr "to handle simple data-reformatting jobs with just a few lines of code."
+}
+
+conflict gawk
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gawk-4.1.4-awhqpwoiddnlzhuzif4ssof4m2v7ye43/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gawk-4.1.4-awhqpwoiddnlzhuzif4ssof4m2v7ye43/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gawk-4.1.4-awhqpwoiddnlzhuzif4ssof4m2v7ye43/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/gawk-4.1.4-awhqpwoiddnlzhuzif4ssof4m2v7ye43/"
+

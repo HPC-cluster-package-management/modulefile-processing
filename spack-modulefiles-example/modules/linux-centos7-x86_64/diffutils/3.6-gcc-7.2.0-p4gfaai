@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:54.402897
+##
+## diffutils@3.6%gcc@7.2.0 arch=linux-centos7-x86_64 /p4gfaai
+##
+
+
+module-whatis "GNU Diffutils is a package of several programs related to finding differences between files."
+
+proc ModulesHelp { } {
+puts stderr "GNU Diffutils is a package of several programs related to finding"
+puts stderr "differences between files."
+}
+
+conflict diffutils
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/diffutils-3.6-p4gfaaiefcrg6o7j24cu4mrzklmec5kr/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/diffutils-3.6-p4gfaaiefcrg6o7j24cu4mrzklmec5kr/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/diffutils-3.6-p4gfaaiefcrg6o7j24cu4mrzklmec5kr/"
+

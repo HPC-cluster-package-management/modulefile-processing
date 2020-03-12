@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:10.414217
+##
+## texlive@live%gcc@7.2.0 scheme=small arch=linux-centos7-x86_64 /kz5i2km
+##
+
+
+module-whatis "TeX Live is a free software distribution for the TeX typesetting system. Heads up, it's is not a reproducible installation."
+
+proc ModulesHelp { } {
+puts stderr "TeX Live is a free software distribution for the TeX typesetting system."
+puts stderr "Heads up, it's is not a reproducible installation."
+}
+
+conflict texlive
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/texlive-live-kz5i2kmmdtegipkhhvz6wxszm6hxe6ms/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/texlive-live-kz5i2kmmdtegipkhhvz6wxszm6hxe6ms/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/texlive-live-kz5i2kmmdtegipkhhvz6wxszm6hxe6ms/bin/x86_64-linux"
+

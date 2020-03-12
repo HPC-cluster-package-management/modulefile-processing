@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:52.987483
+##
+## matio@1.5.9%gcc@7.2.0+hdf5+shared+zlib arch=linux-centos7-x86_64 /5smsxrj
+##
+## Configure options: --with-zlib=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/zlib-1.2.11-fuwbsyd4h6milgbzfi362t25s46hd75r --with-hdf5=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hdf5-1.10.4-w3l7zgmivoesd6vu4ej25wrzwmr2lquh
+##
+
+
+module-whatis "matio is an C library for reading and writing Matlab MAT files"
+
+proc ModulesHelp { } {
+puts stderr "matio is an C library for reading and writing Matlab MAT files"
+}
+
+conflict matio
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/matio-1.5.9-5smsxrjnzoh2m3wey26nkfpku7jroly6/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/matio-1.5.9-5smsxrjnzoh2m3wey26nkfpku7jroly6/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/matio-1.5.9-5smsxrjnzoh2m3wey26nkfpku7jroly6/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/matio-1.5.9-5smsxrjnzoh2m3wey26nkfpku7jroly6/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/matio-1.5.9-5smsxrjnzoh2m3wey26nkfpku7jroly6/"
+

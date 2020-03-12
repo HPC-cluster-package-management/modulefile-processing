@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:36.821419
+##
+## libgd@2.2.4%gcc@7.2.0 arch=linux-centos7-x86_64 /4e237jv
+##
+
+
+module-whatis "GD is an open source code library for the dynamic creation of images by programmers. GD is written in C, and 'wrappers' are available for Perl, PHP and other languages. GD creates PNG, JPEG, GIF, WebP, XPM, BMP images, among other formats. GD is commonly used to generate charts, graphics, thumbnails, and most anything else, on the fly. While not restricted to use on the web, the most common applications of GD involve website development."
+
+proc ModulesHelp { } {
+puts stderr "GD is an open source code library for the dynamic creation of images by"
+puts stderr "programmers. GD is written in C, and "wrappers" are available for Perl,"
+puts stderr "PHP and other languages. GD creates PNG, JPEG, GIF, WebP, XPM, BMP"
+puts stderr "images, among other formats. GD is commonly used to generate charts,"
+puts stderr "graphics, thumbnails, and most anything else, on the fly. While not"
+puts stderr "restricted to use on the web, the most common applications of GD involve"
+puts stderr "website development."
+}
+
+conflict libgd
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgd-2.2.4-4e237jvrmmcgtkalfu7oce2mj5liblsj/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgd-2.2.4-4e237jvrmmcgtkalfu7oce2mj5liblsj/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgd-2.2.4-4e237jvrmmcgtkalfu7oce2mj5liblsj/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgd-2.2.4-4e237jvrmmcgtkalfu7oce2mj5liblsj/"
+

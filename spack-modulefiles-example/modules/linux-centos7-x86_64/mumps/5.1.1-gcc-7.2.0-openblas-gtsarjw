@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:00.875301
+##
+## mumps@5.1.1%gcc@7.2.0+complex+double+float~int64~metis+mpi~parmetis~ptscotch~scotch+shared arch=linux-centos7-x86_64 /gtsarjw
+##
+
+
+module-whatis "MUMPS: a MUltifrontal Massively Parallel sparse direct Solver"
+
+proc ModulesHelp { } {
+puts stderr "MUMPS: a MUltifrontal Massively Parallel sparse direct Solver"
+}
+
+conflict mumps
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/mumps-5.1.1-gtsarjwsnmqb5bwugaya32wfndslxind/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/mumps-5.1.1-gtsarjwsnmqb5bwugaya32wfndslxind/"
+

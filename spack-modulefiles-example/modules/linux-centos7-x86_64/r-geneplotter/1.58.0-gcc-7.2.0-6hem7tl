@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:47.673436
+##
+## r-geneplotter@1.58.0%gcc@7.2.0 arch=linux-centos7-x86_64 /6hem7tl
+##
+
+
+module-whatis "Functions for plotting genomic data."
+
+proc ModulesHelp { } {
+puts stderr "Functions for plotting genomic data."
+}
+
+conflict r-geneplotter
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-geneplotter-1.58.0-6hem7tlftlkgezz72qelhupzqnmemas2/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-geneplotter-1.58.0-6hem7tlftlkgezz72qelhupzqnmemas2/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-geneplotter-1.58.0-6hem7tlftlkgezz72qelhupzqnmemas2/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

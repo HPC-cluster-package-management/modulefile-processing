@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:25.537663
+##
+## r-testit@0.7%gcc@7.2.0 arch=linux-centos7-x86_64 /bc5pl63
+##
+
+
+module-whatis "Provides two convenience functions assert() and test_pkg() to facilitate testing R packages."
+
+proc ModulesHelp { } {
+puts stderr "Provides two convenience functions assert() and test_pkg() to facilitate"
+puts stderr "testing R packages."
+}
+
+conflict r-testit
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-testit-0.7-bc5pl63fzgy7low4xowcrgdshjkwso7z/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-testit-0.7-bc5pl63fzgy7low4xowcrgdshjkwso7z/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-testit-0.7-bc5pl63fzgy7low4xowcrgdshjkwso7z/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:42.352053
+##
+## r-acepack@1.4.1%gcc@5.5.0 arch=linux-centos7-x86_64 /lyy56sv
+##
+
+
+module-whatis "ACE and AVAS for Selecting Multiple Regression Transformations."
+
+proc ModulesHelp { } {
+puts stderr "ACE and AVAS for Selecting Multiple Regression Transformations."
+}
+
+conflict r-acepack
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-acepack-1.4.1-lyy56svlhupvkfxbwscmcyap4tpyrj5l/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-acepack-1.4.1-lyy56svlhupvkfxbwscmcyap4tpyrj5l/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-acepack-1.4.1-lyy56svlhupvkfxbwscmcyap4tpyrj5l/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

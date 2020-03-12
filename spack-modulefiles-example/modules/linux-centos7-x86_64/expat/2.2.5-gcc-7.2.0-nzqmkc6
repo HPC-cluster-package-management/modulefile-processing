@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.138906
+##
+## expat@2.2.5%gcc@7.2.0+libbsd arch=linux-centos7-x86_64 /nzqmkc6
+##
+## Configure options: --with-libbsd
+##
+
+
+module-whatis "Expat is an XML parser library written in C."
+
+proc ModulesHelp { } {
+puts stderr "Expat is an XML parser library written in C."
+}
+
+conflict expat
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/expat-2.2.5-nzqmkc6k6sbb63hz37epl7qjr63l4snh/"
+

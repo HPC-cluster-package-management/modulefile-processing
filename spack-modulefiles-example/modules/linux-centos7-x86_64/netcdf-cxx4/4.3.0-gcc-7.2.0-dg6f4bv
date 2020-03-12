@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:04.946173
+##
+## netcdf-cxx4@4.3.0%gcc@7.2.0 arch=linux-centos7-x86_64 /dg6f4bv
+##
+## Configure options: CPPFLAGS=-I/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-4.6.1-6xnnlkm5ttkeeowmg6kcqrjoxhxjcf7p/include
+##
+
+
+module-whatis "C++ interface for NetCDF4"
+
+proc ModulesHelp { } {
+puts stderr "C++ interface for NetCDF4"
+}
+
+conflict netcdf-cxx4
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-cxx4-4.3.0-dg6f4bvnmlbdyayf7pqkwyrrpmejf7bs/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-cxx4-4.3.0-dg6f4bvnmlbdyayf7pqkwyrrpmejf7bs/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-cxx4-4.3.0-dg6f4bvnmlbdyayf7pqkwyrrpmejf7bs/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-cxx4-4.3.0-dg6f4bvnmlbdyayf7pqkwyrrpmejf7bs/"
+

@@ -1,0 +1,35 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:13.807169
+##
+## r-digest@0.6.12%gcc@5.5.0 arch=linux-centos7-x86_64 /abysrse
+##
+
+
+module-whatis "Implementation of a function 'digest()' for the creation of hash digests of arbitrary R objects (using the md5, sha-1, sha-256, crc32, xxhash and murmurhash algorithms) permitting easy comparison of R language objects, as well as a function 'hmac()' to create hash-based message authentication code. The md5 algorithm by Ron Rivest is specified in RFC 1321, the sha-1 and sha-256 algorithms are specified in FIPS-180-1 and FIPS-180-2, and the crc32 algorithm is described in ftp://ftp.rocksoft.com/cliens/rocksoft/papers/crc_v3.txt. For md5, sha-1, sha-256 and aes, this package uses small standalone implementations that were provided by Christophe Devine. For crc32, code from the zlib library is used. For sha-512, an implementation by Aaron D. Gifford is used. For xxhash, the implementation by Yann Collet is used. For murmurhash, an implementation by Shane Day is used. Please note that this package is not meant to be deployed for cryptographic purposes for which more comprehensive (and widely tested) libraries such as OpenSSL should be used."
+
+proc ModulesHelp { } {
+puts stderr "Implementation of a function 'digest()' for the creation of hash digests"
+puts stderr "of arbitrary R objects (using the md5, sha-1, sha-256, crc32, xxhash and"
+puts stderr "murmurhash algorithms) permitting easy comparison of R language objects,"
+puts stderr "as well as a function 'hmac()' to create hash-based message"
+puts stderr "authentication code. The md5 algorithm by Ron Rivest is specified in RFC"
+puts stderr "1321, the sha-1 and sha-256 algorithms are specified in FIPS-180-1 and"
+puts stderr "FIPS-180-2, and the crc32 algorithm is described in"
+puts stderr "ftp://ftp.rocksoft.com/cliens/rocksoft/papers/crc_v3.txt. For md5,"
+puts stderr "sha-1, sha-256 and aes, this package uses small standalone"
+puts stderr "implementations that were provided by Christophe Devine. For crc32, code"
+puts stderr "from the zlib library is used. For sha-512, an implementation by Aaron"
+puts stderr "D. Gifford is used. For xxhash, the implementation by Yann Collet is"
+puts stderr "used. For murmurhash, an implementation by Shane Day is used. Please"
+puts stderr "note that this package is not meant to be deployed for cryptographic"
+puts stderr "purposes for which more comprehensive (and widely tested) libraries such"
+puts stderr "as OpenSSL should be used."
+}
+
+conflict r-digest
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-digest-0.6.12-abysrsewabhwcdgm477csjmbq2t6pkgw/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-digest-0.6.12-abysrsewabhwcdgm477csjmbq2t6pkgw/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-digest-0.6.12-abysrsewabhwcdgm477csjmbq2t6pkgw/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

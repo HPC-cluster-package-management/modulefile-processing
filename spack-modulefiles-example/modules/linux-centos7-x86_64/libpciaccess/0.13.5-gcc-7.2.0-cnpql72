@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:38.567370
+##
+## libpciaccess@0.13.5%gcc@7.2.0 arch=linux-centos7-x86_64 /cnpql72
+##
+
+
+module-whatis "Generic PCI access library."
+
+proc ModulesHelp { } {
+puts stderr "Generic PCI access library."
+}
+
+conflict libpciaccess
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libpciaccess-0.13.5-cnpql72vsqcmrv7vl6gbvc6kgjugammh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libpciaccess-0.13.5-cnpql72vsqcmrv7vl6gbvc6kgjugammh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libpciaccess-0.13.5-cnpql72vsqcmrv7vl6gbvc6kgjugammh/"
+

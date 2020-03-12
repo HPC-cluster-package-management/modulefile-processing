@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:01.456130
+##
+## nasm@2.13.03%gcc@7.2.0 arch=linux-centos7-x86_64 /kf5jm2f
+##
+
+
+module-whatis "NASM (Netwide Assembler) is an 80x86 assembler designed for portability and modularity. It includes a disassembler as well."
+
+proc ModulesHelp { } {
+puts stderr "NASM (Netwide Assembler) is an 80x86 assembler designed for portability"
+puts stderr "and modularity. It includes a disassembler as well."
+}
+
+conflict nasm
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nasm-2.13.03-kf5jm2fsyu65ax53cndxas7ih5h3blth/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nasm-2.13.03-kf5jm2fsyu65ax53cndxas7ih5h3blth/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nasm-2.13.03-kf5jm2fsyu65ax53cndxas7ih5h3blth/"
+

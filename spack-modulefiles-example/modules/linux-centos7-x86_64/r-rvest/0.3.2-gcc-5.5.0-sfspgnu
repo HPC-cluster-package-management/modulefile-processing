@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:52.788242
+##
+## r-rvest@0.3.2%gcc@5.5.0 arch=linux-centos7-x86_64 /sfspgnu
+##
+
+
+module-whatis "Wrappers around the 'xml2' and 'httr' packages to make it easy to download, then manipulate, HTML and XML."
+
+proc ModulesHelp { } {
+puts stderr "Wrappers around the 'xml2' and 'httr' packages to make it easy to"
+puts stderr "download, then manipulate, HTML and XML."
+}
+
+conflict r-rvest
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rvest-0.3.2-sfspgnudhfomtxypltthpgqpr3q6ni3a/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rvest-0.3.2-sfspgnudhfomtxypltthpgqpr3q6ni3a/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rvest-0.3.2-sfspgnudhfomtxypltthpgqpr3q6ni3a/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

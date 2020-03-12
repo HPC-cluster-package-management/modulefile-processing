@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:48.433144
+##
+## r-rstudioapi@0.7%gcc@5.5.0 arch=linux-centos7-x86_64 /2ttwizi
+##
+
+
+module-whatis "Access the RStudio API (if available) and provide informative error messages when it's not."
+
+proc ModulesHelp { } {
+puts stderr "Access the RStudio API (if available) and provide informative error"
+puts stderr "messages when it's not."
+}
+
+conflict r-rstudioapi
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rstudioapi-0.7-2ttwizim3pfdibrtaeiic5t3xabtvmz7/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rstudioapi-0.7-2ttwizim3pfdibrtaeiic5t3xabtvmz7/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rstudioapi-0.7-2ttwizim3pfdibrtaeiic5t3xabtvmz7/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

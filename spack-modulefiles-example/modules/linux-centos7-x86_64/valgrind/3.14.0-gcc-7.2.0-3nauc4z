@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:21.477948
+##
+## valgrind@3.14.0%gcc@7.2.0+boost+mpi+only64bit+ubsan arch=linux-centos7-x86_64 /3nauc4z
+##
+## Configure options: --enable-ubsan --enable-only64bit
+##
+
+
+module-whatis "An instrumentation framework for building dynamic analysis."
+
+proc ModulesHelp { } {
+puts stderr "An instrumentation framework for building dynamic analysis. There are"
+puts stderr "Valgrind tools that can automatically detect many memory management and"
+puts stderr "threading bugs, and profile your programs in detail. You can also use"
+puts stderr "Valgrind to build new tools. Valgrind is Open Source / Free Software,"
+puts stderr "and is freely available under the GNU General Public License, version 2."
+}
+
+conflict valgrind
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/valgrind-3.14.0-3nauc4zwpy3qundxjnfjuiknkhxzfrlh/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/valgrind-3.14.0-3nauc4zwpy3qundxjnfjuiknkhxzfrlh/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/valgrind-3.14.0-3nauc4zwpy3qundxjnfjuiknkhxzfrlh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/valgrind-3.14.0-3nauc4zwpy3qundxjnfjuiknkhxzfrlh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/valgrind-3.14.0-3nauc4zwpy3qundxjnfjuiknkhxzfrlh/"
+

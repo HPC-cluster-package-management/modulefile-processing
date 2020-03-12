@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:42.816309
+##
+## r-nlme@3.1-131%gcc@5.5.0 arch=linux-centos7-x86_64 /w3npomo
+##
+
+
+module-whatis "Fit and compare Gaussian linear and nonlinear mixed-effects models."
+
+proc ModulesHelp { } {
+puts stderr "Fit and compare Gaussian linear and nonlinear mixed-effects models."
+}
+
+conflict r-nlme
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-nlme-3.1-131-w3npomovhya6doq3ng3t5z2bf6rum7nu/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-nlme-3.1-131-w3npomovhya6doq3ng3t5z2bf6rum7nu/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-nlme-3.1-131-w3npomovhya6doq3ng3t5z2bf6rum7nu/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

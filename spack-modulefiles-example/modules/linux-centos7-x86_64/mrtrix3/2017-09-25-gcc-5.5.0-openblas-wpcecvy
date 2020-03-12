@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:59.326264
+##
+## mrtrix3@2017-09-25%gcc@5.5.0 arch=linux-centos7-x86_64 /wpcecvy
+##
+
+
+module-whatis "MRtrix provides a set of tools to perform various advanced diffusion MRI analyses, including constrained spherical deconvolution (CSD), probabilistic tractography, track-density imaging, and apparent fibre density."
+
+proc ModulesHelp { } {
+puts stderr "MRtrix provides a set of tools to perform various advanced diffusion MRI"
+puts stderr "analyses, including constrained spherical deconvolution (CSD),"
+puts stderr "probabilistic tractography, track-density imaging, and apparent fibre"
+puts stderr "density."
+}
+
+conflict mrtrix3
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mrtrix3-2017-09-25-wpcecvycf7obdre7sdlgnckfrgy4qcud/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mrtrix3-2017-09-25-wpcecvycf7obdre7sdlgnckfrgy4qcud/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mrtrix3-2017-09-25-wpcecvycf7obdre7sdlgnckfrgy4qcud/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mrtrix3-2017-09-25-wpcecvycf7obdre7sdlgnckfrgy4qcud"
+

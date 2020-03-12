@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:36.501562
+##
+## libevent@2.0.21%gcc@7.2.0+openssl arch=linux-centos7-x86_64 /7qrzmxv
+##
+## Configure options: --enable-openssl
+##
+
+
+module-whatis "The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts."
+
+proc ModulesHelp { } {
+puts stderr "The libevent API provides a mechanism to execute a callback function"
+puts stderr "when a specific event occurs on a file descriptor or after a timeout has"
+puts stderr "been reached. Furthermore, libevent also support callbacks due to"
+puts stderr "signals or regular timeouts."
+}
+
+conflict libevent
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libevent-2.0.21-7qrzmxvhe5ukhjsg6jz66m4inythpv7n/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libevent-2.0.21-7qrzmxvhe5ukhjsg6jz66m4inythpv7n/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libevent-2.0.21-7qrzmxvhe5ukhjsg6jz66m4inythpv7n/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libevent-2.0.21-7qrzmxvhe5ukhjsg6jz66m4inythpv7n/"
+

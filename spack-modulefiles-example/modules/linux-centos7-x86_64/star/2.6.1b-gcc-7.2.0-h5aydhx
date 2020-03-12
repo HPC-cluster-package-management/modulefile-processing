@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.789410
+##
+## star@2.6.1b%gcc@7.2.0 arch=linux-centos7-x86_64 /h5aydhx
+##
+
+
+module-whatis "STAR is an ultrafast universal RNA-seq aligner."
+
+proc ModulesHelp { } {
+puts stderr "STAR is an ultrafast universal RNA-seq aligner."
+}
+
+conflict star
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/star-2.6.1b-h5aydhxjgzr3ycpgy34hhqtpg3o7uxis/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/star-2.6.1b-h5aydhxjgzr3ycpgy34hhqtpg3o7uxis/"
+

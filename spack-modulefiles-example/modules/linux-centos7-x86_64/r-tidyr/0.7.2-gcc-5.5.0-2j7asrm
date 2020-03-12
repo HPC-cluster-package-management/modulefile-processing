@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:31.707312
+##
+## r-tidyr@0.7.2%gcc@5.5.0 arch=linux-centos7-x86_64 /2j7asrm
+##
+
+
+module-whatis "An evolution of 'reshape2'. It's designed specifically for data tidying (not general reshaping or aggregating) and works well with 'dplyr' data pipelines."
+
+proc ModulesHelp { } {
+puts stderr "An evolution of 'reshape2'. It's designed specifically for data tidying"
+puts stderr "(not general reshaping or aggregating) and works well with 'dplyr' data"
+puts stderr "pipelines."
+}
+
+conflict r-tidyr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyr-0.7.2-2j7asrmrw4x33zo3mcjwpiulep2wf5xk/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyr-0.7.2-2j7asrmrw4x33zo3mcjwpiulep2wf5xk/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyr-0.7.2-2j7asrmrw4x33zo3mcjwpiulep2wf5xk/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

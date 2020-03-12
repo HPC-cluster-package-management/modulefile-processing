@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:38.281173
+##
+## libmng@2.0.3%gcc@7.2.0 arch=linux-centos7-x86_64 /tymhe2g
+##
+
+
+module-whatis "libmng -THE reference library for reading, displaying, writing and examining Multiple-Image Network Graphics. MNG is the animation extension to the popular PNG image-format."
+
+proc ModulesHelp { } {
+puts stderr "libmng -THE reference library for reading, displaying, writing and"
+puts stderr "examining Multiple-Image Network Graphics. MNG is the animation"
+puts stderr "extension to the popular PNG image-format."
+}
+
+conflict libmng
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libmng-2.0.3-tymhe2ga35bqi3vi25fhwpmjymmmqvqb/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libmng-2.0.3-tymhe2ga35bqi3vi25fhwpmjymmmqvqb/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libmng-2.0.3-tymhe2ga35bqi3vi25fhwpmjymmmqvqb/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libmng-2.0.3-tymhe2ga35bqi3vi25fhwpmjymmmqvqb/"
+

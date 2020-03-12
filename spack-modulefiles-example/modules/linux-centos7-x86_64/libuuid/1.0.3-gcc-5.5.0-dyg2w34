@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:40.358454
+##
+## libuuid@1.0.3%gcc@5.5.0 arch=linux-centos7-x86_64 /dyg2w34
+##
+
+
+module-whatis "Portable uuid C library"
+
+proc ModulesHelp { } {
+puts stderr "Portable uuid C library"
+}
+
+conflict libuuid
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libuuid-1.0.3-dyg2w34q7idbhmpz7bdiuyzfgk5ym3dm/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libuuid-1.0.3-dyg2w34q7idbhmpz7bdiuyzfgk5ym3dm/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libuuid-1.0.3-dyg2w34q7idbhmpz7bdiuyzfgk5ym3dm/"
+

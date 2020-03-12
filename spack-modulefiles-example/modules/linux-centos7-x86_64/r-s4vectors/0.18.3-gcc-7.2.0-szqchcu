@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:55.650374
+##
+## r-s4vectors@0.18.3%gcc@7.2.0 arch=linux-centos7-x86_64 /szqchcu
+##
+
+
+module-whatis "The S4Vectors package defines the Vector and List virtual classes and a set of generic functions that extend the semantic of ordinary vectors and lists in R. Package developers can easily implement vector-like or list-like objects as concrete subclasses of Vector or List. In addition, a few low-level concrete subclasses of general interest (e.g. DataFrame, Rle, and Hits) are implemented in the S4Vectors package itself (many more are implemented in the IRanges package and in other Bioconductor infrastructure packages)."
+
+proc ModulesHelp { } {
+puts stderr "The S4Vectors package defines the Vector and List virtual classes and a"
+puts stderr "set of generic functions that extend the semantic of ordinary vectors"
+puts stderr "and lists in R. Package developers can easily implement vector-like or"
+puts stderr "list-like objects as concrete subclasses of Vector or List. In addition,"
+puts stderr "a few low-level concrete subclasses of general interest (e.g. DataFrame,"
+puts stderr "Rle, and Hits) are implemented in the S4Vectors package itself (many"
+puts stderr "more are implemented in the IRanges package and in other Bioconductor"
+puts stderr "infrastructure packages)."
+}
+
+conflict r-s4vectors
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-s4vectors-0.18.3-szqchcuewf4563wbeevccliqggrqzkvn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-s4vectors-0.18.3-szqchcuewf4563wbeevccliqggrqzkvn/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-s4vectors-0.18.3-szqchcuewf4563wbeevccliqggrqzkvn/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

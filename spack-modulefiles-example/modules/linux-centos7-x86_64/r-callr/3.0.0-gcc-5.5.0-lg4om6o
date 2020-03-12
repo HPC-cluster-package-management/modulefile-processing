@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:32.193097
+##
+## r-callr@3.0.0%gcc@5.5.0 arch=linux-centos7-x86_64 /lg4om6o
+##
+
+
+module-whatis "It is sometimes useful to perform a computation in a separate R process, without affecting the current R process at all. This packages does exactly that."
+
+proc ModulesHelp { } {
+puts stderr "It is sometimes useful to perform a computation in a separate R process,"
+puts stderr "without affecting the current R process at all. This packages does"
+puts stderr "exactly that."
+}
+
+conflict r-callr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-callr-3.0.0-lg4om6ov2qk3qohdo4kclz4hhjt2zrkq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-callr-3.0.0-lg4om6ov2qk3qohdo4kclz4hhjt2zrkq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-callr-3.0.0-lg4om6ov2qk3qohdo4kclz4hhjt2zrkq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

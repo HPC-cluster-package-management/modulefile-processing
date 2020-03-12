@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:06.623741
+##
+## shapeit@2.837%gcc@7.2.0 arch=linux-centos7-x86_64 /igr4bnj
+##
+
+
+module-whatis "SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data."
+
+proc ModulesHelp { } {
+puts stderr "SHAPEIT is a fast and accurate method for estimation of haplotypes (aka"
+puts stderr "phasing) from genotype or sequencing data."
+}
+
+conflict shapeit
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/shapeit-2.837-igr4bnjicdxhbitnbqq3uuwe53arixu5/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/shapeit-2.837-igr4bnjicdxhbitnbqq3uuwe53arixu5/"
+

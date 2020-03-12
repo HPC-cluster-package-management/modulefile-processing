@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:22.573695
+##
+## py-argparse@1.4.0%gcc@5.5.0 arch=linux-centos7-x86_64 /icwobd6
+##
+
+
+module-whatis "Python command-line parsing library."
+
+proc ModulesHelp { } {
+puts stderr "Python command-line parsing library."
+}
+
+conflict py-argparse
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-argparse-1.4.0-icwobd62mnibuufni66zif7m3wgr5zqe/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-argparse-1.4.0-icwobd62mnibuufni66zif7m3wgr5zqe/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-argparse-1.4.0-icwobd62mnibuufni66zif7m3wgr5zqe/lib/python2.7/site-packages"
+

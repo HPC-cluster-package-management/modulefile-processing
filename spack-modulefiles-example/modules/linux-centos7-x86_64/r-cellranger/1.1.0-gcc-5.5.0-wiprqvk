@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:34.779205
+##
+## r-cellranger@1.1.0%gcc@5.5.0 arch=linux-centos7-x86_64 /wiprqvk
+##
+
+
+module-whatis "Helper functions to work with spreadsheets and the 'A1:D10' style of cell range specification."
+
+proc ModulesHelp { } {
+puts stderr "Helper functions to work with spreadsheets and the "A1:D10" style of"
+puts stderr "cell range specification."
+}
+
+conflict r-cellranger
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cellranger-1.1.0-wiprqvk5db6r5oegctiy4wgthua4enls/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cellranger-1.1.0-wiprqvk5db6r5oegctiy4wgthua4enls/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cellranger-1.1.0-wiprqvk5db6r5oegctiy4wgthua4enls/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

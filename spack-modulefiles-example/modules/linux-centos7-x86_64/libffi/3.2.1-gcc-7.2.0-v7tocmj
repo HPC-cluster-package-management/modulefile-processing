@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:36.668062
+##
+## libffi@3.2.1%gcc@7.2.0 arch=linux-centos7-x86_64 /v7tocmj
+##
+
+
+module-whatis "The libffi library provides a portable, high level programming interface to various calling conventions. This allows a programmer to call any function specified by a call interface description at run time."
+
+proc ModulesHelp { } {
+puts stderr "The libffi library provides a portable, high level programming interface"
+puts stderr "to various calling conventions. This allows a programmer to call any"
+puts stderr "function specified by a call interface description at run time."
+}
+
+conflict libffi
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libffi-3.2.1-v7tocmjcyhwiucgvi76wh5ppsst5nz4l/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libffi-3.2.1-v7tocmjcyhwiucgvi76wh5ppsst5nz4l/lib"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libffi-3.2.1-v7tocmjcyhwiucgvi76wh5ppsst5nz4l/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libffi-3.2.1-v7tocmjcyhwiucgvi76wh5ppsst5nz4l/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libffi-3.2.1-v7tocmjcyhwiucgvi76wh5ppsst5nz4l/"
+

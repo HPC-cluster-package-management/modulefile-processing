@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:07.173992
+##
+## numactl@2.0.11%gcc@5.5.0 patches=592f30f7f5f757dfc239ad0ffd39a9a048487ad803c26b419e0f96b8cda08c1a arch=linux-centos7-x86_64 /mjrbbt7
+##
+
+
+module-whatis "NUMA support for Linux"
+
+proc ModulesHelp { } {
+puts stderr "NUMA support for Linux"
+}
+
+conflict numactl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/numactl-2.0.11-mjrbbt7r3sqbbplhoft7rxcmypqizc64/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/numactl-2.0.11-mjrbbt7r3sqbbplhoft7rxcmypqizc64/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/numactl-2.0.11-mjrbbt7r3sqbbplhoft7rxcmypqizc64/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/numactl-2.0.11-mjrbbt7r3sqbbplhoft7rxcmypqizc64/"
+

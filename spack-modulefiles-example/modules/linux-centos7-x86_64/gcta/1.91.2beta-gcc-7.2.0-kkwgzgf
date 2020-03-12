@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:04.430775
+##
+## gcta@1.91.2beta%gcc@7.2.0 arch=linux-centos7-x86_64 /kkwgzgf
+##
+
+
+module-whatis "GCTA (Genome-wide Complex Trait Analysis) was originally designed to estimate the proportion of phenotypic variance explained by all genome-wide SNPs for complex traits (the GREML method), and has subsequently extended for many other analyses to better understand the genetic architecture of complex traits. GCTA currently supports the following analyses."
+
+proc ModulesHelp { } {
+puts stderr "GCTA (Genome-wide Complex Trait Analysis) was originally designed to"
+puts stderr "estimate the proportion of phenotypic variance explained by all genome-"
+puts stderr "wide SNPs for complex traits (the GREML method), and has subsequently"
+puts stderr "extended for many other analyses to better understand the genetic"
+puts stderr "architecture of complex traits. GCTA currently supports the following"
+puts stderr "analyses."
+}
+
+conflict gcta
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gcta-1.91.2beta-kkwgzgfngsd4ztlll6b34mxyg6ch3pdg/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gcta-1.91.2beta-kkwgzgfngsd4ztlll6b34mxyg6ch3pdg/"
+

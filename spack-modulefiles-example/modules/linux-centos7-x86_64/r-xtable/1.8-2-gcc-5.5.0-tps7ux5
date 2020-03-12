@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:52.205588
+##
+## r-xtable@1.8-2%gcc@5.5.0 arch=linux-centos7-x86_64 /tps7ux5
+##
+
+
+module-whatis "Coerce data to LaTeX and HTML tables."
+
+proc ModulesHelp { } {
+puts stderr "Coerce data to LaTeX and HTML tables."
+}
+
+conflict r-xtable
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xtable-1.8-2-tps7ux5osaqxvyibu6klzsd7x63jo4ry/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xtable-1.8-2-tps7ux5osaqxvyibu6klzsd7x63jo4ry/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xtable-1.8-2-tps7ux5osaqxvyibu6klzsd7x63jo4ry/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

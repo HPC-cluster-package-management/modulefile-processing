@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.860180
+##
+## fasttree@2.1.10%gcc@7.2.0 arch=linux-centos7-x86_64 /7wz32qn
+##
+
+
+module-whatis "FastTree infers approximately-maximum-likelihood phylogenetic trees from alignments of nucleotide or protein sequences. FastTree can handle alignments with up to a million of sequences in a reasonable amount of time and memory."
+
+proc ModulesHelp { } {
+puts stderr "FastTree infers approximately-maximum-likelihood phylogenetic trees from"
+puts stderr "alignments of nucleotide or protein sequences. FastTree can handle"
+puts stderr "alignments with up to a million of sequences in a reasonable amount of"
+puts stderr "time and memory."
+}
+
+conflict fasttree
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fasttree-2.1.10-7wz32qnpnf7bsinx7zgt5fo745czapbk/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fasttree-2.1.10-7wz32qnpnf7bsinx7zgt5fo745czapbk/"
+

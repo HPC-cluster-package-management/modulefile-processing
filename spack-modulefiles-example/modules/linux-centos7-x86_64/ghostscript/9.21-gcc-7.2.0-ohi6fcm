@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:08.052119
+##
+## ghostscript@9.21%gcc@7.2.0 arch=linux-centos7-x86_64 /ohi6fcm
+##
+## Configure options: --disable-compile-inits --enable-dynamic --with-system-libtiff
+##
+
+
+module-whatis "An interpreter for the PostScript language and for PDF."
+
+proc ModulesHelp { } {
+puts stderr "An interpreter for the PostScript language and for PDF."
+}
+
+conflict ghostscript
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ghostscript-9.21-ohi6fcm5py3ezsdlzuvxygo53am5k5kt/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ghostscript-9.21-ohi6fcm5py3ezsdlzuvxygo53am5k5kt/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ghostscript-9.21-ohi6fcm5py3ezsdlzuvxygo53am5k5kt/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ghostscript-9.21-ohi6fcm5py3ezsdlzuvxygo53am5k5kt/"
+

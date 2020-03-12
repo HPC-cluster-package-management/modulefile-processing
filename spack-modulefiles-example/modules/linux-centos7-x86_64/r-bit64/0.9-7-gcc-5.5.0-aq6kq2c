@@ -1,0 +1,30 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:23.055209
+##
+## r-bit64@0.9-7%gcc@5.5.0 arch=linux-centos7-x86_64 /aq6kq2c
+##
+
+
+module-whatis "Package 'bit64' provides serializable S3 atomic 64bit (signed) integers. These are useful for handling database keys and exact counting in +-2^63. WARNING: do not use them as replacement for 32bit integers, integer64 are not supported for subscripting by R-core and they have different semantics when combined with double, e.g. integer64 + double => integer64. Class integer64 can be used in vectors, matrices, arrays and data.frames. Methods are available for coercion from and to logicals, integers, doubles, characters and factors as well as many elementwise and summary functions. Many fast algorithmic operations such as 'match' and 'order' support inter- active data exploration and manipulation and optionally leverage caching."
+
+proc ModulesHelp { } {
+puts stderr "Package 'bit64' provides serializable S3 atomic 64bit (signed) integers."
+puts stderr "These are useful for handling database keys and exact counting in"
+puts stderr "+-2^63. WARNING: do not use them as replacement for 32bit integers,"
+puts stderr "integer64 are not supported for subscripting by R-core and they have"
+puts stderr "different semantics when combined with double, e.g. integer64 + double"
+puts stderr "=> integer64. Class integer64 can be used in vectors, matrices, arrays"
+puts stderr "and data.frames. Methods are available for coercion from and to"
+puts stderr "logicals, integers, doubles, characters and factors as well as many"
+puts stderr "elementwise and summary functions. Many fast algorithmic operations such"
+puts stderr "as 'match' and 'order' support inter- active data exploration and"
+puts stderr "manipulation and optionally leverage caching."
+}
+
+conflict r-bit64
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit64-0.9-7-aq6kq2cxnvzkjgfnxid463pootia4gvy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit64-0.9-7-aq6kq2cxnvzkjgfnxid463pootia4gvy/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit64-0.9-7-aq6kq2cxnvzkjgfnxid463pootia4gvy/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

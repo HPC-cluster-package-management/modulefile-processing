@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:30.301241
+##
+## jansson@2.9%gcc@7.2.0 build_type=RelWithDebInfo +shared arch=linux-centos7-x86_64 /mm5k2xz
+##
+## Configure options: -DJANSSON_BUILD_SHARED_LIBS:BOOL=ON
+##
+
+
+module-whatis "Jansson is a C library for encoding, decoding and manipulating JSON data."
+
+proc ModulesHelp { } {
+puts stderr "Jansson is a C library for encoding, decoding and manipulating JSON"
+puts stderr "data."
+}
+
+conflict jansson
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jansson-2.9-mm5k2xzcexttvj6xaiuurqr3o4zpm6m4/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jansson-2.9-mm5k2xzcexttvj6xaiuurqr3o4zpm6m4/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jansson-2.9-mm5k2xzcexttvj6xaiuurqr3o4zpm6m4/"
+

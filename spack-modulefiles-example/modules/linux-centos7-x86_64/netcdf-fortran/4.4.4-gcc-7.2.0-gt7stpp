@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:05.206668
+##
+## netcdf-fortran@4.4.4%gcc@7.2.0 arch=linux-centos7-x86_64 /gt7stpp
+##
+## Configure options: CPPFLAGS=-I/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-4.6.1-mnzjcfnsg4apvy6xvp7qyflp6iv3hnoz/include
+##
+
+
+module-whatis "Fortran interface for NetCDF4"
+
+proc ModulesHelp { } {
+puts stderr "Fortran interface for NetCDF4"
+}
+
+conflict netcdf-fortran
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-fortran-4.4.4-gt7stpp242xsogru363gpitlvh47csrv/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-fortran-4.4.4-gt7stpp242xsogru363gpitlvh47csrv/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-fortran-4.4.4-gt7stpp242xsogru363gpitlvh47csrv/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-fortran-4.4.4-gt7stpp242xsogru363gpitlvh47csrv/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/netcdf-fortran-4.4.4-gt7stpp242xsogru363gpitlvh47csrv/"
+

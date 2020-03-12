@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:31.629451
+##
+## py-setuptools@40.4.3%gcc@5.5.0 arch=linux-centos7-x86_64 /3xryhie
+##
+
+
+module-whatis "A Python utility that aids in the process of downloading, building, upgrading, installing, and uninstalling Python packages."
+
+proc ModulesHelp { } {
+puts stderr "A Python utility that aids in the process of downloading, building,"
+puts stderr "upgrading, installing, and uninstalling Python packages."
+}
+
+conflict py-setuptools
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-setuptools-40.4.3-3xryhiescpkfth3st6nsu3i6rrezu7wg/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-setuptools-40.4.3-3xryhiescpkfth3st6nsu3i6rrezu7wg/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-setuptools-40.4.3-3xryhiescpkfth3st6nsu3i6rrezu7wg/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-setuptools-40.4.3-3xryhiescpkfth3st6nsu3i6rrezu7wg/lib/python2.7/site-packages"
+

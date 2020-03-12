@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:35.068874
+##
+## r-mime@0.5%gcc@7.2.0 arch=linux-centos7-x86_64 /4ezntwf
+##
+
+
+module-whatis "Guesses the MIME type from a filename extension using the data derived from /etc/mime.types in UNIX-type systems."
+
+proc ModulesHelp { } {
+puts stderr "Guesses the MIME type from a filename extension using the data derived"
+puts stderr "from /etc/mime.types in UNIX-type systems."
+}
+
+conflict r-mime
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mime-0.5-4ezntwflvqhma55jcks5re4d2bkabait/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mime-0.5-4ezntwflvqhma55jcks5re4d2bkabait/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mime-0.5-4ezntwflvqhma55jcks5re4d2bkabait/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:13.143162
+##
+## r-biocparallel@1.14.2%gcc@5.5.0 arch=linux-centos7-x86_64 /7sogp4l
+##
+
+
+module-whatis "This package provides modified versions and novel implementation of functions for parallel evaluation, tailored to use with Bioconductor objects."
+
+proc ModulesHelp { } {
+puts stderr "This package provides modified versions and novel implementation of"
+puts stderr "functions for parallel evaluation, tailored to use with Bioconductor"
+puts stderr "objects."
+}
+
+conflict r-biocparallel
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocparallel-1.14.2-7sogp4lfn3huor4c4e3lbpc36hzaq45d/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocparallel-1.14.2-7sogp4lfn3huor4c4e3lbpc36hzaq45d/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocparallel-1.14.2-7sogp4lfn3huor4c4e3lbpc36hzaq45d/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

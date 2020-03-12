@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:40.438467
+##
+## r-viridis@0.4.0%gcc@5.5.0 arch=linux-centos7-x86_64 /sxzakj3
+##
+
+
+module-whatis "viridis: Default Color Maps from 'matplotlib'"
+
+proc ModulesHelp { } {
+puts stderr "viridis: Default Color Maps from 'matplotlib'"
+}
+
+conflict r-viridis
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-viridis-0.4.0-sxzakj3c33eyljvb34j2kr6gizvsp4kr/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-viridis-0.4.0-sxzakj3c33eyljvb34j2kr6gizvsp4kr/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-viridis-0.4.0-sxzakj3c33eyljvb34j2kr6gizvsp4kr/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

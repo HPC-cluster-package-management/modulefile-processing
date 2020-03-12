@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:59.038353
+##
+## mrbayes@2017-11-22%gcc@7.2.0+beagle+mpi+sse arch=linux-centos7-x86_64 /a2oy47t
+##
+## Configure options: --with-beagle=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libbeagle-2.1.2-etgnbxnacn3y2yq5go4xpc6pzpkdvsws --enable-sse=yes --enable-mpi=yes
+##
+
+
+module-whatis "MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. MrBayes uses Markov chain Monte Carlo (MCMC) methods to estimate the posterior distribution of model parameters."
+
+proc ModulesHelp { } {
+puts stderr "MrBayes is a program for Bayesian inference and model choice across a"
+puts stderr "wide range of phylogenetic and evolutionary models. MrBayes uses Markov"
+puts stderr "chain Monte Carlo (MCMC) methods to estimate the posterior distribution"
+puts stderr "of model parameters."
+}
+
+conflict mrbayes
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/mrbayes-2017-11-22-a2oy47tqajpszcwjrd7tqzqi6aartyow/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/mrbayes-2017-11-22-a2oy47tqajpszcwjrd7tqzqi6aartyow/"
+

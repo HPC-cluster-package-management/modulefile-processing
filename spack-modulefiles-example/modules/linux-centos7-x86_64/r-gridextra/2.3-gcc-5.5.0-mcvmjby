@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:19.659461
+##
+## r-gridextra@2.3%gcc@5.5.0 arch=linux-centos7-x86_64 /mcvmjby
+##
+
+
+module-whatis "Provides a number of user-level functions to work with 'grid' graphics, notably to arrange multiple grid-based plots on a page, and draw tables."
+
+proc ModulesHelp { } {
+puts stderr "Provides a number of user-level functions to work with "grid" graphics,"
+puts stderr "notably to arrange multiple grid-based plots on a page, and draw tables."
+}
+
+conflict r-gridextra
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gridextra-2.3-mcvmjby3eityayat4h6ceyb7s3hshoke/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gridextra-2.3-mcvmjby3eityayat4h6ceyb7s3hshoke/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gridextra-2.3-mcvmjby3eityayat4h6ceyb7s3hshoke/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

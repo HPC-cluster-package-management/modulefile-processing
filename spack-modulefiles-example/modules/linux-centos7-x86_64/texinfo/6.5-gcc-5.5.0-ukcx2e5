@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:10.127582
+##
+## texinfo@6.5%gcc@5.5.0 arch=linux-centos7-x86_64 /ukcx2e5
+##
+
+
+module-whatis "Texinfo is the official documentation format of the GNU project."
+
+proc ModulesHelp { } {
+puts stderr "Texinfo is the official documentation format of the GNU project. It was"
+puts stderr "invented by Richard Stallman and Bob Chassell many years ago, loosely"
+puts stderr "based on Brian Reid's Scribe and other formatting languages of the time."
+puts stderr "It is used by many non-GNU projects as well."
+}
+
+conflict texinfo
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/texinfo-6.5-ukcx2e5dge6lsupe53txyrmlxpm6ipax/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/texinfo-6.5-ukcx2e5dge6lsupe53txyrmlxpm6ipax/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/texinfo-6.5-ukcx2e5dge6lsupe53txyrmlxpm6ipax/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/texinfo-6.5-ukcx2e5dge6lsupe53txyrmlxpm6ipax/"
+

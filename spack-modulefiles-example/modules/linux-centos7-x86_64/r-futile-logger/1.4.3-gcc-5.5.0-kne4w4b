@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:33.152764
+##
+## r-futile-logger@1.4.3%gcc@5.5.0 arch=linux-centos7-x86_64 /kne4w4b
+##
+
+
+module-whatis "Provides a simple yet powerful logging utility. Based loosely on log4j, futile.logger takes advantage of R idioms to make logging a convenient and easy to use replacement for cat and print statements."
+
+proc ModulesHelp { } {
+puts stderr "Provides a simple yet powerful logging utility. Based loosely on log4j,"
+puts stderr "futile.logger takes advantage of R idioms to make logging a convenient"
+puts stderr "and easy to use replacement for cat and print statements."
+}
+
+conflict r-futile-logger
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-futile-logger-1.4.3-kne4w4b6vrx35bqislmz5ui4a53ixje5/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-futile-logger-1.4.3-kne4w4b6vrx35bqislmz5ui4a53ixje5/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-futile-logger-1.4.3-kne4w4b6vrx35bqislmz5ui4a53ixje5/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

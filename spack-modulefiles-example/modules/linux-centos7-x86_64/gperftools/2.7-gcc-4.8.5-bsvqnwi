@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:17.514909
+##
+## gperftools@2.7%gcc@4.8.5 arch=linux-centos7-x86_64 /bsvqnwi
+##
+
+
+module-whatis "Google's fast malloc/free implementation, especially for multi-threaded applications. Contains tcmalloc, heap-checker, heap-profiler, and cpu-profiler."
+
+proc ModulesHelp { } {
+puts stderr "Google's fast malloc/free implementation, especially for multi-threaded"
+puts stderr "applications. Contains tcmalloc, heap-checker, heap-profiler, and cpu-"
+puts stderr "profiler."
+}
+
+conflict gperftools
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gperftools-2.7-bsvqnwi4zisjfppvcwpgsu3vpkls6ghm/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gperftools-2.7-bsvqnwi4zisjfppvcwpgsu3vpkls6ghm/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gperftools-2.7-bsvqnwi4zisjfppvcwpgsu3vpkls6ghm/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gperftools-2.7-bsvqnwi4zisjfppvcwpgsu3vpkls6ghm/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gperftools-2.7-bsvqnwi4zisjfppvcwpgsu3vpkls6ghm/"
+

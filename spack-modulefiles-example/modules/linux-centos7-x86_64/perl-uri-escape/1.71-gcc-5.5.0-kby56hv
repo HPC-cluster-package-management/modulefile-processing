@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:17.585948
+##
+## perl-uri-escape@1.71%gcc@5.5.0 arch=linux-centos7-x86_64 /kby56hv
+##
+
+
+module-whatis "This module provides functions to percent-encode and percent-decode URI strings as defined by RFC 3986. Percent-encoding URI's is informally called 'URI escaping'. This is the terminology used by this module, which predates the formalization of the terms by the RFC by several years."
+
+proc ModulesHelp { } {
+puts stderr "This module provides functions to percent-encode and percent-decode URI"
+puts stderr "strings as defined by RFC 3986. Percent-encoding URI's is informally"
+puts stderr "called "URI escaping". This is the terminology used by this module,"
+puts stderr "which predates the formalization of the terms by the RFC by several"
+puts stderr "years."
+}
+
+conflict perl-uri-escape
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-uri-escape-1.71-kby56hvel5rjk6xu2ylx6szoykmxucjp/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-uri-escape-1.71-kby56hvel5rjk6xu2ylx6szoykmxucjp/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-uri-escape-1.71-kby56hvel5rjk6xu2ylx6szoykmxucjp/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-uri-escape-1.71-kby56hvel5rjk6xu2ylx6szoykmxucjp/bin"
+prepend-path PERL5LIB "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-uri-escape-1.71-kby56hvel5rjk6xu2ylx6szoykmxucjp/lib/perl5"
+

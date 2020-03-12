@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:53.486279
+##
+## cufflinks@2.2.1%gcc@7.2.0 arch=linux-centos7-x86_64 /e2uwrza
+##
+
+
+module-whatis "Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples."
+
+proc ModulesHelp { } {
+puts stderr "Cufflinks assembles transcripts, estimates their abundances, and tests"
+puts stderr "for differential expression and regulation in RNA-Seq samples."
+}
+
+conflict cufflinks
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cufflinks-2.2.1-e2uwrzavoi2rweekwppy75a6s2luh6tf/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cufflinks-2.2.1-e2uwrzavoi2rweekwppy75a6s2luh6tf/"
+

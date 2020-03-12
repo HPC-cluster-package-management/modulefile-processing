@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:25.207856
+##
+## r-forcats@0.2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /d2msolb
+##
+
+
+module-whatis "Helpers for reordering factor levels (including moving specified levels to front, ordering by first appearance, reversing, and randomly shuffling), and tools for modifying factor levels (including collapsing rare levels into other, 'anonymising', and manually 'recoding')."
+
+proc ModulesHelp { } {
+puts stderr "Helpers for reordering factor levels (including moving specified levels"
+puts stderr "to front, ordering by first appearance, reversing, and randomly"
+puts stderr "shuffling), and tools for modifying factor levels (including collapsing"
+puts stderr "rare levels into other, 'anonymising', and manually 'recoding')."
+}
+
+conflict r-forcats
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-forcats-0.2.0-d2msolbq6y2ivawjy73yabodix726czp/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-forcats-0.2.0-d2msolbq6y2ivawjy73yabodix726czp/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-forcats-0.2.0-d2msolbq6y2ivawjy73yabodix726czp/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

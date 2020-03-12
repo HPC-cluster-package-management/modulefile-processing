@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:41.678949
+##
+## r-mvtnorm@1.0-6%gcc@7.2.0 arch=linux-centos7-x86_64 /ow3ccc6
+##
+
+
+module-whatis "Computes multivariate normal and t probabilities, quantiles, random deviates and densities."
+
+proc ModulesHelp { } {
+puts stderr "Computes multivariate normal and t probabilities, quantiles, random"
+puts stderr "deviates and densities."
+}
+
+conflict r-mvtnorm
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mvtnorm-1.0-6-ow3ccc67ng23uxsf2befxseseypla3pb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mvtnorm-1.0-6-ow3ccc67ng23uxsf2befxseseypla3pb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-mvtnorm-1.0-6-ow3ccc67ng23uxsf2befxseseypla3pb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

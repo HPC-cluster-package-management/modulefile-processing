@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:28.633810
+##
+## r-reshape2@1.4.2%gcc@7.2.0 arch=linux-centos7-x86_64 /sgkyz2k
+##
+
+
+module-whatis "Flexibly restructure and aggregate data using just two functions: melt and dcast (or acast)."
+
+proc ModulesHelp { } {
+puts stderr "Flexibly restructure and aggregate data using just two functions: melt"
+puts stderr "and dcast (or acast)."
+}
+
+conflict r-reshape2
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-reshape2-1.4.2-sgkyz2kuan23kc3cvbcqyablgaw3xjcx/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-reshape2-1.4.2-sgkyz2kuan23kc3cvbcqyablgaw3xjcx/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-reshape2-1.4.2-sgkyz2kuan23kc3cvbcqyablgaw3xjcx/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

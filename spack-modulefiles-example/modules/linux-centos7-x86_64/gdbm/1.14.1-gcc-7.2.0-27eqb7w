@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:04.959563
+##
+## gdbm@1.14.1%gcc@7.2.0 arch=linux-centos7-x86_64 /27eqb7w
+##
+## Configure options: --enable-libgdbm-compat CPPFLAGS=-D_GNU_SOURCE
+##
+
+
+module-whatis "GNU dbm (or GDBM, for short) is a library of database functions that use extensible hashing and work similar to the standard UNIX dbm. These routines are provided to a programmer needing to create and manipulate a hashed database."
+
+proc ModulesHelp { } {
+puts stderr "GNU dbm (or GDBM, for short) is a library of database functions that use"
+puts stderr "extensible hashing and work similar to the standard UNIX dbm. These"
+puts stderr "routines are provided to a programmer needing to create and manipulate a"
+puts stderr "hashed database."
+}
+
+conflict gdbm
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdbm-1.14.1-27eqb7wsi5erbtrx2to22kp2gdxuzt7d/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdbm-1.14.1-27eqb7wsi5erbtrx2to22kp2gdxuzt7d/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdbm-1.14.1-27eqb7wsi5erbtrx2to22kp2gdxuzt7d/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdbm-1.14.1-27eqb7wsi5erbtrx2to22kp2gdxuzt7d/"
+

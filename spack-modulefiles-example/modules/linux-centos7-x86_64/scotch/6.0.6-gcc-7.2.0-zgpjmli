@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:06.205394
+##
+## scotch@6.0.6%gcc@7.2.0+compression~esmumps~int64+metis+mpi+shared arch=linux-centos7-x86_64 /zgpjmli
+##
+
+
+module-whatis "Scotch is a software package for graph and mesh/hypergraph partitioning, graph clustering, and sparse matrix ordering."
+
+proc ModulesHelp { } {
+puts stderr "Scotch is a software package for graph and mesh/hypergraph partitioning,"
+puts stderr "graph clustering, and sparse matrix ordering."
+}
+
+conflict scotch
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scotch-6.0.6-zgpjmliy2kgxym36ninto5kw4n5tbksh/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scotch-6.0.6-zgpjmliy2kgxym36ninto5kw4n5tbksh/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scotch-6.0.6-zgpjmliy2kgxym36ninto5kw4n5tbksh/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scotch-6.0.6-zgpjmliy2kgxym36ninto5kw4n5tbksh/"
+

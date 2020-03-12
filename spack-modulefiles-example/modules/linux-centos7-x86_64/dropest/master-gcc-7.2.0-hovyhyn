@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:54.485305
+##
+## dropest@master%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /hovyhyn
+##
+
+
+module-whatis "FIXME: Put a proper description of your package here."
+
+proc ModulesHelp { } {
+puts stderr "FIXME: Put a proper description of your package here."
+}
+
+conflict dropest
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dropest-master-hovyhynfsto4iv6q2f23z5lmrymyo3sq/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dropest-master-hovyhynfsto4iv6q2f23z5lmrymyo3sq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dropest-master-hovyhynfsto4iv6q2f23z5lmrymyo3sq/"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

@@ -1,0 +1,29 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:18.479943
+##
+## r-rcurl@1.95-4.8%gcc@7.2.0 arch=linux-centos7-x86_64 /uhhh6n7
+##
+
+
+module-whatis "A wrapper for 'libcurl' <http://curl.haxx.se/libcurl/> Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get & post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the request while providing a higher-level interface than is available just using R socket connections. Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc."
+
+proc ModulesHelp { } {
+puts stderr "A wrapper for 'libcurl' <http://curl.haxx.se/libcurl/> Provides"
+puts stderr "functions to allow one to compose general HTTP requests and provides"
+puts stderr "convenient functions to fetch URIs, get & post forms, etc. and process"
+puts stderr "the results returned by the Web server. This provides a great deal of"
+puts stderr "control over the HTTP/FTP/... connection and the form of the request"
+puts stderr "while providing a higher-level interface than is available just using R"
+puts stderr "socket connections. Additionally, the underlying implementation is"
+puts stderr "robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads),"
+puts stderr "SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects,"
+puts stderr "authentication, etc."
+}
+
+conflict r-rcurl
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcurl-1.95-4.8-uhhh6n7justsm5qvovdfn7tp3lojvldp/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcurl-1.95-4.8-uhhh6n7justsm5qvovdfn7tp3lojvldp/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcurl-1.95-4.8-uhhh6n7justsm5qvovdfn7tp3lojvldp/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

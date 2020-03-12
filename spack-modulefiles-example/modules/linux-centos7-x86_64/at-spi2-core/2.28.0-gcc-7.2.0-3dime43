@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:40.244035
+##
+## at-spi2-core@2.28.0%gcc@7.2.0 buildtype=release arch=linux-centos7-x86_64 /3dime43
+##
+
+
+module-whatis "The At-Spi2 Core package provides a Service Provider Interface for the Assistive Technologies available on the GNOME platform and a library against which applications can be linked."
+
+proc ModulesHelp { } {
+puts stderr "The At-Spi2 Core package provides a Service Provider Interface for the"
+puts stderr "Assistive Technologies available on the GNOME platform and a library"
+puts stderr "against which applications can be linked."
+}
+
+conflict at-spi2-core
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/at-spi2-core-2.28.0-3dime434w6zprm2b2kmg325seqjgtlpa/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/at-spi2-core-2.28.0-3dime434w6zprm2b2kmg325seqjgtlpa/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/at-spi2-core-2.28.0-3dime434w6zprm2b2kmg325seqjgtlpa/"
+

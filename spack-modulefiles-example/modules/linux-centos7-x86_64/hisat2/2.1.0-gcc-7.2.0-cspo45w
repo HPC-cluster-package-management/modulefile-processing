@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:22.722719
+##
+## hisat2@2.1.0%gcc@7.2.0 arch=linux-centos7-x86_64 /cspo45w
+##
+
+
+module-whatis "HISAT2 is a fast and sensitive alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against the general human population (as well as against a single reference genome)."
+
+proc ModulesHelp { } {
+puts stderr "HISAT2 is a fast and sensitive alignment program for mapping next-"
+puts stderr "generation sequencing reads (whole-genome, transcriptome, and exome"
+puts stderr "sequencing data) against the general human population (as well as"
+puts stderr "against a single reference genome)."
+}
+
+conflict hisat2
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hisat2-2.1.0-cspo45wxq2endoj6235nzxtjdg7jdrrz/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hisat2-2.1.0-cspo45wxq2endoj6235nzxtjdg7jdrrz/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hisat2-2.1.0-cspo45wxq2endoj6235nzxtjdg7jdrrz"
+

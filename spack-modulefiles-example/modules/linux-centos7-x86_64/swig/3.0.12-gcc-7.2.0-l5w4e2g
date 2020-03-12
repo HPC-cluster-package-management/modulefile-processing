@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:09.521746
+##
+## swig@3.0.12%gcc@7.2.0 arch=linux-centos7-x86_64 /l5w4e2g
+##
+
+
+module-whatis "SWIG is an interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl. It works by taking the declarations found in C/C++ header files and using them to generate the wrapper code that scripting languages need to access the underlying C/C++ code. In addition, SWIG provides a variety of customization features that let you tailor the wrapping process to suit your application."
+
+proc ModulesHelp { } {
+puts stderr "SWIG is an interface compiler that connects programs written in C and"
+puts stderr "C++ with scripting languages such as Perl, Python, Ruby, and Tcl. It"
+puts stderr "works by taking the declarations found in C/C++ header files and using"
+puts stderr "them to generate the wrapper code that scripting languages need to"
+puts stderr "access the underlying C/C++ code. In addition, SWIG provides a variety"
+puts stderr "of customization features that let you tailor the wrapping process to"
+puts stderr "suit your application."
+}
+
+conflict swig
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/swig-3.0.12-l5w4e2gl25gtkkumjnmwumapf2gpbyz7/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/swig-3.0.12-l5w4e2gl25gtkkumjnmwumapf2gpbyz7/"
+

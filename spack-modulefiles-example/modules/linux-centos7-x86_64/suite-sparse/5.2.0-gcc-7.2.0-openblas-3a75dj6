@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:08.372838
+##
+## suite-sparse@5.2.0%gcc@7.2.0~cuda~openmp+pic~tbb arch=linux-centos7-x86_64 /3a75dj6
+##
+
+
+module-whatis " SuiteSparse is a suite of sparse matrix algorithms "
+
+proc ModulesHelp { } {
+puts stderr " SuiteSparse is a suite of sparse matrix algorithms"
+}
+
+conflict suite-sparse
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/suite-sparse-5.2.0-3a75dj6ys52jho5wejllmtbyqyev3xlg/lib"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/suite-sparse-5.2.0-3a75dj6ys52jho5wejllmtbyqyev3xlg/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/suite-sparse-5.2.0-3a75dj6ys52jho5wejllmtbyqyev3xlg/"
+

@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:17.435856
+##
+## perl-extutils-makemaker@7.24%gcc@5.5.0 arch=linux-centos7-x86_64 /nyl2rgf
+##
+
+
+module-whatis "ExtUtils::MakeMaker - Create a module Makefile. This utility is designed to write a Makefile for an extension module from a Makefile.PL. It is based on the Makefile.SH model provided by Andy Dougherty and the perl5-porters. "
+
+proc ModulesHelp { } {
+puts stderr "ExtUtils::MakeMaker - Create a module Makefile. This utility is designed"
+puts stderr "to write a Makefile for an extension module from a Makefile.PL. It is"
+puts stderr "based on the Makefile.SH model provided by Andy Dougherty and the"
+puts stderr "perl5-porters."
+}
+
+conflict perl-extutils-makemaker
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/bin"
+prepend-path PERL5LIB "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-extutils-makemaker-7.24-nyl2rgfuhwefjq63ddwe72lbo6dsbkop/lib/perl5"
+

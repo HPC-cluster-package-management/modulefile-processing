@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:02.630082
+##
+## renderproto@0.11.1%gcc@7.2.0 arch=linux-centos7-x86_64 /vw5deme
+##
+
+
+module-whatis "X Rendering Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Rendering Extension. This extension defines the protcol for a digital"
+puts stderr "image composition as the foundation of a new rendering model within the"
+puts stderr "X Window System."
+}
+
+conflict renderproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/renderproto-0.11.1-vw5demew34rfddem4jlh2bsyf3vajdsx/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/renderproto-0.11.1-vw5demew34rfddem4jlh2bsyf3vajdsx/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/renderproto-0.11.1-vw5demew34rfddem4jlh2bsyf3vajdsx/"
+

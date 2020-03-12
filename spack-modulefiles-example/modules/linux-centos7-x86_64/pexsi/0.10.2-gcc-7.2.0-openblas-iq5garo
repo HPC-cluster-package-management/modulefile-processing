@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:18.311555
+##
+## pexsi@0.10.2%gcc@7.2.0~fortran arch=linux-centos7-x86_64 /iq5garo
+##
+
+
+module-whatis "The PEXSI library is written in C++, and uses message passing interface (MPI) to parallelize the computation on distributed memory computing systems and achieve scalability on more than 10,000 processors."
+
+proc ModulesHelp { } {
+puts stderr "The PEXSI library is written in C++, and uses message passing interface"
+puts stderr "(MPI) to parallelize the computation on distributed memory computing"
+puts stderr "systems and achieve scalability on more than 10,000 processors. The Pole"
+puts stderr "EXpansion and Selected Inversion (PEXSI) method is a fast method for"
+puts stderr "electronic structure calculation based on Kohn-Sham density functional"
+puts stderr "theory. It efficiently evaluates certain selected elements of matrix"
+puts stderr "functions, e.g., the Fermi-Dirac function of the KS Hamiltonian, which"
+puts stderr "yields a density matrix. It can be used as an alternative to"
+puts stderr "diagonalization methods for obtaining the density, energy and forces in"
+puts stderr "electronic structure calculations."
+}
+
+conflict pexsi
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pexsi-0.10.2-iq5garo2pxrkr2w3bug3v3svylxiopdf/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pexsi-0.10.2-iq5garo2pxrkr2w3bug3v3svylxiopdf/"
+

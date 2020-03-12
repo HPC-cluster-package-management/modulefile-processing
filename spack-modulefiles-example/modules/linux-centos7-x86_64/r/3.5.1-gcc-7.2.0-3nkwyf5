@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:41.235912
+##
+## r@3.5.1%gcc@7.2.0~X~external-lapack~memory_profiling arch=linux-centos7-x86_64 /3nkwyf5
+##
+## Configure options: --libdir=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-3.5.1-3nkwyf5bnooajjti4qei34v32mjq2orp/rlib --enable-R-shlib --enable-BLAS-shlib --enable-R-framework=no --with-tcl-config=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/lib/tclConfig.sh --with-tk-config=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tk-8.6.8-eirkk3waof2bt6d3o7ezwzm5jwrm2x45/lib/tkConfig.sh --without-x
+##
+
+
+module-whatis "R is 'GNU S', a freely available language and environment for statistical computing and graphics which provides a wide variety of statistical and graphical techniques: linear and nonlinear modelling, statistical tests, time series analysis, classification, clustering, etc. Please consult the R project homepage for further information."
+
+proc ModulesHelp { } {
+puts stderr "R is 'GNU S', a freely available language and environment for"
+puts stderr "statistical computing and graphics which provides a wide variety of"
+puts stderr "statistical and graphical techniques: linear and nonlinear modelling,"
+puts stderr "statistical tests, time series analysis, classification, clustering,"
+puts stderr "etc. Please consult the R project homepage for further information."
+}
+
+conflict r
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-3.5.1-3nkwyf5bnooajjti4qei34v32mjq2orp/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-3.5.1-3nkwyf5bnooajjti4qei34v32mjq2orp/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-3.5.1-3nkwyf5bnooajjti4qei34v32mjq2orp/"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-3.5.1-3nkwyf5bnooajjti4qei34v32mjq2orp/rlib/R/lib"
+

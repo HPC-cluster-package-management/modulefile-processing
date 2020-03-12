@@ -1,0 +1,30 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:11.739797
+##
+## openmpi@2.1.5%gcc@7.2.0~cuda+cxx_exceptions fabrics=verbs ~java~legacylaunchers~memchecker patches=32effdf1deab19ca87850161d3ad8ff34540c9e26f6bf40cd64839ea47a3a0e0 ~pmi schedulers= ~sqlite3~thread_multiple+vt arch=linux-centos7-x86_64 /an3uy3a
+##
+## Configure options: --enable-shared --with-wrapper-ldflags= --enable-static --without-pmi --enable-mpi-cxx --without-psm --without-psm2 --with-verbs --without-mxm --without-ucx --without-libfabric --without-alps --without-lsf --without-tm --without-slurm --without-sge --without-loadleveler --disable-memchecker --with-hwloc=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hwloc-1.11.9-y22acpo4tj5h4w4ihp5x6hkkjt5zeved --disable-java --disable-mpi-java --disable-mpi-thread-multiple --without-cuda --enable-cxx-exceptions
+##
+
+
+module-whatis "An open source Message Passing Interface implementation."
+
+proc ModulesHelp { } {
+puts stderr "An open source Message Passing Interface implementation. The Open MPI"
+puts stderr "Project is an open source Message Passing Interface implementation that"
+puts stderr "is developed and maintained by a consortium of academic, research, and"
+puts stderr "industry partners. Open MPI is therefore able to combine the expertise,"
+puts stderr "technologies, and resources from all across the High Performance"
+puts stderr "Computing community in order to build the best MPI library available."
+puts stderr "Open MPI offers advantages for system and software vendors, application"
+puts stderr "developers and computer science researchers."
+}
+
+conflict openmpi
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-2.1.5-an3uy3adftyepoyrum7s5noimxmra7bh/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-2.1.5-an3uy3adftyepoyrum7s5noimxmra7bh/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-2.1.5-an3uy3adftyepoyrum7s5noimxmra7bh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-2.1.5-an3uy3adftyepoyrum7s5noimxmra7bh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-2.1.5-an3uy3adftyepoyrum7s5noimxmra7bh/"
+

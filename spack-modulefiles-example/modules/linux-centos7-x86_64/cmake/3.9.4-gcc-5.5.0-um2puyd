@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:52.612682
+##
+## cmake@3.9.4%gcc@5.5.0~doc+ncurses+openssl+ownlibs patches=dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0 ~qt arch=linux-centos7-x86_64 /um2puyd
+##
+
+
+module-whatis "A cross-platform, open-source build system. CMake is a family of tools designed to build, test and package software."
+
+proc ModulesHelp { } {
+puts stderr "A cross-platform, open-source build system. CMake is a family of tools"
+puts stderr "designed to build, test and package software."
+}
+
+conflict cmake
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cmake-3.9.4-um2puydixct5eei5ttj4gii2kh2ujbll/bin"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cmake-3.9.4-um2puydixct5eei5ttj4gii2kh2ujbll/share/aclocal"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cmake-3.9.4-um2puydixct5eei5ttj4gii2kh2ujbll/"
+

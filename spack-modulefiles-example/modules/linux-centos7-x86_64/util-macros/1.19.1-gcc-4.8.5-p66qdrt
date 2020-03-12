@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:21.302778
+##
+## util-macros@1.19.1%gcc@4.8.5 arch=linux-centos7-x86_64 /p66qdrt
+##
+
+
+module-whatis "This is a set of autoconf macros used by the configure.ac scripts in other Xorg modular packages, and is needed to generate new versions of their configure scripts with autoconf."
+
+proc ModulesHelp { } {
+puts stderr "This is a set of autoconf macros used by the configure.ac scripts in"
+puts stderr "other Xorg modular packages, and is needed to generate new versions of"
+puts stderr "their configure scripts with autoconf."
+}
+
+conflict util-macros
+
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/util-macros-1.19.1-p66qdrtaslf2cq4wyc6mitrxzhnyujhc/share/aclocal"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/util-macros-1.19.1-p66qdrtaslf2cq4wyc6mitrxzhnyujhc/"
+

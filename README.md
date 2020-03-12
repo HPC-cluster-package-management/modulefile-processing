@@ -7,6 +7,8 @@ Python 3.5 or later is needed to run the scripts `modulefilter.py` and `gen_json
 
 A deployment of a group of software packaged has to be built through Spack before the module file processing. The Spack's module file configuration has to enable both `tcl` and `lmod` block in its `modules.yaml` file. An example of configuration can be checked in Spack's [module tutorial](https://spack-tutorial.readthedocs.io/en/latest/tutorial_modules.html). The module files from Spack in both `lmod` and `modules` folders (together with the 2 folders) have to be tar-zipped into the tar file `spack-modulefiles.tar.gz` and replace it in the repo. The default loacation of 2 folders will be in `$SPACK_ROOT/share/spack/` if the configuration of Spack module files is not customized. 
 
+For demonstration purpose, we include an example of spack-generated module files deployed on UCLA's Hoffman2 cluster in the directory of `spack-modulefiles-example`. All package pathes are specific to Hoffman2 environment and thus do not have generalization usage sense.
+
 ## Quick Start
 After cloning, you need to specify the corresponding module file root path information in `settings.ini` by modifying the content in `settings.ini.template`:
 
@@ -14,6 +16,8 @@ After cloning, you need to specify the corresponding module file root path infor
 cp settings.ini.template settings.ini
 vi settings.ini
 ```
+
+If no modification is made, the processed module file will be in the directory of `/tmp/moduleroot/newmodules`. For deployment process, you need to set `UseSpackExample = no` and change both `SpackModulePATH` and `NewModulePATH` to the specific pathes for your own environment.
 
 To process the module files, simply run the command below:
 

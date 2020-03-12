@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:39.466126
+##
+## libsodium@1.0.15%gcc@7.2.0 arch=linux-centos7-x86_64 /4rkrial
+##
+
+
+module-whatis "Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more."
+
+proc ModulesHelp { } {
+puts stderr "Sodium is a modern, easy-to-use software library for encryption,"
+puts stderr "decryption, signatures, password hashing and more."
+}
+
+conflict libsodium
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libsodium-1.0.15-4rkrialv743oo3c4a3yomkclnkqejf6n/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libsodium-1.0.15-4rkrialv743oo3c4a3yomkclnkqejf6n/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libsodium-1.0.15-4rkrialv743oo3c4a3yomkclnkqejf6n/"
+

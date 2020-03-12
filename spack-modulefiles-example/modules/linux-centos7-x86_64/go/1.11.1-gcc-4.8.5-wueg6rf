@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:14.220189
+##
+## go@1.11.1%gcc@4.8.5 arch=linux-centos7-x86_64 /wueg6rf
+##
+
+
+module-whatis "The golang compiler and build environment"
+
+proc ModulesHelp { } {
+puts stderr "The golang compiler and build environment"
+}
+
+conflict go
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-1.11.1-wueg6rfexh5xtu6y4pz3k3dnnk4zaoqh/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-1.11.1-wueg6rfexh5xtu6y4pz3k3dnnk4zaoqh/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/go-1.11.1-wueg6rfexh5xtu6y4pz3k3dnnk4zaoqh/"
+

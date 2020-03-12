@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:37.691718
+##
+## r-checkmate@1.8.4%gcc@7.2.0 arch=linux-centos7-x86_64 /uoh5nb2
+##
+
+
+module-whatis "Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead."
+
+proc ModulesHelp { } {
+puts stderr "Tests and assertions to perform frequent argument checks. A substantial"
+puts stderr "part of the package was written in C to minimize any worries about"
+puts stderr "execution time overhead."
+}
+
+conflict r-checkmate
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-checkmate-1.8.4-uoh5nb2kc55i4sunzv4le646uhinnfkj/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-checkmate-1.8.4-uoh5nb2kc55i4sunzv4le646uhinnfkj/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-checkmate-1.8.4-uoh5nb2kc55i4sunzv4le646uhinnfkj/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

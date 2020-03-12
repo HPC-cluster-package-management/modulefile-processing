@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:12.245977
+##
+## gmake@4.2.1%gcc@7.2.0~guile+nls patches=ca60bd9c1a1b35bc0dc58b6a4a19d5c2651f7a94a4b22b2c5ea001a1ca7a8a7f,fe5b60d091c33f169740df8cb718bf4259f84528b42435194ffe0dd5b79cd125 arch=linux-centos7-x86_64 /oiro7e7
+##
+## Configure options: --without-guile --enable-nls
+##
+
+
+module-whatis "GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files."
+
+proc ModulesHelp { } {
+puts stderr "GNU Make is a tool which controls the generation of executables and"
+puts stderr "other non-source files of a program from the program's source files."
+}
+
+conflict gmake
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmake-4.2.1-oiro7e7f7zgutppd6q77kysuowujxnh2/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmake-4.2.1-oiro7e7f7zgutppd6q77kysuowujxnh2/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmake-4.2.1-oiro7e7f7zgutppd6q77kysuowujxnh2/"
+

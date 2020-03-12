@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:42.436186
+##
+## autoconf@2.69%gcc@5.5.0 arch=linux-centos7-x86_64 /el43fsg
+##
+
+
+module-whatis "Autoconf -- system configuration part of autotools"
+
+proc ModulesHelp { } {
+puts stderr "Autoconf -- system configuration part of autotools"
+}
+
+conflict autoconf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/autoconf-2.69-el43fsgwfa2fxz45muhqfmndrnv4zjyy/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/autoconf-2.69-el43fsgwfa2fxz45muhqfmndrnv4zjyy/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/autoconf-2.69-el43fsgwfa2fxz45muhqfmndrnv4zjyy/"
+

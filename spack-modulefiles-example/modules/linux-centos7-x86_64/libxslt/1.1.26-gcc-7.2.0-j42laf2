@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:48.799787
+##
+## libxslt@1.1.26%gcc@7.2.0~crypto arch=linux-centos7-x86_64 /j42laf2
+##
+## Configure options: --without-crypto
+##
+
+
+module-whatis "Libxslt is the XSLT C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML. Libxslt is based on libxml2 the XML C library developed for the GNOME project. It also implements most of the EXSLT set of processor-portable extensions functions and some of Saxon's evaluate and expressions extensions."
+
+proc ModulesHelp { } {
+puts stderr "Libxslt is the XSLT C library developed for the GNOME project. XSLT"
+puts stderr "itself is a an XML language to define transformation for XML. Libxslt is"
+puts stderr "based on libxml2 the XML C library developed for the GNOME project. It"
+puts stderr "also implements most of the EXSLT set of processor-portable extensions"
+puts stderr "functions and some of Saxon's evaluate and expressions extensions."
+}
+
+conflict libxslt
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxslt-1.1.26-j42laf2bijatepj5mj2pfqbp6kca4ksy/"
+

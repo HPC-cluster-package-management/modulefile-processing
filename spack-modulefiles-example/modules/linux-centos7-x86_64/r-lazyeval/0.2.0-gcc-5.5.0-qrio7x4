@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:09.323106
+##
+## r-lazyeval@0.2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /qrio7x4
+##
+
+
+module-whatis "An alternative approach to non-standard evaluation using formulas. Provides a full implementation of LISP style 'quasiquotation', making it easier to generate code with other code."
+
+proc ModulesHelp { } {
+puts stderr "An alternative approach to non-standard evaluation using formulas."
+puts stderr "Provides a full implementation of LISP style 'quasiquotation', making it"
+puts stderr "easier to generate code with other code."
+}
+
+conflict r-lazyeval
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-lazyeval-0.2.0-qrio7x4uc3y5j6bp246ufkehttjy24e3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-lazyeval-0.2.0-qrio7x4uc3y5j6bp246ufkehttjy24e3/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-lazyeval-0.2.0-qrio7x4uc3y5j6bp246ufkehttjy24e3/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

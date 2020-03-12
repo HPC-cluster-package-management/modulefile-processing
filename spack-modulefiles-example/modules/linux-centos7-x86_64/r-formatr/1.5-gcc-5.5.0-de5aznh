@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:27.639437
+##
+## r-formatr@1.5%gcc@5.5.0 arch=linux-centos7-x86_64 /de5aznh
+##
+
+
+module-whatis "Provides a function tidy_source() to format R source code. Spaces and indent will be added to the code automatically, and comments will be preserved under certain conditions, so that R code will be more human-readable and tidy. There is also a Shiny app as a user interface in this package."
+
+proc ModulesHelp { } {
+puts stderr "Provides a function tidy_source() to format R source code. Spaces and"
+puts stderr "indent will be added to the code automatically, and comments will be"
+puts stderr "preserved under certain conditions, so that R code will be more human-"
+puts stderr "readable and tidy. There is also a Shiny app as a user interface in this"
+puts stderr "package."
+}
+
+conflict r-formatr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-formatr-1.5-de5aznhr5gjx3twt76yvnknczluugmdm/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-formatr-1.5-de5aznhr5gjx3twt76yvnknczluugmdm/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-formatr-1.5-de5aznhr5gjx3twt76yvnknczluugmdm/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.965935
+##
+## subversion@1.9.7%gcc@7.2.0~perl arch=linux-centos7-x86_64 /wfwlhon
+##
+
+
+module-whatis "Apache Subversion - an open source version control system."
+
+proc ModulesHelp { } {
+puts stderr "Apache Subversion - an open source version control system."
+}
+
+conflict subversion
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/subversion-1.9.7-wfwlhon26grx3kzkhcp6rfphppa4c6zc/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/subversion-1.9.7-wfwlhon26grx3kzkhcp6rfphppa4c6zc/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/subversion-1.9.7-wfwlhon26grx3kzkhcp6rfphppa4c6zc/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/subversion-1.9.7-wfwlhon26grx3kzkhcp6rfphppa4c6zc/"
+

@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:07.981818
+##
+## gflags@2.1.2%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /unlfd2d
+##
+## Configure options: -DBUILD_SHARED_LIBS=ON
+##
+
+
+module-whatis "The gflags package contains a C++ library that implements commandline flags processing. It includes built-in support for standard types such as string and the ability to define flags in the source file in which they are used. Online documentation available at: https://gflags.github.io/gflags/"
+
+proc ModulesHelp { } {
+puts stderr "The gflags package contains a C++ library that implements commandline"
+puts stderr "flags processing. It includes built-in support for standard types such"
+puts stderr "as string and the ability to define flags in the source file in which"
+puts stderr "they are used. Online documentation available at:"
+puts stderr "https://gflags.github.io/gflags/"
+}
+
+conflict gflags
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gflags-2.1.2-unlfd2d4adqvzvk5hlfir2dyws2gzmeq/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gflags-2.1.2-unlfd2d4adqvzvk5hlfir2dyws2gzmeq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gflags-2.1.2-unlfd2d4adqvzvk5hlfir2dyws2gzmeq/"
+

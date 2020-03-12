@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.918350
+##
+## fastx-toolkit@0.0.14%gcc@7.2.0 patches=8de7ba47072cf2b48e534f08221411bc82c4aceade3ef6b48412aacc897c6f0b arch=linux-centos7-x86_64 /ktskkc5
+##
+
+
+module-whatis "The FASTX-Toolkit is a collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing."
+
+proc ModulesHelp { } {
+puts stderr "The FASTX-Toolkit is a collection of command line tools for Short-Reads"
+puts stderr "FASTA/FASTQ files preprocessing."
+}
+
+conflict fastx-toolkit
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastx-toolkit-0.0.14-ktskkc5jzxnmpmvnsdck6exb4mdqgx4e/bin"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastx-toolkit-0.0.14-ktskkc5jzxnmpmvnsdck6exb4mdqgx4e/share/aclocal"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastx-toolkit-0.0.14-ktskkc5jzxnmpmvnsdck6exb4mdqgx4e/"
+

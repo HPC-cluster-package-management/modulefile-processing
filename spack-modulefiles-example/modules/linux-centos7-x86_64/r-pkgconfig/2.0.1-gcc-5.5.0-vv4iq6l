@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:48.192497
+##
+## r-pkgconfig@2.0.1%gcc@5.5.0 arch=linux-centos7-x86_64 /vv4iq6l
+##
+
+
+module-whatis "Set configuration options on a per-package basis. Options set by a given package only apply to that package, other packages are unaffected."
+
+proc ModulesHelp { } {
+puts stderr "Set configuration options on a per-package basis. Options set by a given"
+puts stderr "package only apply to that package, other packages are unaffected."
+}
+
+conflict r-pkgconfig
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-pkgconfig-2.0.1-vv4iq6ltxndyyh72lecmwizp2uwn3bkb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-pkgconfig-2.0.1-vv4iq6ltxndyyh72lecmwizp2uwn3bkb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-pkgconfig-2.0.1-vv4iq6ltxndyyh72lecmwizp2uwn3bkb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

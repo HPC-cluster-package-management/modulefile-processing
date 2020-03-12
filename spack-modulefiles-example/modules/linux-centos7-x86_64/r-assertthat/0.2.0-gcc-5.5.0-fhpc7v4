@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:55.329253
+##
+## r-assertthat@0.2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /fhpc7v4
+##
+
+
+module-whatis "assertthat is an extension to stopifnot() that makes it easy to declare the pre and post conditions that you code should satisfy, while also producing friendly error messages so that your users know what they've done wrong."
+
+proc ModulesHelp { } {
+puts stderr "assertthat is an extension to stopifnot() that makes it easy to declare"
+puts stderr "the pre and post conditions that you code should satisfy, while also"
+puts stderr "producing friendly error messages so that your users know what they've"
+puts stderr "done wrong."
+}
+
+conflict r-assertthat
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-assertthat-0.2.0-fhpc7v4yahnqm2smrmwigi2anozw62pw/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-assertthat-0.2.0-fhpc7v4yahnqm2smrmwigi2anozw62pw/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-assertthat-0.2.0-fhpc7v4yahnqm2smrmwigi2anozw62pw/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

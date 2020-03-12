@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:30.756565
+##
+## py-scipy@1.1.0%gcc@7.2.0 arch=linux-centos7-x86_64 /rkduav4
+##
+
+
+module-whatis "SciPy (pronounced 'Sigh Pie') is a Scientific Library for Python. It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization."
+
+proc ModulesHelp { } {
+puts stderr "SciPy (pronounced "Sigh Pie") is a Scientific Library for Python. It"
+puts stderr "provides many user-friendly and efficient numerical routines such as"
+puts stderr "routines for numerical integration and optimization."
+}
+
+conflict py-scipy
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-scipy-1.1.0-rkduav4ereplpyyuuoumqry6gx3zu4fv/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-scipy-1.1.0-rkduav4ereplpyyuuoumqry6gx3zu4fv/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-scipy-1.1.0-rkduav4ereplpyyuuoumqry6gx3zu4fv/lib/python3.7/site-packages"
+

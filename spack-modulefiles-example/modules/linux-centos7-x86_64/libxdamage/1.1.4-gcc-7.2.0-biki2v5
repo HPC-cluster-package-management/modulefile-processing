@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:43.419908
+##
+## libxdamage@1.1.4%gcc@7.2.0 arch=linux-centos7-x86_64 /biki2v5
+##
+
+
+module-whatis "This package contains the library for the X Damage extension."
+
+proc ModulesHelp { } {
+puts stderr "This package contains the library for the X Damage extension."
+}
+
+conflict libxdamage
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdamage-1.1.4-biki2v5rat7vp37gm72nl7emgivyvipb/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdamage-1.1.4-biki2v5rat7vp37gm72nl7emgivyvipb/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdamage-1.1.4-biki2v5rat7vp37gm72nl7emgivyvipb/"
+

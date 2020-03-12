@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:32.626471
+##
+## kahip@2.00%gcc@7.2.0 arch=linux-centos7-x86_64 /tjokd4p
+##
+
+
+module-whatis "KaHIP - Karlsruhe High Quality Partitioning - is a family of graph partitioning programs. It includes KaFFPa (Karlsruhe Fast Flow Partitioner), which is a multilevel graph partitioning algorithm, in its variants Strong, Eco and Fast, KaFFPaE (KaFFPaEvolutionary) which is a parallel evolutionary algorithm that uses KaFFPa to provide combine and mutation operations, as well as KaBaPE which extends the evolutionary algorithm. Moreover, specialized techniques are included to partition road networks (Buffoon), to output a vertex separator from a given partition or techniques geared towards efficient partitioning of social networks. "
+
+proc ModulesHelp { } {
+puts stderr "KaHIP - Karlsruhe High Quality Partitioning - is a family of graph"
+puts stderr "partitioning programs. It includes KaFFPa (Karlsruhe Fast Flow"
+puts stderr "Partitioner), which is a multilevel graph partitioning algorithm, in its"
+puts stderr "variants Strong, Eco and Fast, KaFFPaE (KaFFPaEvolutionary) which is a"
+puts stderr "parallel evolutionary algorithm that uses KaFFPa to provide combine and"
+puts stderr "mutation operations, as well as KaBaPE which extends the evolutionary"
+puts stderr "algorithm. Moreover, specialized techniques are included to partition"
+puts stderr "road networks (Buffoon), to output a vertex separator from a given"
+puts stderr "partition or techniques geared towards efficient partitioning of social"
+puts stderr "networks."
+}
+
+conflict kahip
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kahip-2.00-tjokd4pxk5ss4aedvfhreoqbyw42nqtr/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kahip-2.00-tjokd4pxk5ss4aedvfhreoqbyw42nqtr/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kahip-2.00-tjokd4pxk5ss4aedvfhreoqbyw42nqtr/"
+

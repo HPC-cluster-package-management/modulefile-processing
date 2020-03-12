@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:21.407998
+##
+## harminv@1.4.1%gcc@7.2.0 arch=linux-centos7-x86_64 /jniqglb
+##
+## Configure options: --enable-shared --with-blas=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openblas-0.3.3-jxq4hjgcgwoak34awk6zn4w4goa74imu/lib --with-lapack=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openblas-0.3.3-jxq4hjgcgwoak34awk6zn4w4goa74imu/lib
+##
+
+
+module-whatis "Harminv is a free program (and accompanying library) to solve the problem of harmonic inversion - given a discrete-time, finite-length signal that consists of a sum of finitely-many sinusoids (possibly exponentially decaying) in a given bandwidth, it determines the frequencies, decay constants, amplitudes, and phases of those sinusoids."
+
+proc ModulesHelp { } {
+puts stderr "Harminv is a free program (and accompanying library) to solve the"
+puts stderr "problem of harmonic inversion - given a discrete-time, finite-length"
+puts stderr "signal that consists of a sum of finitely-many sinusoids (possibly"
+puts stderr "exponentially decaying) in a given bandwidth, it determines the"
+puts stderr "frequencies, decay constants, amplitudes, and phases of those sinusoids."
+}
+
+conflict harminv
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/harminv-1.4.1-jniqglbhpavp7xa7bcxbi2ychkfowjee/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/harminv-1.4.1-jniqglbhpavp7xa7bcxbi2ychkfowjee/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/harminv-1.4.1-jniqglbhpavp7xa7bcxbi2ychkfowjee/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/harminv-1.4.1-jniqglbhpavp7xa7bcxbi2ychkfowjee/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/harminv-1.4.1-jniqglbhpavp7xa7bcxbi2ychkfowjee/"
+

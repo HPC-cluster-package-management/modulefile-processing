@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:09.439141
+##
+## openblas@0.3.3%gcc@5.5.0 cpu_target= ~ilp64 patches=47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d,714aea33692304a50bd0ccde42590c176c82ded4a8ac7f06e573dc8071929c33 +pic+shared threads=none ~virtual_machine arch=linux-centos7-x86_64 /qgiqo3o
+##
+
+
+module-whatis "OpenBLAS: An optimized BLAS library"
+
+proc ModulesHelp { } {
+puts stderr "OpenBLAS: An optimized BLAS library"
+}
+
+conflict openblas
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openblas-0.3.3-qgiqo3o5imjolozgmpact2zumpjqgkfc/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openblas-0.3.3-qgiqo3o5imjolozgmpact2zumpjqgkfc/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openblas-0.3.3-qgiqo3o5imjolozgmpact2zumpjqgkfc/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openblas-0.3.3-qgiqo3o5imjolozgmpact2zumpjqgkfc/"
+

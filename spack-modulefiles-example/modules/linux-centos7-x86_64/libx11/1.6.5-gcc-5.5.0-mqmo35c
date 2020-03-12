@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:40.708396
+##
+## libx11@1.6.5%gcc@5.5.0 arch=linux-centos7-x86_64 /mqmo35c
+##
+
+
+module-whatis "libX11 - Core X11 protocol client library."
+
+proc ModulesHelp { } {
+puts stderr "libX11 - Core X11 protocol client library."
+}
+
+conflict libx11
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libx11-1.6.5-mqmo35c4sxsqq5i3mo557nxprhxbbetx/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libx11-1.6.5-mqmo35c4sxsqq5i3mo557nxprhxbbetx/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libx11-1.6.5-mqmo35c4sxsqq5i3mo557nxprhxbbetx/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libx11-1.6.5-mqmo35c4sxsqq5i3mo557nxprhxbbetx/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:06.202565
+##
+## r-bindr@0.1.1%gcc@5.5.0 arch=linux-centos7-x86_64 /7li2w7j
+##
+
+
+module-whatis "Provides a simple interface for creating active bindings where the bound function accepts additional arguments."
+
+proc ModulesHelp { } {
+puts stderr "Provides a simple interface for creating active bindings where the bound"
+puts stderr "function accepts additional arguments."
+}
+
+conflict r-bindr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bindr-0.1.1-7li2w7jpjigxl5mbo7kn2s64erc5cne7/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bindr-0.1.1-7li2w7jpjigxl5mbo7kn2s64erc5cne7/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bindr-0.1.1-7li2w7jpjigxl5mbo7kn2s64erc5cne7/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

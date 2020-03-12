@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:46.103849
+##
+## blast-plus@2.7.1%gcc@7.2.0+bzip2+freetype+gnutls+jpeg+lzo+openssl+pcre+perl+png+python~static+zlib arch=linux-centos7-x86_64 /npprbit
+##
+
+
+module-whatis "Basic Local Alignment Search Tool."
+
+proc ModulesHelp { } {
+puts stderr "Basic Local Alignment Search Tool."
+}
+
+conflict blast-plus
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/blast-plus-2.7.1-npprbitq5p4jciseernckp3ukpgpigsf/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/blast-plus-2.7.1-npprbitq5p4jciseernckp3ukpgpigsf/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/blast-plus-2.7.1-npprbitq5p4jciseernckp3ukpgpigsf/"
+

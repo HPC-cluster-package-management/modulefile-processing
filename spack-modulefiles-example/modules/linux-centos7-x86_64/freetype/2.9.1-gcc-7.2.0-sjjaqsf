@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:01.550508
+##
+## freetype@2.9.1%gcc@7.2.0 arch=linux-centos7-x86_64 /sjjaqsf
+##
+## Configure options: --with-harfbuzz=no --enable-freetype-config
+##
+
+
+module-whatis "FreeType is a freely available software library to render fonts. It is written in C, designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images) of most vector and bitmap font formats."
+
+proc ModulesHelp { } {
+puts stderr "FreeType is a freely available software library to render fonts. It is"
+puts stderr "written in C, designed to be small, efficient, highly customizable, and"
+puts stderr "portable while capable of producing high-quality output (glyph images)"
+puts stderr "of most vector and bitmap font formats."
+}
+
+conflict freetype
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/freetype-2.9.1-sjjaqsfziyl7lgxgfk5gzm24uultybuj/"
+

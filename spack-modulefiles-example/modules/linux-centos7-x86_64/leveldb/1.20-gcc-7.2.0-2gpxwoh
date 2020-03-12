@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.284082
+##
+## leveldb@1.20%gcc@7.2.0 arch=linux-centos7-x86_64 /2gpxwoh
+##
+
+
+module-whatis "LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values."
+
+proc ModulesHelp { } {
+puts stderr "LevelDB is a fast key-value storage library written at Google that"
+puts stderr "provides an ordered mapping from string keys to string values."
+}
+
+conflict leveldb
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/leveldb-1.20-2gpxwohmgyepeybiqvt6prs3xdpj3cxu/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/leveldb-1.20-2gpxwohmgyepeybiqvt6prs3xdpj3cxu/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/leveldb-1.20-2gpxwohmgyepeybiqvt6prs3xdpj3cxu/"
+

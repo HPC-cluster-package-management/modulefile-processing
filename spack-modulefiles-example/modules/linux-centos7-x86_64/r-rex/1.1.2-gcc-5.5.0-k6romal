@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:29.926406
+##
+## r-rex@1.1.2%gcc@5.5.0 arch=linux-centos7-x86_64 /k6romal
+##
+
+
+module-whatis "A friendly interface for the construction of regular expressions."
+
+proc ModulesHelp { } {
+puts stderr "A friendly interface for the construction of regular expressions."
+}
+
+conflict r-rex
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rex-1.1.2-k6romals5b7tchcjuvp2xtjj34dslzzv/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rex-1.1.2-k6romals5b7tchcjuvp2xtjj34dslzzv/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rex-1.1.2-k6romals5b7tchcjuvp2xtjj34dslzzv/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

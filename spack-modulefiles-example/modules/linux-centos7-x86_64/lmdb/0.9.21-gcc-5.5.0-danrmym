@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:51.417489
+##
+## lmdb@0.9.21%gcc@5.5.0 arch=linux-centos7-x86_64 /danrmym
+##
+
+
+module-whatis "Symas LMDB is an extraordinarily fast, memory-efficient database we developed for the Symas OpenLDAP Project. With memory-mapped files, it has the read performance of a pure in-memory database while retaining the persistence of standard disk-based databases."
+
+proc ModulesHelp { } {
+puts stderr "Symas LMDB is an extraordinarily fast, memory-efficient database we"
+puts stderr "developed for the Symas OpenLDAP Project. With memory-mapped files, it"
+puts stderr "has the read performance of a pure in-memory database while retaining"
+puts stderr "the persistence of standard disk-based databases."
+}
+
+conflict lmdb
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/lmdb-0.9.21-danrmymu57gj7fqfbvg33eleg34t3db5/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/lmdb-0.9.21-danrmymu57gj7fqfbvg33eleg34t3db5/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/lmdb-0.9.21-danrmymu57gj7fqfbvg33eleg34t3db5/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/lmdb-0.9.21-danrmymu57gj7fqfbvg33eleg34t3db5/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/lmdb-0.9.21-danrmymu57gj7fqfbvg33eleg34t3db5/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:49.318572
+##
+## r-pkgconfig@2.0.1%gcc@7.2.0 arch=linux-centos7-x86_64 /aloksge
+##
+
+
+module-whatis "Set configuration options on a per-package basis. Options set by a given package only apply to that package, other packages are unaffected."
+
+proc ModulesHelp { } {
+puts stderr "Set configuration options on a per-package basis. Options set by a given"
+puts stderr "package only apply to that package, other packages are unaffected."
+}
+
+conflict r-pkgconfig
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-pkgconfig-2.0.1-aloksges5k5cm4edmd3ow2eui5lcbkhb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-pkgconfig-2.0.1-aloksges5k5cm4edmd3ow2eui5lcbkhb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-pkgconfig-2.0.1-aloksges5k5cm4edmd3ow2eui5lcbkhb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

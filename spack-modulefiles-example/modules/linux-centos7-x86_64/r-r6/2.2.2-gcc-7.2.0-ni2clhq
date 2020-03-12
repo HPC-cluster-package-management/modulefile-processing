@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:09.304776
+##
+## r-r6@2.2.2%gcc@7.2.0 arch=linux-centos7-x86_64 /ni2clhq
+##
+
+
+module-whatis "The R6 package allows the creation of classes with reference semantics, similar to R's built-in reference classes. Compared to reference classes, R6 classes are simpler and lighter-weight, and they are not built on S4 classes so they do not require the methods package. These classes allow public and private members, and they support inheritance, even when the classes are defined in different packages."
+
+proc ModulesHelp { } {
+puts stderr "The R6 package allows the creation of classes with reference semantics,"
+puts stderr "similar to R's built-in reference classes. Compared to reference"
+puts stderr "classes, R6 classes are simpler and lighter-weight, and they are not"
+puts stderr "built on S4 classes so they do not require the methods package. These"
+puts stderr "classes allow public and private members, and they support inheritance,"
+puts stderr "even when the classes are defined in different packages."
+}
+
+conflict r-r6
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-r6-2.2.2-ni2clhqnyfaelx4lzsknzj3d4gxg5zvd/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-r6-2.2.2-ni2clhqnyfaelx4lzsknzj3d4gxg5zvd/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-r6-2.2.2-ni2clhqnyfaelx4lzsknzj3d4gxg5zvd/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

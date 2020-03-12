@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:51.153291
+##
+## r-annotationdbi@1.42.1%gcc@7.2.0 arch=linux-centos7-x86_64 /emmb5df
+##
+
+
+module-whatis "Provides user interface and database connection code for annotation data packages using SQLite data storage."
+
+proc ModulesHelp { } {
+puts stderr "Provides user interface and database connection code for annotation data"
+puts stderr "packages using SQLite data storage."
+}
+
+conflict r-annotationdbi
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotationdbi-1.42.1-emmb5df7yo3rufomd624vmt4m2kjzzky/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotationdbi-1.42.1-emmb5df7yo3rufomd624vmt4m2kjzzky/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotationdbi-1.42.1-emmb5df7yo3rufomd624vmt4m2kjzzky/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

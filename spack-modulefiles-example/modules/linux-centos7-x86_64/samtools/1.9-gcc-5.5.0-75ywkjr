@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:05.010687
+##
+## samtools@1.9%gcc@5.5.0 arch=linux-centos7-x86_64 /75ywkjr
+##
+
+
+module-whatis "SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format"
+
+proc ModulesHelp { } {
+puts stderr "SAM Tools provide various utilities for manipulating alignments in the"
+puts stderr "SAM format, including sorting, merging, indexing and generating"
+puts stderr "alignments in a per-position format"
+}
+
+conflict samtools
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/samtools-1.9-75ywkjrbjv2f33hsjd5kcfk3ndmsrxo5/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/samtools-1.9-75ywkjrbjv2f33hsjd5kcfk3ndmsrxo5/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/samtools-1.9-75ywkjrbjv2f33hsjd5kcfk3ndmsrxo5/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/samtools-1.9-75ywkjrbjv2f33hsjd5kcfk3ndmsrxo5/"
+

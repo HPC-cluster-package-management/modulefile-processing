@@ -1,0 +1,31 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:17.339622
+##
+## r-biomart@2.36.1%gcc@5.5.0 arch=linux-centos7-x86_64 /czt54se
+##
+
+
+module-whatis "In recent years a wealth of biological data has become available in public data repositories. Easy access to these valuable data resources and firm integration with data analysis is needed for comprehensive bioinformatics data analysis. biomaRt provides an interface to a growing collection of databases implementing the BioMart software suite (http://www.biomart.org). The package enables retrieval of large amounts of data in a uniform way without the need to know the underlying database schemas or write complex SQL queries. Examples of BioMart databases are Ensembl, COSMIC, Uniprot, HGNC, Gramene, Wormbase and dbSNP mapped to Ensembl. These major databases give biomaRt users direct access to a diverse set of data and enable a wide range of powerful online queries from gene annotation to database mining."
+
+proc ModulesHelp { } {
+puts stderr "In recent years a wealth of biological data has become available in"
+puts stderr "public data repositories. Easy access to these valuable data resources"
+puts stderr "and firm integration with data analysis is needed for comprehensive"
+puts stderr "bioinformatics data analysis. biomaRt provides an interface to a growing"
+puts stderr "collection of databases implementing the BioMart software suite"
+puts stderr "(http://www.biomart.org). The package enables retrieval of large amounts"
+puts stderr "of data in a uniform way without the need to know the underlying"
+puts stderr "database schemas or write complex SQL queries. Examples of BioMart"
+puts stderr "databases are Ensembl, COSMIC, Uniprot, HGNC, Gramene, Wormbase and"
+puts stderr "dbSNP mapped to Ensembl. These major databases give biomaRt users direct"
+puts stderr "access to a diverse set of data and enable a wide range of powerful"
+puts stderr "online queries from gene annotation to database mining."
+}
+
+conflict r-biomart
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biomart-2.36.1-czt54seeiyexellec3tyrbkyivj2jh3n/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biomart-2.36.1-czt54seeiyexellec3tyrbkyivj2jh3n/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biomart-2.36.1-czt54seeiyexellec3tyrbkyivj2jh3n/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

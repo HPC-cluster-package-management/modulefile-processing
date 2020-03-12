@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:58.988435
+##
+## r-backports@1.1.1%gcc@7.2.0 arch=linux-centos7-x86_64 /5d56qvl
+##
+
+
+module-whatis "Implementations of functions which have been introduced in R since version 3.0.0. The backports are conditionally exported which results in R resolving the function names to the version shipped with R (if available) and uses the implemented backports as fallback. This way package developers can make use of the new functions without worrying about the minimum required R version."
+
+proc ModulesHelp { } {
+puts stderr "Implementations of functions which have been introduced in R since"
+puts stderr "version 3.0.0. The backports are conditionally exported which results in"
+puts stderr "R resolving the function names to the version shipped with R (if"
+puts stderr "available) and uses the implemented backports as fallback. This way"
+puts stderr "package developers can make use of the new functions without worrying"
+puts stderr "about the minimum required R version."
+}
+
+conflict r-backports
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-backports-1.1.1-5d56qvlwnncckgkta6am7xnkgoa5paqy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-backports-1.1.1-5d56qvlwnncckgkta6am7xnkgoa5paqy/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-backports-1.1.1-5d56qvlwnncckgkta6am7xnkgoa5paqy/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

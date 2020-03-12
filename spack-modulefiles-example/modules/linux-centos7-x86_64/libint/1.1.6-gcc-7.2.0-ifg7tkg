@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.774070
+##
+## libint@1.1.6%gcc@7.2.0 arch=linux-centos7-x86_64 /ifg7tkg
+##
+## Configure options: --enable-shared --with-cc-optflags=-O2 --with-cxx-optflags=-O2 --with-libint-max-am=5 --with-libderiv-max-am1=4
+##
+
+
+module-whatis "Libint is a high-performance library for computing Gaussian integrals in quantum mechanics. "
+
+proc ModulesHelp { } {
+puts stderr "Libint is a high-performance library for computing Gaussian integrals in"
+puts stderr "quantum mechanics."
+}
+
+conflict libint
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libint-1.1.6-ifg7tkgssr4s24ordkzbl2etf73cxmlz/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libint-1.1.6-ifg7tkgssr4s24ordkzbl2etf73cxmlz/"
+

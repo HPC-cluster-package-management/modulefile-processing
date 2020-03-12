@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:18.592923
+##
+## guile@2.2.0%gcc@7.2.0+readline+threads arch=linux-centos7-x86_64 /dhehgdu
+##
+## Configure options: --with-libunistring-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libunistring-0.9.7-hksjestnhgrgy5szwm7hfhky4axmuxq7 --with-libltdl-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libtool-2.4.6-fg67fjwlct3pkle3u4wqpjwaqixgqkn6 --with-libgmp-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmp-6.1.2-brarnvxzlyhcfay55p6kzimevuosxwkn --with-libintl-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gettext-0.19.8.1-oc4yzjzifmyjtqgierjqg4jtexct3w33 --with-threads --with-libreadline-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/readline-7.0-lvibxmqhxyriy6vtp6mfsycrw5qc3aci
+##
+
+
+module-whatis "Guile is the GNU Ubiquitous Intelligent Language for Extensions, the official extension language for the GNU operating system."
+
+proc ModulesHelp { } {
+puts stderr "Guile is the GNU Ubiquitous Intelligent Language for Extensions, the"
+puts stderr "official extension language for the GNU operating system."
+}
+
+conflict guile
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/guile-2.2.0-dhehgdusn7wiz4lnpjstot5k34tbuket/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:53.410295
+##
+## cuda-memtest@master%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /rinnz5a
+##
+
+
+module-whatis "Maintained and updated fork of cuda_memtest."
+
+proc ModulesHelp { } {
+puts stderr "Maintained and updated fork of cuda_memtest. original homepage:"
+puts stderr "http://sourceforge.net/projects/cudagpumemtest . This software tests GPU"
+puts stderr "memory for hardware errors and soft errors using CUDA or OpenCL."
+}
+
+conflict cuda-memtest
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cuda-memtest-master-rinnz5a24wiv3z5tngigvcrkctmb62hx/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cuda-memtest-master-rinnz5a24wiv3z5tngigvcrkctmb62hx/"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:18.197407
+##
+## graphviz@2.40.1%gcc@7.2.0~expat~ghostscript~go~gtkplus~gts~guile~io~java~libgd~lua~ocaml~pangocairo~perl~php~python~qt~r~ruby~sharp~tcl arch=linux-centos7-x86_64 /k55wpfa
+##
+## Configure options: --disable-perl --disable-sharp --disable-go --disable-guile --disable-io --disable-lua --disable-ocaml --disable-php --disable-python --disable-r --disable-ruby --disable-tcl --disable-java --enable-swig=no --without-pangocairo --without-libgd --without-gts --without-expat --without-ghostscript --without-qt --without-gtk
+##
+
+
+module-whatis "Graph Visualization Software"
+
+proc ModulesHelp { } {
+puts stderr "Graph Visualization Software"
+}
+
+conflict graphviz
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/graphviz-2.40.1-k55wpfaen4vcgzqsg4gzg5aljarocj2f/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/graphviz-2.40.1-k55wpfaen4vcgzqsg4gzg5aljarocj2f/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/graphviz-2.40.1-k55wpfaen4vcgzqsg4gzg5aljarocj2f/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/graphviz-2.40.1-k55wpfaen4vcgzqsg4gzg5aljarocj2f/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/graphviz-2.40.1-k55wpfaen4vcgzqsg4gzg5aljarocj2f/"
+

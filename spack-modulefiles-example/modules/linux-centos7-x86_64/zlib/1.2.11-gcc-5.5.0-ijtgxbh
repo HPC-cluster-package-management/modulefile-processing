@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:28.999529
+##
+## zlib@1.2.11%gcc@5.5.0+optimize+pic+shared arch=linux-centos7-x86_64 /ijtgxbh
+##
+
+
+module-whatis "A free, general-purpose, legally unencumbered lossless data-compression library."
+
+proc ModulesHelp { } {
+puts stderr "A free, general-purpose, legally unencumbered lossless data-compression"
+puts stderr "library."
+}
+
+conflict zlib
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/zlib-1.2.11-ijtgxbh42fcxbwklab6vdvmlrjadep56/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/zlib-1.2.11-ijtgxbh42fcxbwklab6vdvmlrjadep56/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/zlib-1.2.11-ijtgxbh42fcxbwklab6vdvmlrjadep56/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/zlib-1.2.11-ijtgxbh42fcxbwklab6vdvmlrjadep56/"
+

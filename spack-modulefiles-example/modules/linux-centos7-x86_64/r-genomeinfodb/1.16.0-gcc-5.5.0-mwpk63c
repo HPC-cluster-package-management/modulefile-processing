@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:49.619944
+##
+## r-genomeinfodb@1.16.0%gcc@5.5.0 arch=linux-centos7-x86_64 /mwpk63c
+##
+
+
+module-whatis "Contains data and functions that define and allow translation between different chromosome sequence naming conventions (e.g., 'chr1' versus '1'), including a function that attempts to place sequence names in their natural, rather than lexicographic, order."
+
+proc ModulesHelp { } {
+puts stderr "Contains data and functions that define and allow translation between"
+puts stderr "different chromosome sequence naming conventions (e.g., "chr1" versus"
+puts stderr ""1"), including a function that attempts to place sequence names in"
+puts stderr "their natural, rather than lexicographic, order."
+}
+
+conflict r-genomeinfodb
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomeinfodb-1.16.0-mwpk63cwnyw2duyiuefkg2mgsoqyyihc/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomeinfodb-1.16.0-mwpk63cwnyw2duyiuefkg2mgsoqyyihc/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomeinfodb-1.16.0-mwpk63cwnyw2duyiuefkg2mgsoqyyihc/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

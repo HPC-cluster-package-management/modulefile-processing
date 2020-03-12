@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:11.590179
+##
+## r-limma@3.36.2%gcc@5.5.0 arch=linux-centos7-x86_64 /r7akzvf
+##
+
+
+module-whatis "Data analysis, linear models and differential expression for microarray data."
+
+proc ModulesHelp { } {
+puts stderr "Data analysis, linear models and differential expression for microarray"
+puts stderr "data."
+}
+
+conflict r-limma
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-limma-3.36.2-r7akzvfifi64mdyl7qwklxzvuzbr23kn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-limma-3.36.2-r7akzvfifi64mdyl7qwklxzvuzbr23kn/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-limma-3.36.2-r7akzvfifi64mdyl7qwklxzvuzbr23kn/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

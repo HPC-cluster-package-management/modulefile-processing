@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.007477
+##
+## sortmerna@2017-07-13%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /mbsths2
+##
+
+
+module-whatis "SortMeRNA is a program tool for filtering, mapping and OTU-picking NGS reads in metatranscriptomic and metagenomic data"
+
+proc ModulesHelp { } {
+puts stderr "SortMeRNA is a program tool for filtering, mapping and OTU-picking NGS"
+puts stderr "reads in metatranscriptomic and metagenomic data"
+}
+
+conflict sortmerna
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sortmerna-2017-07-13-mbsths2tqglpndusjowgmm4ylkfapu2n/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/sortmerna-2017-07-13-mbsths2tqglpndusjowgmm4ylkfapu2n/"
+

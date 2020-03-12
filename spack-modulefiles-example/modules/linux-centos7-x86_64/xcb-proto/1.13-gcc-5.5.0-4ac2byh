@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:26.663425
+##
+## xcb-proto@1.13%gcc@5.5.0 arch=linux-centos7-x86_64 /4ac2byh
+##
+
+
+module-whatis "xcb-proto provides the XML-XCB protocol descriptions that libxcb uses to generate the majority of its code and API."
+
+proc ModulesHelp { } {
+puts stderr "xcb-proto provides the XML-XCB protocol descriptions that libxcb uses to"
+puts stderr "generate the majority of its code and API."
+}
+
+conflict xcb-proto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xcb-proto-1.13-4ac2byhdtddhqr3pperi6xpm7cvcbzjv/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xcb-proto-1.13-4ac2byhdtddhqr3pperi6xpm7cvcbzjv/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xcb-proto-1.13-4ac2byhdtddhqr3pperi6xpm7cvcbzjv/"
+

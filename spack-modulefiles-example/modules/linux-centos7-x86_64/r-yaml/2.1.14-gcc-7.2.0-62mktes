@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:58.166285
+##
+## r-yaml@2.1.14%gcc@7.2.0 arch=linux-centos7-x86_64 /62mktes
+##
+
+
+module-whatis "This package implements the libyaml YAML 1.1 parser and emitter (http://pyyaml.org/wiki/LibYAML) for R."
+
+proc ModulesHelp { } {
+puts stderr "This package implements the libyaml YAML 1.1 parser and emitter"
+puts stderr "(http://pyyaml.org/wiki/LibYAML) for R."
+}
+
+conflict r-yaml
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-yaml-2.1.14-62mktesqne3d477mcwtexpsff2l6v73w/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-yaml-2.1.14-62mktesqne3d477mcwtexpsff2l6v73w/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-yaml-2.1.14-62mktesqne3d477mcwtexpsff2l6v73w/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

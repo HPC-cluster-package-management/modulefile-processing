@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:21.750187
+##
+## preseq@2.0.2%gcc@7.2.0 arch=linux-centos7-x86_64 /ypwuiyf
+##
+
+
+module-whatis "The preseq package is aimed at predicting and estimating the complexity of a genomic sequencing library, equivalent to predicting and estimating the number of redundant reads from a given sequencing depth and how many will be expected from additional sequencing using an initial sequencing experiment."
+
+proc ModulesHelp { } {
+puts stderr "The preseq package is aimed at predicting and estimating the complexity"
+puts stderr "of a genomic sequencing library, equivalent to predicting and estimating"
+puts stderr "the number of redundant reads from a given sequencing depth and how many"
+puts stderr "will be expected from additional sequencing using an initial sequencing"
+puts stderr "experiment."
+}
+
+conflict preseq
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/preseq-2.0.2-ypwuiyfj7vikcaxcjwfjpoqr3r3mdizy/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/preseq-2.0.2-ypwuiyfj7vikcaxcjwfjpoqr3r3mdizy/"
+

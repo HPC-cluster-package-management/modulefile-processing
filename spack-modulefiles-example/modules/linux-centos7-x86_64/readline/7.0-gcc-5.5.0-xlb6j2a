@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:01.874231
+##
+## readline@7.0%gcc@5.5.0 arch=linux-centos7-x86_64 /xlb6j2a
+##
+
+
+module-whatis "The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those lines, and perform csh-like history expansion on previous commands."
+
+proc ModulesHelp { } {
+puts stderr "The GNU Readline library provides a set of functions for use by"
+puts stderr "applications that allow users to edit command lines as they are typed"
+puts stderr "in. Both Emacs and vi editing modes are available. The Readline library"
+puts stderr "includes additional functions to maintain a list of previously-entered"
+puts stderr "command lines, to recall and perhaps reedit those lines, and perform"
+puts stderr "csh-like history expansion on previous commands."
+}
+
+conflict readline
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/readline-7.0-xlb6j2aim4wejxpt7dzhm4dn3glc4woc/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/readline-7.0-xlb6j2aim4wejxpt7dzhm4dn3glc4woc/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/readline-7.0-xlb6j2aim4wejxpt7dzhm4dn3glc4woc/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/readline-7.0-xlb6j2aim4wejxpt7dzhm4dn3glc4woc/"
+

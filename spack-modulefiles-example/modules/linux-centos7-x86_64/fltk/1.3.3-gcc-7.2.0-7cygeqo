@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:00.586836
+##
+## fltk@1.3.3%gcc@7.2.0 patches=120d2474567df05e74ed0f8ab383f2afd2d6948f735c150739e7c3f992d4e679 +shared arch=linux-centos7-x86_64 /7cygeqo
+##
+
+
+module-whatis "FLTK (pronounced 'fulltick') is a cross-platform C++ GUI toolkit for UNIX/Linux (X11), Microsoft Windows, and MacOS X. FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL and its built-in GLUT emulation."
+
+proc ModulesHelp { } {
+puts stderr "FLTK (pronounced "fulltick") is a cross-platform C++ GUI toolkit for"
+puts stderr "UNIX/Linux (X11), Microsoft Windows, and MacOS X. FLTK provides modern"
+puts stderr "GUI functionality without the bloat and supports 3D graphics via OpenGL"
+puts stderr "and its built-in GLUT emulation. FLTK is designed to be small and"
+puts stderr "modular enough to be statically linked, but works fine as a shared"
+puts stderr "library. FLTK also includes an excellent UI builder called FLUID that"
+puts stderr "can be used to create applications in minutes."
+}
+
+conflict fltk
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fltk-1.3.3-7cygeqoafn43bmmmr466q5dsygio52my/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fltk-1.3.3-7cygeqoafn43bmmmr466q5dsygio52my/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fltk-1.3.3-7cygeqoafn43bmmmr466q5dsygio52my/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fltk-1.3.3-7cygeqoafn43bmmmr466q5dsygio52my/"
+

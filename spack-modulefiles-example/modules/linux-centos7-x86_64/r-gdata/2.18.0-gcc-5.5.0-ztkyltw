@@ -1,0 +1,36 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:37.803527
+##
+## r-gdata@2.18.0%gcc@5.5.0 arch=linux-centos7-x86_64 /ztkyltw
+##
+
+
+module-whatis "Various R programming tools for data manipulation, including: - medical unit conversions ('ConvertMedUnits', 'MedUnits'), - combining objects ('bindData', 'cbindX', 'combine', 'interleave'), - character vector operations ('centerText', 'startsWith', 'trim'), - factor manipulation ('levels', 'reorder.factor', 'mapLevels'), - obtaining information about R objects ('object.size', 'elem', 'env', 'humanReadable', 'is.what', 'll', 'keep', 'ls.funs', 'Args','nPairs', 'nobs'), - manipulating MS-Excel formatted files ('read.xls', 'installXLSXsupport', 'sheetCount', 'xlsFormats'), - generating fixed-width format files ('write.fwf'), - extricating components of date & time objects ('getYear', 'getMonth', 'getDay', 'getHour', 'getMin', 'getSec'), - operations on columns of data frames ('matchcols', 'rename.vars'), - matrix operations ('unmatrix', 'upperTriangle', 'lowerTriangle'), - operations on vectors ('case', 'unknownToNA', 'duplicated2', 'trimSum'), - operations on data frames ('frameApply', 'wideByFactor'), - value of last evaluated expression ('ans'), and - wrapper for 'sample' that ensures consistent behavior for both scalar and vector arguments ('resample')."
+
+proc ModulesHelp { } {
+puts stderr "Various R programming tools for data manipulation, including: - medical"
+puts stderr "unit conversions ('ConvertMedUnits', 'MedUnits'), - combining objects"
+puts stderr "('bindData', 'cbindX', 'combine', 'interleave'), - character vector"
+puts stderr "operations ('centerText', 'startsWith', 'trim'), - factor manipulation"
+puts stderr "('levels', 'reorder.factor', 'mapLevels'), - obtaining information about"
+puts stderr "R objects ('object.size', 'elem', 'env', 'humanReadable', 'is.what',"
+puts stderr "'ll', 'keep', 'ls.funs', 'Args','nPairs', 'nobs'), - manipulating MS-"
+puts stderr "Excel formatted files ('read.xls', 'installXLSXsupport', 'sheetCount',"
+puts stderr "'xlsFormats'), - generating fixed-width format files ('write.fwf'), -"
+puts stderr "extricating components of date & time objects ('getYear', 'getMonth',"
+puts stderr "'getDay', 'getHour', 'getMin', 'getSec'), - operations on columns of"
+puts stderr "data frames ('matchcols', 'rename.vars'), - matrix operations"
+puts stderr "('unmatrix', 'upperTriangle', 'lowerTriangle'), - operations on vectors"
+puts stderr "('case', 'unknownToNA', 'duplicated2', 'trimSum'), - operations on data"
+puts stderr "frames ('frameApply', 'wideByFactor'), - value of last evaluated"
+puts stderr "expression ('ans'), and - wrapper for 'sample' that ensures consistent"
+puts stderr "behavior for both scalar and vector arguments ('resample')."
+}
+
+conflict r-gdata
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gdata-2.18.0-ztkyltw3pduh5zfuby4npkaofla3bs3o/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gdata-2.18.0-ztkyltw3pduh5zfuby4npkaofla3bs3o/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gdata-2.18.0-ztkyltw3pduh5zfuby4npkaofla3bs3o/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

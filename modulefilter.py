@@ -6,7 +6,7 @@ from pprint import pprint
 import re
 from shutil import copyfile
 import json
-import tarfile
+#import tarfile
 
 # Get the root path info from settings.ini
 import configparser
@@ -14,13 +14,19 @@ settings = configparser.ConfigParser()
 settings._interpolation = configparser.ExtendedInterpolation()
 settings.read('settings.ini')
 
-spackmodule_all = settings.get('ModulePATH', 'SpackModulePATH')
+demo_mode = settings.getboolean('Mode', 'UseSpackExample')
+
+if demo_mode :
+    spackmodule_all = "spack-modulefiles-example"
+else:
+    spackmodule_all = settings.get('ModulePATH', 'SpackModulePATH')
+
 modulepath_new = settings.get('ModulePATH', 'NewModulePATH')
 
-# Untar the spack module files generated from the already-installed spack packages
-spack_tar = tarfile.open('spack-modulefiles.tar.gz')
-spack_tar.extractall(spackmodule_all)
-spack_tar.close()
+### Untar the spack module files generated from the already-installed spack packages
+##spack_tar = tarfile.open('spack-modulefiles.tar.gz')
+##spack_tar.extractall(spackmodule_all)
+##spack_tar.close()
 
 tclpath_all = spackmodule_all+"/modules/linux-centos7-x86_64/"
 luapath_all = spackmodule_all+"/lmod/linux-centos7-x86_64/"

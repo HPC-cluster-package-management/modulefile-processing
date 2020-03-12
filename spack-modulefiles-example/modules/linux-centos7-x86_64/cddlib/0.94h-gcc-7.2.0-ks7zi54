@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:52.261937
+##
+## cddlib@0.94h%gcc@7.2.0 arch=linux-centos7-x86_64 /ks7zi54
+##
+
+
+module-whatis "The C-library cddlib is a C implementation of the Double Description Method of Motzkin et al. for generating all vertices (i.e. extreme points) and extreme rays of a general convex polyhedron in R^d given by a system of linear inequalities"
+
+proc ModulesHelp { } {
+puts stderr "The C-library cddlib is a C implementation of the Double Description"
+puts stderr "Method of Motzkin et al. for generating all vertices (i.e. extreme"
+puts stderr "points) and extreme rays of a general convex polyhedron in R^d given by"
+puts stderr "a system of linear inequalities"
+}
+
+conflict cddlib
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cddlib-0.94h-ks7zi54k32ab75hlo5eaiezol6sfj2mg/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cddlib-0.94h-ks7zi54k32ab75hlo5eaiezol6sfj2mg/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cddlib-0.94h-ks7zi54k32ab75hlo5eaiezol6sfj2mg/"
+

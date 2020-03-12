@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:04.865793
+##
+## salmon@0.9.1%gcc@5.5.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /iay7csz
+##
+## Configure options: -DBOOST_ROOT=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/boost-1.66.0-6ja4stxqrdfdexhdew46jneqi64rbjbw
+##
+
+
+module-whatis "Salmon is a tool for quantifying the expression of transcripts using RNA-seq data."
+
+proc ModulesHelp { } {
+puts stderr "Salmon is a tool for quantifying the expression of transcripts using"
+puts stderr "RNA-seq data."
+}
+
+conflict salmon
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/salmon-0.9.1-iay7csz7hxjbby7e7vwczsqcwrd6f3si/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/salmon-0.9.1-iay7csz7hxjbby7e7vwczsqcwrd6f3si/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/salmon-0.9.1-iay7csz7hxjbby7e7vwczsqcwrd6f3si/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/salmon-0.9.1-iay7csz7hxjbby7e7vwczsqcwrd6f3si/"
+

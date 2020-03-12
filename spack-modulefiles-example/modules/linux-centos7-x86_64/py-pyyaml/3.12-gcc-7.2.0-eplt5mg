@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:30.368844
+##
+## py-pyyaml@3.12%gcc@7.2.0 arch=linux-centos7-x86_64 /eplt5mg
+##
+
+
+module-whatis "PyYAML is a YAML parser and emitter for Python."
+
+proc ModulesHelp { } {
+puts stderr "PyYAML is a YAML parser and emitter for Python."
+}
+
+conflict py-pyyaml
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pyyaml-3.12-eplt5mg6s4stvy2hro2gbmiedv45vbih/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pyyaml-3.12-eplt5mg6s4stvy2hro2gbmiedv45vbih/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-pyyaml-3.12-eplt5mg6s4stvy2hro2gbmiedv45vbih/lib/python2.7/site-packages"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.692552
+##
+## libiconv@1.15%gcc@7.2.0 arch=linux-centos7-x86_64 /7d3im4i
+##
+
+
+module-whatis "GNU libiconv provides an implementation of the iconv() function and the iconv program for character set conversion."
+
+proc ModulesHelp { } {
+puts stderr "GNU libiconv provides an implementation of the iconv() function and the"
+puts stderr "iconv program for character set conversion."
+}
+
+conflict libiconv
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libiconv-1.15-7d3im4inxbd7y5vzgxkruhkepkttmse3/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libiconv-1.15-7d3im4inxbd7y5vzgxkruhkepkttmse3/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libiconv-1.15-7d3im4inxbd7y5vzgxkruhkepkttmse3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libiconv-1.15-7d3im4inxbd7y5vzgxkruhkepkttmse3/"
+

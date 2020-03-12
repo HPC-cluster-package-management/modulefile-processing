@@ -1,0 +1,29 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:04.089059
+##
+## gcc@5.5.0%gcc@4.8.5~binutils languages=c,c++,fortran ~piclibs~strip arch=linux-centos7-x86_64 /264foil
+##
+## Configure options: --disable-multilib --enable-languages=c,c++,fortran --with-mpfr=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/mpfr-3.1.6-kflyoj7nrj2mht5pf4z7mtkdp4hcbs5v --with-gmp=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gmp-6.1.2-6bsovvkqwx6zscwtbvjj6egrgizbyycm --enable-lto --with-quad --with-mpc=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/mpc-1.1.0-v5rqsbkr3zbia475v33ndowqhecvcvzn --with-isl=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/isl-0.15-s7aaz6bqazbsomr7qfstukyfnyiktfjo
+##
+
+
+module-whatis "The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, and Go, as well as libraries for these languages."
+
+proc ModulesHelp { } {
+puts stderr "The GNU Compiler Collection includes front ends for C, C++, Objective-C,"
+puts stderr "Fortran, Ada, and Go, as well as libraries for these languages."
+}
+
+conflict gcc
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/lib"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/"
+setenv CC "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin/gcc"
+setenv CXX "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin/g++"
+setenv FC "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin/gfortran"
+setenv F77 "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin/gfortran"
+setenv F90 "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-5.5.0-264foiljohrvwmgu25nsiawhhmyqca77/bin/gfortran"
+

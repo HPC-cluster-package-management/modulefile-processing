@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:39.104531
+##
+## libsigsegv@2.11%gcc@4.8.5 arch=linux-centos7-x86_64 /qpmaxx6
+##
+## Configure options: --enable-shared
+##
+
+
+module-whatis "GNU libsigsegv is a library for handling page faults in user mode."
+
+proc ModulesHelp { } {
+puts stderr "GNU libsigsegv is a library for handling page faults in user mode."
+}
+
+conflict libsigsegv
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libsigsegv-2.11-qpmaxx6z62df4s4hwyehdwptv6kmrfhf/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libsigsegv-2.11-qpmaxx6z62df4s4hwyehdwptv6kmrfhf/"
+

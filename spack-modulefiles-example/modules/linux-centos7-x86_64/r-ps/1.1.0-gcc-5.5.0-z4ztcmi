@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:02.279742
+##
+## r-ps@1.1.0%gcc@5.5.0 arch=linux-centos7-x86_64 /z4ztcmi
+##
+
+
+module-whatis "Manipulate processes on Windows, Linux and MacOS"
+
+proc ModulesHelp { } {
+puts stderr "Manipulate processes on Windows, Linux and MacOS"
+}
+
+conflict r-ps
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ps-1.1.0-z4ztcmiv2hlbp6dpsgac3la6scqafv4i/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ps-1.1.0-z4ztcmiv2hlbp6dpsgac3la6scqafv4i/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ps-1.1.0-z4ztcmiv2hlbp6dpsgac3la6scqafv4i/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

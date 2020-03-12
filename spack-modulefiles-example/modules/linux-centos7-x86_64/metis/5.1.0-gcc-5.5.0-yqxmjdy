@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:56.942124
+##
+## metis@5.1.0%gcc@5.5.0 build_type=Release ~gdb~int64 patches=4991da938c1d3a1d3dea78e49bbebecba00273f98df2a656e38b83d55b281da1 ~real64+shared arch=linux-centos7-x86_64 /yqxmjdy
+##
+
+
+module-whatis "METIS is a set of serial programs for partitioning graphs, partitioning finite element meshes, and producing fill reducing orderings for sparse matrices. The algorithms implemented in METIS are based on the multilevel recursive-bisection, multilevel k-way, and multi-constraint partitioning schemes."
+
+proc ModulesHelp { } {
+puts stderr "METIS is a set of serial programs for partitioning graphs, partitioning"
+puts stderr "finite element meshes, and producing fill reducing orderings for sparse"
+puts stderr "matrices. The algorithms implemented in METIS are based on the"
+puts stderr "multilevel recursive-bisection, multilevel k-way, and multi-constraint"
+puts stderr "partitioning schemes."
+}
+
+conflict metis
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/metis-5.1.0-yqxmjdykvc7qzz2wmwjfftog43xgtdz6/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/metis-5.1.0-yqxmjdykvc7qzz2wmwjfftog43xgtdz6/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/metis-5.1.0-yqxmjdykvc7qzz2wmwjfftog43xgtdz6/"
+

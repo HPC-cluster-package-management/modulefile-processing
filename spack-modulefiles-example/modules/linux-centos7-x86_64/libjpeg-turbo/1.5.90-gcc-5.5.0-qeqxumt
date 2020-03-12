@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.903856
+##
+## libjpeg-turbo@1.5.90%gcc@5.5.0 arch=linux-centos7-x86_64 /qeqxumt
+##
+
+
+module-whatis "libjpeg-turbo is a fork of the original IJG libjpeg which uses SIMD to accelerate baseline JPEG compression and decompression. libjpeg is a library that implements JPEG image encoding, decoding and transcoding."
+
+proc ModulesHelp { } {
+puts stderr "libjpeg-turbo is a fork of the original IJG libjpeg which uses SIMD to"
+puts stderr "accelerate baseline JPEG compression and decompression. libjpeg is a"
+puts stderr "library that implements JPEG image encoding, decoding and transcoding."
+}
+
+conflict libjpeg-turbo
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libjpeg-turbo-1.5.90-qeqxumtkqk6yomawsymttbbkbmt6erb7/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libjpeg-turbo-1.5.90-qeqxumtkqk6yomawsymttbbkbmt6erb7/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libjpeg-turbo-1.5.90-qeqxumtkqk6yomawsymttbbkbmt6erb7/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libjpeg-turbo-1.5.90-qeqxumtkqk6yomawsymttbbkbmt6erb7/lib64/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libjpeg-turbo-1.5.90-qeqxumtkqk6yomawsymttbbkbmt6erb7/"
+

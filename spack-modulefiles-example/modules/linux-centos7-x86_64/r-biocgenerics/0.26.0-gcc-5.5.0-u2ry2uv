@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:10.868365
+##
+## r-biocgenerics@0.26.0%gcc@5.5.0 arch=linux-centos7-x86_64 /u2ry2uv
+##
+
+
+module-whatis "S4 generic functions needed by many Bioconductor packages."
+
+proc ModulesHelp { } {
+puts stderr "S4 generic functions needed by many Bioconductor packages."
+}
+
+conflict r-biocgenerics
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocgenerics-0.26.0-u2ry2uviig5pzdflofyofgq2bnpdnazj/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocgenerics-0.26.0-u2ry2uviig5pzdflofyofgq2bnpdnazj/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biocgenerics-0.26.0-u2ry2uviig5pzdflofyofgq2bnpdnazj/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:12.789847
+##
+## opus@1.1.4%gcc@7.2.0 arch=linux-centos7-x86_64 /4la2rp6
+##
+
+
+module-whatis "Opus is a totally open, royalty-free, highly versatile audio codec."
+
+proc ModulesHelp { } {
+puts stderr "Opus is a totally open, royalty-free, highly versatile audio codec."
+}
+
+conflict opus
+
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/opus-1.1.4-4la2rp6feqqokezr6i4mphhxz43bobm7/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/opus-1.1.4-4la2rp6feqqokezr6i4mphhxz43bobm7/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/opus-1.1.4-4la2rp6feqqokezr6i4mphhxz43bobm7/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/opus-1.1.4-4la2rp6feqqokezr6i4mphhxz43bobm7/"
+

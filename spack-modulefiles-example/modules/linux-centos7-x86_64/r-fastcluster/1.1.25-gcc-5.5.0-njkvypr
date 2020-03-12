@@ -1,0 +1,29 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:22.924523
+##
+## r-fastcluster@1.1.25%gcc@5.5.0 arch=linux-centos7-x86_64 /njkvypr
+##
+
+
+module-whatis "This is a two-in-one package which provides interfaces to both R and 'Python'. It implements fast hierarchical, agglomerative clustering routines. Part of the functionality is designed as drop-in replacement for existing routines: linkage() in the 'SciPy' package 'scipy.cluster.hierarchy', hclust() in R's 'stats' package, and the 'flashClust' package. It provides the same functionality with the benefit of a much faster implementation. Moreover, there are memory-saving routines for clustering of vector data, which go beyond what the existing packages provide. For information on how to install the 'Python' files, see the file INSTALL in the source distribution."
+
+proc ModulesHelp { } {
+puts stderr "This is a two-in-one package which provides interfaces to both R and"
+puts stderr "'Python'. It implements fast hierarchical, agglomerative clustering"
+puts stderr "routines. Part of the functionality is designed as drop-in replacement"
+puts stderr "for existing routines: linkage() in the 'SciPy' package"
+puts stderr "'scipy.cluster.hierarchy', hclust() in R's 'stats' package, and the"
+puts stderr "'flashClust' package. It provides the same functionality with the"
+puts stderr "benefit of a much faster implementation. Moreover, there are memory-"
+puts stderr "saving routines for clustering of vector data, which go beyond what the"
+puts stderr "existing packages provide. For information on how to install the"
+puts stderr "'Python' files, see the file INSTALL in the source distribution."
+}
+
+conflict r-fastcluster
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-fastcluster-1.1.25-njkvyprvqmsadr4znfwuym7hukqneeu5/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-fastcluster-1.1.25-njkvyprvqmsadr4znfwuym7hukqneeu5/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-fastcluster-1.1.25-njkvyprvqmsadr4znfwuym7hukqneeu5/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:12.611256
+##
+## openssl@1.0.2o%gcc@5.5.0+systemcerts arch=linux-centos7-x86_64 /errue3t
+##
+
+
+module-whatis "OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library."
+
+proc ModulesHelp { } {
+puts stderr "OpenSSL is an open source project that provides a robust, commercial-"
+puts stderr "grade, and full-featured toolkit for the Transport Layer Security (TLS)"
+puts stderr "and Secure Sockets Layer (SSL) protocols. It is also a general-purpose"
+puts stderr "cryptography library."
+}
+
+conflict openssl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openssl-1.0.2o-errue3ts2ongk76wzkay6u6xorsrmjoq/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openssl-1.0.2o-errue3ts2ongk76wzkay6u6xorsrmjoq/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openssl-1.0.2o-errue3ts2ongk76wzkay6u6xorsrmjoq/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/openssl-1.0.2o-errue3ts2ongk76wzkay6u6xorsrmjoq/"
+

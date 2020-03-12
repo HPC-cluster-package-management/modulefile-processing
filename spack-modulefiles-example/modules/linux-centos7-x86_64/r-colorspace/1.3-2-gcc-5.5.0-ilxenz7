@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:44.102254
+##
+## r-colorspace@1.3-2%gcc@5.5.0 arch=linux-centos7-x86_64 /ilxenz7
+##
+
+
+module-whatis "Carries out mapping between assorted color spaces including RGB, HSV, HLS, CIEXYZ, CIELUV, HCL (polar CIELUV), CIELAB and polar CIELAB. Qualitative, sequential, and diverging color palettes based on HCL colors are provided."
+
+proc ModulesHelp { } {
+puts stderr "Carries out mapping between assorted color spaces including RGB, HSV,"
+puts stderr "HLS, CIEXYZ, CIELUV, HCL (polar CIELUV), CIELAB and polar CIELAB."
+puts stderr "Qualitative, sequential, and diverging color palettes based on HCL"
+puts stderr "colors are provided."
+}
+
+conflict r-colorspace
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-colorspace-1.3-2-ilxenz724nbljxpjpr6zrajtifaityzg/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-colorspace-1.3-2-ilxenz724nbljxpjpr6zrajtifaityzg/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-colorspace-1.3-2-ilxenz724nbljxpjpr6zrajtifaityzg/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

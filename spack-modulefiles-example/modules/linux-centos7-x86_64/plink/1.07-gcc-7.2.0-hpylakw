@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:21.181697
+##
+## plink@1.07%gcc@7.2.0 arch=linux-centos7-x86_64 /hpylakw
+##
+
+
+module-whatis "PLINK is a free, open-source whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner."
+
+proc ModulesHelp { } {
+puts stderr "PLINK is a free, open-source whole genome association analysis toolset,"
+puts stderr "designed to perform a range of basic, large-scale analyses in a"
+puts stderr "computationally efficient manner."
+}
+
+conflict plink
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/plink-1.07-hpylakwby5v6mgtxswhu4xftiesm4hke/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/plink-1.07-hpylakwby5v6mgtxswhu4xftiesm4hke/"
+

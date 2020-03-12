@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:37.710070
+##
+## ampliconnoise@1.29%gcc@7.2.0 arch=linux-centos7-x86_64 /5tbswd3
+##
+
+
+module-whatis "AmpliconNoise is a collection of programs for the removal of noise from 454 sequenced PCR amplicons."
+
+proc ModulesHelp { } {
+puts stderr "AmpliconNoise is a collection of programs for the removal of noise from"
+puts stderr "454 sequenced PCR amplicons."
+}
+
+conflict ampliconnoise
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ampliconnoise-1.29-5tbswd32pemzl5krv2ckhkjvvxxwiult/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ampliconnoise-1.29-5tbswd32pemzl5krv2ckhkjvvxxwiult/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ampliconnoise-1.29-5tbswd32pemzl5krv2ckhkjvvxxwiult/Scripts"
+setenv PYRO_LOOKUP_FILE "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ampliconnoise-1.29-5tbswd32pemzl5krv2ckhkjvvxxwiult/Data/LookUp_E123.dat"
+setenv SEQ_LOOKUP_FILE "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ampliconnoise-1.29-5tbswd32pemzl5krv2ckhkjvvxxwiult/Data/Tran.dat"
+

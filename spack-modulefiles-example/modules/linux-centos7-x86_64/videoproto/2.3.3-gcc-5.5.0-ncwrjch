@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:23.213748
+##
+## videoproto@2.3.3%gcc@5.5.0 arch=linux-centos7-x86_64 /ncwrjch
+##
+
+
+module-whatis "X Video Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Video Extension. This extension provides a protocol for a video output"
+puts stderr "mechanism, mainly to rescale video playback in the video controller"
+puts stderr "hardware."
+}
+
+conflict videoproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/videoproto-2.3.3-ncwrjche7hi7a3x3yypqhobane62357g/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/videoproto-2.3.3-ncwrjche7hi7a3x3yypqhobane62357g/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/videoproto-2.3.3-ncwrjche7hi7a3x3yypqhobane62357g/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:58.240397
+##
+## r-scales@0.5.0%gcc@7.2.0 arch=linux-centos7-x86_64 /sz4g3sz
+##
+
+
+module-whatis "Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends."
+
+proc ModulesHelp { } {
+puts stderr "Graphical scales map data to aesthetics, and provide methods for"
+puts stderr "automatically determining breaks and labels for axes and legends."
+}
+
+conflict r-scales
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-scales-0.5.0-sz4g3szskqzumcywnq5w3hbgof7pfeao/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-scales-0.5.0-sz4g3szskqzumcywnq5w3hbgof7pfeao/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-scales-0.5.0-sz4g3szskqzumcywnq5w3hbgof7pfeao/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

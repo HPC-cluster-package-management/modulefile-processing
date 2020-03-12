@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:49.839544
+##
+## r-xml@3.98-1.9%gcc@7.2.0 arch=linux-centos7-x86_64 /xoxhq4a
+##
+
+
+module-whatis "Many approaches for both reading and creating XML (and HTML) documents (including DTDs), both local and accessible via HTTP or FTP. Also offers access to an 'XPath' 'interpreter'."
+
+proc ModulesHelp { } {
+puts stderr "Many approaches for both reading and creating XML (and HTML) documents"
+puts stderr "(including DTDs), both local and accessible via HTTP or FTP. Also offers"
+puts stderr "access to an 'XPath' "interpreter"."
+}
+
+conflict r-xml
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xml-3.98-1.9-xoxhq4ayokttuabpwmt6ykvpxsmhbsjq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xml-3.98-1.9-xoxhq4ayokttuabpwmt6ykvpxsmhbsjq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xml-3.98-1.9-xoxhq4ayokttuabpwmt6ykvpxsmhbsjq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

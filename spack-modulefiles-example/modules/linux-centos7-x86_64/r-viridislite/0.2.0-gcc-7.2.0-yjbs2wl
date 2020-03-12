@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:45.272453
+##
+## r-viridislite@0.2.0%gcc@7.2.0 arch=linux-centos7-x86_64 /yjbs2wl
+##
+
+
+module-whatis "viridisLite: Default Color Maps from 'matplotlib' (Lite Version)"
+
+proc ModulesHelp { } {
+puts stderr "viridisLite: Default Color Maps from 'matplotlib' (Lite Version)"
+}
+
+conflict r-viridislite
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-viridislite-0.2.0-yjbs2wlh5ds5utbr2ou3t7u2ep3vo6nf/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-viridislite-0.2.0-yjbs2wlh5ds5utbr2ou3t7u2ep3vo6nf/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-viridislite-0.2.0-yjbs2wlh5ds5utbr2ou3t7u2ep3vo6nf/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

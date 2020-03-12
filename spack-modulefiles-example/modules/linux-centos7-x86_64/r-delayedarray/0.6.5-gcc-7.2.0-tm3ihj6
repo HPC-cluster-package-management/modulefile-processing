@@ -1,0 +1,33 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:01.338889
+##
+## r-delayedarray@0.6.5%gcc@7.2.0 arch=linux-centos7-x86_64 /tm3ihj6
+##
+
+
+module-whatis "Wrapping an array-like object (typically an on-disk object) in a DelayedArray object allows one to perform common array operations on it without loading the object in memory. In order to reduce memory usage and optimize performance, operations on the object are either delayed or executed using a block processing mechanism. Note that this also works on in-memory array-like objects like DataFrame objects (typically with Rle columns), Matrix objects, and ordinary arrays and data frames. Wrapping an array-like object (typically an on-disk object) in a DelayedArray object allows one to perform common array operations on it without loading the object in memory. In order to reduce memory usage and optimize performance, operations on the object are either delayed or executed using a block processing mechanism. Note that this also works on in-memory array-like objects like DataFrame objects (typically with Rle columns), Matrix objects, and ordinary arrays and data frames."
+
+proc ModulesHelp { } {
+puts stderr "Wrapping an array-like object (typically an on-disk object) in a"
+puts stderr "DelayedArray object allows one to perform common array operations on it"
+puts stderr "without loading the object in memory. In order to reduce memory usage"
+puts stderr "and optimize performance, operations on the object are either delayed or"
+puts stderr "executed using a block processing mechanism. Note that this also works"
+puts stderr "on in-memory array-like objects like DataFrame objects (typically with"
+puts stderr "Rle columns), Matrix objects, and ordinary arrays and data frames."
+puts stderr "Wrapping an array-like object (typically an on-disk object) in a"
+puts stderr "DelayedArray object allows one to perform common array operations on it"
+puts stderr "without loading the object in memory. In order to reduce memory usage"
+puts stderr "and optimize performance, operations on the object are either delayed or"
+puts stderr "executed using a block processing mechanism. Note that this also works"
+puts stderr "on in-memory array-like objects like DataFrame objects (typically with"
+puts stderr "Rle columns), Matrix objects, and ordinary arrays and data frames."
+}
+
+conflict r-delayedarray
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-delayedarray-0.6.5-tm3ihj6d3xpiro4e4zo7qi3omdklgf2m/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-delayedarray-0.6.5-tm3ihj6d3xpiro4e4zo7qi3omdklgf2m/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-delayedarray-0.6.5-tm3ihj6d3xpiro4e4zo7qi3omdklgf2m/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

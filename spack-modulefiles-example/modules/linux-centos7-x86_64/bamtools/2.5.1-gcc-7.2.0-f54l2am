@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:43.308467
+##
+## bamtools@2.5.1%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /f54l2am
+##
+## Configure options: -DCMAKE_INSTALL_RPATH=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/lib:/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/lib64:/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/zlib-1.2.11-fuwbsyd4h6milgbzfi362t25s46hd75r/lib:/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/lib/bamtools
+##
+
+
+module-whatis "C++ API & command-line toolkit for working with BAM data."
+
+proc ModulesHelp { } {
+puts stderr "C++ API & command-line toolkit for working with BAM data."
+}
+
+conflict bamtools
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/lib64/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bamtools-2.5.1-f54l2amgjxlq4422ieang2mgfmj7lizi/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.697312
+##
+## fastqc@0.11.7%gcc@7.2.0 patches=b237b2449aea6f933c1e7f6f28b9b0bff1924a7d7fc0322fa76ab23832d5237c arch=linux-centos7-x86_64 /tnqetoa
+##
+
+
+module-whatis "A quality control tool for high throughput sequence data."
+
+proc ModulesHelp { } {
+puts stderr "A quality control tool for high throughput sequence data."
+}
+
+conflict fastqc
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastqc-0.11.7-tnqetoakuqdadbi2z33nn5jfgofsjjlz/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastqc-0.11.7-tnqetoakuqdadbi2z33nn5jfgofsjjlz/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/fastqc-0.11.7-tnqetoakuqdadbi2z33nn5jfgofsjjlz/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jdk-11.0.1-rc33thqmqps5vrmu236o6xg773g3ttgi/bin"
+

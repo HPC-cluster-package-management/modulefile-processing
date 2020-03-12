@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.405464
+##
+## libharu@2.3.0%gcc@7.2.0 arch=linux-centos7-x86_64 /sojvowl
+##
+## Configure options: --with-zlib=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/zlib-1.2.11-fuwbsyd4h6milgbzfi362t25s46hd75r --with-png=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libpng-1.6.34-aiz5qo7sshiccqk7vpqgkpjh6hnh53hy
+##
+
+
+module-whatis "libharu - free PDF library."
+
+proc ModulesHelp { } {
+puts stderr "libharu - free PDF library. Haru is a free, cross platform, open-sourced"
+puts stderr "software library for generating PDF."
+}
+
+conflict libharu
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libharu-2.3.0-sojvowl6jaohcc6aic4qizab5wsd7kyy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libharu-2.3.0-sojvowl6jaohcc6aic4qizab5wsd7kyy/"
+

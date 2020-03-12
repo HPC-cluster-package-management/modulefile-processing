@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:32.986420
+##
+## kbproto@1.0.7%gcc@4.8.5 arch=linux-centos7-x86_64 /vruzxik
+##
+
+
+module-whatis "X Keyboard Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Keyboard Extension. This extension defines a protcol to provide a"
+puts stderr "number of new capabilities and controls for text keyboards."
+}
+
+conflict kbproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/kbproto-1.0.7-vruzxik3xlpqwriupuhz5qfyu6sjsdxk/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/kbproto-1.0.7-vruzxik3xlpqwriupuhz5qfyu6sjsdxk/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/kbproto-1.0.7-vruzxik3xlpqwriupuhz5qfyu6sjsdxk/"
+

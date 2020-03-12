@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:57.432664
+##
+## emacs@26.1%gcc@7.2.0~X~tls toolkit=gtk arch=linux-centos7-x86_64 /3t5imij
+##
+## Configure options: --without-x --without-gnutls
+##
+
+
+module-whatis "The Emacs programmable text editor."
+
+proc ModulesHelp { } {
+puts stderr "The Emacs programmable text editor."
+}
+
+conflict emacs
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/emacs-26.1-3t5imijdzngstixtlbhpa7qan6k5453p/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/emacs-26.1-3t5imijdzngstixtlbhpa7qan6k5453p/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/emacs-26.1-3t5imijdzngstixtlbhpa7qan6k5453p/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/emacs-26.1-3t5imijdzngstixtlbhpa7qan6k5453p/"
+

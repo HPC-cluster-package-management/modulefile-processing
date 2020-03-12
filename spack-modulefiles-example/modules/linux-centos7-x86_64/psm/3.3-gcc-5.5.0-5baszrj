@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:22.088578
+##
+## psm@3.3%gcc@5.5.0 arch=linux-centos7-x86_64 /5baszrj
+##
+
+
+module-whatis "Intel Performance scaled messaging library"
+
+proc ModulesHelp { } {
+puts stderr "Intel Performance scaled messaging library"
+}
+
+conflict psm
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/psm-3.3-5baszrjz3q4tqfqut6z3eor5q4226vnw/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/psm-3.3-5baszrjz3q4tqfqut6z3eor5q4226vnw/"
+

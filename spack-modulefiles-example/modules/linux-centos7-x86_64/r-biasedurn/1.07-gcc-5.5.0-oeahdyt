@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:05.075158
+##
+## r-biasedurn@1.07%gcc@5.5.0 arch=linux-centos7-x86_64 /oeahdyt
+##
+
+
+module-whatis "Statistical models of biased sampling in the form of univariate and multivariate noncentral hypergeometric distributions, including Wallenius' noncentral hypergeometric distribution and Fisher's noncentral hypergeometric distribution (also called extended hypergeometric distribution). See vignette('UrnTheory') for explanation of these distributions."
+
+proc ModulesHelp { } {
+puts stderr "Statistical models of biased sampling in the form of univariate and"
+puts stderr "multivariate noncentral hypergeometric distributions, including"
+puts stderr "Wallenius' noncentral hypergeometric distribution and Fisher's"
+puts stderr "noncentral hypergeometric distribution (also called extended"
+puts stderr "hypergeometric distribution). See vignette("UrnTheory") for explanation"
+puts stderr "of these distributions."
+}
+
+conflict r-biasedurn
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biasedurn-1.07-oeahdyttbv2novx7eobo4e44v5vnsp2l/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biasedurn-1.07-oeahdyttbv2novx7eobo4e44v5vnsp2l/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-biasedurn-1.07-oeahdyttbv2novx7eobo4e44v5vnsp2l/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

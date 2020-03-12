@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:22.661799
+##
+## help2man@1.47.4%gcc@7.2.0 arch=linux-centos7-x86_64 /aenlgsh
+##
+
+
+module-whatis "help2man produces simple manual pages from the '--help' and '--version' output of other commands."
+
+proc ModulesHelp { } {
+puts stderr "help2man produces simple manual pages from the '--help' and '--version'"
+puts stderr "output of other commands."
+}
+
+conflict help2man
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/help2man-1.47.4-aenlgshizehl6vqzdp34sni2buq3g7go/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/help2man-1.47.4-aenlgshizehl6vqzdp34sni2buq3g7go/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/help2man-1.47.4-aenlgshizehl6vqzdp34sni2buq3g7go/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/help2man-1.47.4-aenlgshizehl6vqzdp34sni2buq3g7go/"
+

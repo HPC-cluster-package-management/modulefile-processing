@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:33.107819
+##
+## kbproto@1.0.7%gcc@7.2.0 arch=linux-centos7-x86_64 /ugjncua
+##
+
+
+module-whatis "X Keyboard Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Keyboard Extension. This extension defines a protcol to provide a"
+puts stderr "number of new capabilities and controls for text keyboards."
+}
+
+conflict kbproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kbproto-1.0.7-ugjncua66uvnmu4a4tds466g2yb554f6/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kbproto-1.0.7-ugjncua66uvnmu4a4tds466g2yb554f6/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/kbproto-1.0.7-ugjncua66uvnmu4a4tds466g2yb554f6/"
+

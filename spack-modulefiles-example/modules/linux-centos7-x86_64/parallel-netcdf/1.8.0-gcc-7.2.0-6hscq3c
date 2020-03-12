@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:15.744211
+##
+## parallel-netcdf@1.8.0%gcc@7.2.0+cxx+fortran+pic arch=linux-centos7-x86_64 /6hscq3c
+##
+## Configure options: --with-mpi=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-3.1.3-5rp5rgzasx4ojhtrzvjdp7ewgn76sjja MPICC=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-3.1.3-5rp5rgzasx4ojhtrzvjdp7ewgn76sjja/bin/mpicc MPICXX=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-3.1.3-5rp5rgzasx4ojhtrzvjdp7ewgn76sjja/bin/mpic++ MPIF77=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-3.1.3-5rp5rgzasx4ojhtrzvjdp7ewgn76sjja/bin/mpif90 MPIF90=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openmpi-3.1.3-5rp5rgzasx4ojhtrzvjdp7ewgn76sjja/bin/mpif90 SEQ_CC=/u/local/spack/0.12/lib/spack/env/gcc/gcc CFLAGS=-fPIC CXXFLAGS=-fPIC FFLAGS=-fPIC
+##
+
+
+module-whatis "Parallel netCDF (PnetCDF) is a library providing high-performance parallel I/O while still maintaining file-format compatibility with Unidata's NetCDF."
+
+proc ModulesHelp { } {
+puts stderr "Parallel netCDF (PnetCDF) is a library providing high-performance"
+puts stderr "parallel I/O while still maintaining file-format compatibility with"
+puts stderr "Unidata's NetCDF."
+}
+
+conflict parallel-netcdf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/parallel-netcdf-1.8.0-6hscq3cczcdpkeais6jakyyvjhq6zr4h/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/parallel-netcdf-1.8.0-6hscq3cczcdpkeais6jakyyvjhq6zr4h/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/parallel-netcdf-1.8.0-6hscq3cczcdpkeais6jakyyvjhq6zr4h/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/parallel-netcdf-1.8.0-6hscq3cczcdpkeais6jakyyvjhq6zr4h/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/parallel-netcdf-1.8.0-6hscq3cczcdpkeais6jakyyvjhq6zr4h/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:58.284971
+##
+## r-knitr@1.17%gcc@7.2.0 arch=linux-centos7-x86_64 /7l6tqaa
+##
+
+
+module-whatis "Provides a general-purpose tool for dynamic report generation in R using Literate Programming techniques."
+
+proc ModulesHelp { } {
+puts stderr "Provides a general-purpose tool for dynamic report generation in R using"
+puts stderr "Literate Programming techniques."
+}
+
+conflict r-knitr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-knitr-1.17-7l6tqaakgyhrwarkovohabclhgnpc43f/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-knitr-1.17-7l6tqaakgyhrwarkovohabclhgnpc43f/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-knitr-1.17-7l6tqaakgyhrwarkovohabclhgnpc43f/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

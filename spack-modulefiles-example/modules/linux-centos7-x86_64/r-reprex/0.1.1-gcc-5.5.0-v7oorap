@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:24.811154
+##
+## r-reprex@0.1.1%gcc@5.5.0 arch=linux-centos7-x86_64 /v7oorap
+##
+
+
+module-whatis "Convenience wrapper that uses the 'rmarkdown' package to render small snippets of code to target formats that include both code and output. The goal is to encourage the sharing of small, reproducible, and runnable examples on code-oriented websites, such as <http://stackoverflow.com> and <https://github.com>, or in email. 'reprex' also extracts clean, runnable R code from various common formats, such as copy/paste from an R session."
+
+proc ModulesHelp { } {
+puts stderr "Convenience wrapper that uses the 'rmarkdown' package to render small"
+puts stderr "snippets of code to target formats that include both code and output."
+puts stderr "The goal is to encourage the sharing of small, reproducible, and"
+puts stderr "runnable examples on code-oriented websites, such as"
+puts stderr "<http://stackoverflow.com> and <https://github.com>, or in email."
+puts stderr "'reprex' also extracts clean, runnable R code from various common"
+puts stderr "formats, such as copy/paste from an R session."
+}
+
+conflict r-reprex
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-reprex-0.1.1-v7oorapsn5di4xe2lz63ongxbx676lxb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-reprex-0.1.1-v7oorapsn5di4xe2lz63ongxbx676lxb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-reprex-0.1.1-v7oorapsn5di4xe2lz63ongxbx676lxb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

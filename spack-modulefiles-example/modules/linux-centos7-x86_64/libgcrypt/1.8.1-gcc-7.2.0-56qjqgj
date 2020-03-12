@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:36.731918
+##
+## libgcrypt@1.8.1%gcc@7.2.0 arch=linux-centos7-x86_64 /56qjqgj
+##
+
+
+module-whatis "Libgcrypt is a general purpose cryptographic library based on the code from GnuPG. It provides functions for all cryptographic building blocks: symmetric ciphers, hash algorithms, MACs, public key algorithms, large integer functions, random numbers and a lot of supporting functions. "
+
+proc ModulesHelp { } {
+puts stderr "Libgcrypt is a general purpose cryptographic library based on the code"
+puts stderr "from GnuPG. It provides functions for all cryptographic building blocks:"
+puts stderr "symmetric ciphers, hash algorithms, MACs, public key algorithms, large"
+puts stderr "integer functions, random numbers and a lot of supporting functions."
+}
+
+conflict libgcrypt
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgcrypt-1.8.1-56qjqgjiguxt662oabzjpsz2thpsauls/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgcrypt-1.8.1-56qjqgjiguxt662oabzjpsz2thpsauls/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgcrypt-1.8.1-56qjqgjiguxt662oabzjpsz2thpsauls/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgcrypt-1.8.1-56qjqgjiguxt662oabzjpsz2thpsauls/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgcrypt-1.8.1-56qjqgjiguxt662oabzjpsz2thpsauls/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:16.153617
+##
+## r-rcpparmadillo@0.8.100.1.0%gcc@7.2.0 arch=linux-centos7-x86_64 /j5ytxql
+##
+
+
+module-whatis "'Rcpp' Integration for the 'Armadillo' Templated Linear Algebra Library."
+
+proc ModulesHelp { } {
+puts stderr "'Rcpp' Integration for the 'Armadillo' Templated Linear Algebra Library."
+}
+
+conflict r-rcpparmadillo
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpparmadillo-0.8.100.1.0-j5ytxql6uw4py2yorezto5zpu6dsgylo/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpparmadillo-0.8.100.1.0-j5ytxql6uw4py2yorezto5zpu6dsgylo/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpparmadillo-0.8.100.1.0-j5ytxql6uw4py2yorezto5zpu6dsgylo/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

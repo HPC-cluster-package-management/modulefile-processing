@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:33.401616
+##
+## r-tidyselect@0.2.3%gcc@5.5.0 arch=linux-centos7-x86_64 /xhs5ylm
+##
+
+
+module-whatis "A backend for the selecting functions of the 'tidyverse'. It makes it easy to implement select-like functions in your own packages in a way that is consistent with other 'tidyverse' interfaces for selection."
+
+proc ModulesHelp { } {
+puts stderr "A backend for the selecting functions of the 'tidyverse'. It makes it"
+puts stderr "easy to implement select-like functions in your own packages in a way"
+puts stderr "that is consistent with other 'tidyverse' interfaces for selection."
+}
+
+conflict r-tidyselect
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyselect-0.2.3-xhs5ylmjy5rbbhlk6c4qwicjflprrc7y/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyselect-0.2.3-xhs5ylmjy5rbbhlk6c4qwicjflprrc7y/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-tidyselect-0.2.3-xhs5ylmjy5rbbhlk6c4qwicjflprrc7y/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:23.791926
+##
+## py-ase@3.15.0%gcc@7.2.0 arch=linux-centos7-x86_64 /vciztf7
+##
+
+
+module-whatis "The Atomic Simulation Environment (ASE) is a set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations."
+
+proc ModulesHelp { } {
+puts stderr "The Atomic Simulation Environment (ASE) is a set of tools and Python"
+puts stderr "modules for setting up, manipulating, running, visualizing and analyzing"
+puts stderr "atomistic simulations."
+}
+
+conflict py-ase
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-ase-3.15.0-vciztf7cphrmuvbcfsiluqozxrxwa3be/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-ase-3.15.0-vciztf7cphrmuvbcfsiluqozxrxwa3be/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-ase-3.15.0-vciztf7cphrmuvbcfsiluqozxrxwa3be/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-ase-3.15.0-vciztf7cphrmuvbcfsiluqozxrxwa3be/lib/python3.7/site-packages"
+

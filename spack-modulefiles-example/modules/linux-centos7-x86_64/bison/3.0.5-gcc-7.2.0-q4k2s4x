@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:45.260016
+##
+## bison@3.0.5%gcc@7.2.0 arch=linux-centos7-x86_64 /q4k2s4x
+##
+
+
+module-whatis "Bison is a general-purpose parser generator that converts an annotated context-free grammar into a deterministic LR or generalized LR (GLR) parser employing LALR(1) parser tables."
+
+proc ModulesHelp { } {
+puts stderr "Bison is a general-purpose parser generator that converts an annotated"
+puts stderr "context-free grammar into a deterministic LR or generalized LR (GLR)"
+puts stderr "parser employing LALR(1) parser tables."
+}
+
+conflict bison
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bison-3.0.5-q4k2s4xccrjrvupgcok754hvnjppfeaj/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bison-3.0.5-q4k2s4xccrjrvupgcok754hvnjppfeaj/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bison-3.0.5-q4k2s4xccrjrvupgcok754hvnjppfeaj/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bison-3.0.5-q4k2s4xccrjrvupgcok754hvnjppfeaj/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bison-3.0.5-q4k2s4xccrjrvupgcok754hvnjppfeaj/"
+

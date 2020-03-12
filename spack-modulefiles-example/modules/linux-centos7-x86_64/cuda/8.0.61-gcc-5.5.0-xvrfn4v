@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:53.286845
+##
+## cuda@8.0.61%gcc@5.5.0 arch=linux-centos7-x86_64 /xvrfn4v
+##
+
+
+module-whatis "CUDA is a parallel computing platform and programming model invented by NVIDIA. It enables dramatic increases in computing performance by harnessing the power of the graphics processing unit (GPU)."
+
+proc ModulesHelp { } {
+puts stderr "CUDA is a parallel computing platform and programming model invented by"
+puts stderr "NVIDIA. It enables dramatic increases in computing performance by"
+puts stderr "harnessing the power of the graphics processing unit (GPU). Note: This"
+puts stderr "package does not currently install the drivers necessary to run CUDA."
+puts stderr "These will need to be installed manually. See:"
+puts stderr "https://docs.nvidia.com/cuda/ for details."
+}
+
+conflict cuda
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cuda-8.0.61-xvrfn4veaenoq6kbpjyfnspvubfczxab/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cuda-8.0.61-xvrfn4veaenoq6kbpjyfnspvubfczxab/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/cuda-8.0.61-xvrfn4veaenoq6kbpjyfnspvubfczxab/"
+

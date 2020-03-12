@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:21.656273
+##
+## r-survival@2.41-3%gcc@5.5.0 arch=linux-centos7-x86_64 /yw5kioi
+##
+
+
+module-whatis "Contains the core survival analysis routines, including definition of Surv objects, Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox models, and parametric accelerated failure time models."
+
+proc ModulesHelp { } {
+puts stderr "Contains the core survival analysis routines, including definition of"
+puts stderr "Surv objects, Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox"
+puts stderr "models, and parametric accelerated failure time models."
+}
+
+conflict r-survival
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-survival-2.41-3-yw5kioi56pqoyrbbn3eg7dt6sbojycl2/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-survival-2.41-3-yw5kioi56pqoyrbbn3eg7dt6sbojycl2/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-survival-2.41-3-yw5kioi56pqoyrbbn3eg7dt6sbojycl2/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

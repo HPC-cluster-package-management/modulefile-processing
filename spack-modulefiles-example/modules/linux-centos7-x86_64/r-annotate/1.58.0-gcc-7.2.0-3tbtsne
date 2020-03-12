@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:47.620640
+##
+## r-annotate@1.58.0%gcc@7.2.0 arch=linux-centos7-x86_64 /3tbtsne
+##
+
+
+module-whatis "Using R enviroments for annotation."
+
+proc ModulesHelp { } {
+puts stderr "Using R enviroments for annotation."
+}
+
+conflict r-annotate
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotate-1.58.0-3tbtsnezvuspr7nnk6affn4onzlv5pey/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotate-1.58.0-3tbtsnezvuspr7nnk6affn4onzlv5pey/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-annotate-1.58.0-3tbtsnezvuspr7nnk6affn4onzlv5pey/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

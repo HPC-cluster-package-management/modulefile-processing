@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.426944
+##
+## libbeagle@2.1.2%gcc@7.2.0 arch=linux-centos7-x86_64 /etgnbxn
+##
+
+
+module-whatis "Beagle performs genotype calling, genotype phasing, imputation of ungenotyped markers, and identity-by-descent segment detection."
+
+proc ModulesHelp { } {
+puts stderr "Beagle performs genotype calling, genotype phasing, imputation of"
+puts stderr "ungenotyped markers, and identity-by-descent segment detection."
+}
+
+conflict libbeagle
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libbeagle-2.1.2-etgnbxnacn3y2yq5go4xpc6pzpkdvsws/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libbeagle-2.1.2-etgnbxnacn3y2yq5go4xpc6pzpkdvsws/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libbeagle-2.1.2-etgnbxnacn3y2yq5go4xpc6pzpkdvsws/"
+prepend-path BEAST_LIB "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libbeagle-2.1.2-etgnbxnacn3y2yq5go4xpc6pzpkdvsws/lib"
+

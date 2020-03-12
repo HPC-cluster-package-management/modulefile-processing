@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:51.271854
+##
+## r-ctc@1.54.0%gcc@5.5.0 arch=linux-centos7-x86_64 /teqtqei
+##
+
+
+module-whatis "Tools for export and import classification trees and clusters to other programs"
+
+proc ModulesHelp { } {
+puts stderr "Tools for export and import classification trees and clusters to other"
+puts stderr "programs"
+}
+
+conflict r-ctc
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ctc-1.54.0-teqtqei7igtv66tgh4je236hkb2xue3x/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ctc-1.54.0-teqtqei7igtv66tgh4je236hkb2xue3x/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ctc-1.54.0-teqtqei7igtv66tgh4je236hkb2xue3x/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

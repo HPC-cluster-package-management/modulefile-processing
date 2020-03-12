@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:36.084065
+##
+## qhull@2015.2%gcc@7.2.0 build_type=RelWithDebInfo patches=10ddc62a1600b0ede23fb0502e29dca389d18689fd8dfe7a849e3a989c0e607e arch=linux-centos7-x86_64 /rxpdn4t
+##
+
+
+module-whatis "Qhull computes the convex hull, Delaunay triangulation, Voronoi diagram, halfspace intersection about a point, furt hest-site Delaunay triangulation, and furthest-site Voronoi diagram. The source code runs in 2-d, 3-d, 4-d, and higher dimensions. Qhull implements the Quickhull algorithm for computing the convex hull. It handles roundoff errors from floating point arithmetic. It computes volumes, surface areas, and approximations to the convex hull."
+
+proc ModulesHelp { } {
+puts stderr "Qhull computes the convex hull, Delaunay triangulation, Voronoi diagram,"
+puts stderr "halfspace intersection about a point, furt hest-site Delaunay"
+puts stderr "triangulation, and furthest-site Voronoi diagram. The source code runs"
+puts stderr "in 2-d, 3-d, 4-d, and higher dimensions. Qhull implements the Quickhull"
+puts stderr "algorithm for computing the convex hull. It handles roundoff errors from"
+puts stderr "floating point arithmetic. It computes volumes, surface areas, and"
+puts stderr "approximations to the convex hull."
+}
+
+conflict qhull
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/qhull-2015.2-rxpdn4tvy7ge6eqneg6dknf3f6fsmo65/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/qhull-2015.2-rxpdn4tvy7ge6eqneg6dknf3f6fsmo65/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/qhull-2015.2-rxpdn4tvy7ge6eqneg6dknf3f6fsmo65/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/qhull-2015.2-rxpdn4tvy7ge6eqneg6dknf3f6fsmo65/"
+

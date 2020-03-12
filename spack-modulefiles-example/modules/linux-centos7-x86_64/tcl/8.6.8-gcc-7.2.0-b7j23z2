@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:09.959809
+##
+## tcl@8.6.8%gcc@7.2.0 arch=linux-centos7-x86_64 /b7j23z2
+##
+
+
+module-whatis "Tcl (Tool Command Language) is a very powerful but easy to learn dynamic programming language, suitable for a very wide range of uses, including web and desktop applications, networking, administration, testing and many more. Open source and business-friendly, Tcl is a mature yet evolving language that is truly cross platform, easily deployed and highly extensible."
+
+proc ModulesHelp { } {
+puts stderr "Tcl (Tool Command Language) is a very powerful but easy to learn dynamic"
+puts stderr "programming language, suitable for a very wide range of uses, including"
+puts stderr "web and desktop applications, networking, administration, testing and"
+puts stderr "many more. Open source and business-friendly, Tcl is a mature yet"
+puts stderr "evolving language that is truly cross platform, easily deployed and"
+puts stderr "highly extensible."
+}
+
+conflict tcl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/man"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/"
+setenv TCL_LIBRARY "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/tcl-8.6.8-b7j23z24otm3em3rml6hg6gvhbp4ejpp/lib"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:50.980874
+##
+## r-xml2@1.1.1%gcc@5.5.0 arch=linux-centos7-x86_64 /bex5muk
+##
+
+
+module-whatis "Work with XML files using a simple, consistent interface. Built on top of the 'libxml2' C library."
+
+proc ModulesHelp { } {
+puts stderr "Work with XML files using a simple, consistent interface. Built on top"
+puts stderr "of the 'libxml2' C library."
+}
+
+conflict r-xml2
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xml2-1.1.1-bex5mukz5aosghh6ddwoamw6qtqfsdme/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xml2-1.1.1-bex5mukz5aosghh6ddwoamw6qtqfsdme/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-xml2-1.1.1-bex5mukz5aosghh6ddwoamw6qtqfsdme/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

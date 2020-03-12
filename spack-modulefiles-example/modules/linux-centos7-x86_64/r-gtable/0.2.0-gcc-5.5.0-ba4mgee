@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:21.991504
+##
+## r-gtable@0.2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /ba4mgee
+##
+
+
+module-whatis "Tools to make it easier to work with 'tables' of 'grobs'."
+
+proc ModulesHelp { } {
+puts stderr "Tools to make it easier to work with "tables" of 'grobs'."
+}
+
+conflict r-gtable
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtable-0.2.0-ba4mgee3ziewzhdfaqezad7gdned4x4o/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtable-0.2.0-ba4mgee3ziewzhdfaqezad7gdned4x4o/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtable-0.2.0-ba4mgee3ziewzhdfaqezad7gdned4x4o/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

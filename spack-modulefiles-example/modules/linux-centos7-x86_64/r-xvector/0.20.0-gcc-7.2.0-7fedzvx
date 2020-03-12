@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:55.735139
+##
+## r-xvector@0.20.0%gcc@7.2.0 arch=linux-centos7-x86_64 /7fedzvx
+##
+
+
+module-whatis "Memory efficient S4 classes for storing sequences 'externally' (behind an R external pointer, or on disk)."
+
+proc ModulesHelp { } {
+puts stderr "Memory efficient S4 classes for storing sequences "externally" (behind"
+puts stderr "an R external pointer, or on disk)."
+}
+
+conflict r-xvector
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xvector-0.20.0-7fedzvxvuo54a5ksf4zdbgecwlgovrdq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xvector-0.20.0-7fedzvxvuo54a5ksf4zdbgecwlgovrdq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-xvector-0.20.0-7fedzvxvuo54a5ksf4zdbgecwlgovrdq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:55.673637
+##
+## eigen@3.3.5%gcc@7.2.0 build_type=RelWithDebInfo +fftw+metis~mpfr+scotch+suitesparse arch=linux-centos7-x86_64 /rntqgld
+##
+
+
+module-whatis "Eigen is a C++ template library for linear algebra matrices, vectors, numerical solvers, and related algorithms. "
+
+proc ModulesHelp { } {
+puts stderr "Eigen is a C++ template library for linear algebra matrices, vectors,"
+puts stderr "numerical solvers, and related algorithms."
+}
+
+conflict eigen
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/eigen-3.3.5-rntqgldsd7pf52jnyemhf5k6ifvz4u6e/"
+

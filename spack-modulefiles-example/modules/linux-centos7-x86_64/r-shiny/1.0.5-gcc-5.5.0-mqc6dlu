@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:01.233506
+##
+## r-shiny@1.0.5%gcc@5.5.0 arch=linux-centos7-x86_64 /mqc6dlu
+##
+
+
+module-whatis "Makes it incredibly easy to build interactive web applications with R. Automatic 'reactive' binding between inputs and outputs and extensive pre-built widgets make it possible to build beautiful, responsive, and powerful applications with minimal effort."
+
+proc ModulesHelp { } {
+puts stderr "Makes it incredibly easy to build interactive web applications with R."
+puts stderr "Automatic "reactive" binding between inputs and outputs and extensive"
+puts stderr "pre-built widgets make it possible to build beautiful, responsive, and"
+puts stderr "powerful applications with minimal effort."
+}
+
+conflict r-shiny
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-shiny-1.0.5-mqc6dlusojslrlcvou75ng5kismplahy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-shiny-1.0.5-mqc6dlusojslrlcvou75ng5kismplahy/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-shiny-1.0.5-mqc6dlusojslrlcvou75ng5kismplahy/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

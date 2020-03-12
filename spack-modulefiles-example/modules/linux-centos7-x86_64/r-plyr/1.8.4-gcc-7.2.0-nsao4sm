@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:53.897967
+##
+## r-plyr@1.8.4%gcc@7.2.0 arch=linux-centos7-x86_64 /nsao4sm
+##
+
+
+module-whatis "A set of tools that solves a common set of problems: you need to break a big problem down into manageable pieces, operate on each piece and then put all the pieces back together. For example, you might want to fit a model to each spatial location or time point in your study, summarise data by panels or collapse high-dimensional arrays to simpler summary statistics. The development of 'plyr' has been generously supported by 'Becton Dickinson'."
+
+proc ModulesHelp { } {
+puts stderr "A set of tools that solves a common set of problems: you need to break a"
+puts stderr "big problem down into manageable pieces, operate on each piece and then"
+puts stderr "put all the pieces back together. For example, you might want to fit a"
+puts stderr "model to each spatial location or time point in your study, summarise"
+puts stderr "data by panels or collapse high-dimensional arrays to simpler summary"
+puts stderr "statistics. The development of 'plyr' has been generously supported by"
+puts stderr "'Becton Dickinson'."
+}
+
+conflict r-plyr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-plyr-1.8.4-nsao4smufl4ajpyi3bfsx3indxhj22gb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-plyr-1.8.4-nsao4smufl4ajpyi3bfsx3indxhj22gb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-plyr-1.8.4-nsao4smufl4ajpyi3bfsx3indxhj22gb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

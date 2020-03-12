@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:05.453892
+##
+## r-snow@0.4-2%gcc@5.5.0 arch=linux-centos7-x86_64 /vinuxa4
+##
+
+
+module-whatis "Support for simple parallel computing in R."
+
+proc ModulesHelp { } {
+puts stderr "Support for simple parallel computing in R."
+}
+
+conflict r-snow
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-snow-0.4-2-vinuxa4c444iwp6wrdta7gcbjagpho7u/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-snow-0.4-2-vinuxa4c444iwp6wrdta7gcbjagpho7u/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-snow-0.4-2-vinuxa4c444iwp6wrdta7gcbjagpho7u/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

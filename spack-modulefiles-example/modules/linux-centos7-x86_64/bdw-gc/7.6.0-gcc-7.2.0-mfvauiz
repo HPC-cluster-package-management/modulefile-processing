@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:43.990198
+##
+## bdw-gc@7.6.0%gcc@7.2.0+libatomic-ops arch=linux-centos7-x86_64 /mfvauiz
+##
+## Configure options: --with-libatomic-ops=yes
+##
+
+
+module-whatis "The Boehm-Demers-Weiser conservative garbage collector is a garbage collecting replacement for C malloc or C++ new."
+
+proc ModulesHelp { } {
+puts stderr "The Boehm-Demers-Weiser conservative garbage collector is a garbage"
+puts stderr "collecting replacement for C malloc or C++ new."
+}
+
+conflict bdw-gc
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bdw-gc-7.6.0-mfvauizlucq6qg2qz3juljpmixxkilwg/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bdw-gc-7.6.0-mfvauizlucq6qg2qz3juljpmixxkilwg/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/bdw-gc-7.6.0-mfvauizlucq6qg2qz3juljpmixxkilwg/"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.840004
+##
+## libjpeg@9c%gcc@7.2.0 arch=linux-centos7-x86_64 /y4r76wb
+##
+
+
+module-whatis "libjpeg is a widely used free library with functions for handling the JPEG image data format. It implements a JPEG codec (encoding and decoding) alongside various utilities for handling JPEG data."
+
+proc ModulesHelp { } {
+puts stderr "libjpeg is a widely used free library with functions for handling the"
+puts stderr "JPEG image data format. It implements a JPEG codec (encoding and"
+puts stderr "decoding) alongside various utilities for handling JPEG data."
+}
+
+conflict libjpeg
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libjpeg-9c-y4r76wbbaqpj6ktkrufz7cxkk7my4twy/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libjpeg-9c-y4r76wbbaqpj6ktkrufz7cxkk7my4twy/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libjpeg-9c-y4r76wbbaqpj6ktkrufz7cxkk7my4twy/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libjpeg-9c-y4r76wbbaqpj6ktkrufz7cxkk7my4twy/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libjpeg-9c-y4r76wbbaqpj6ktkrufz7cxkk7my4twy/"
+

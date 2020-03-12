@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:46.816193
+##
+## blat@35%gcc@7.2.0 arch=linux-centos7-x86_64 /rmhul72
+##
+
+
+module-whatis "BLAT (BLAST-like alignment tool) is a pairwise sequence alignment algorithm."
+
+proc ModulesHelp { } {
+puts stderr "BLAT (BLAST-like alignment tool) is a pairwise sequence alignment"
+puts stderr "algorithm."
+}
+
+conflict blat
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/blat-35-rmhul72yfgvz5onixtjd7vitlmuzyjrs/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/blat-35-rmhul72yfgvz5onixtjd7vitlmuzyjrs/"
+

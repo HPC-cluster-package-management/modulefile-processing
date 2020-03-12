@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:02.708290
+##
+## gatk@4.0.8.1%gcc@7.2.0 arch=linux-centos7-x86_64 /jt4cdz7
+##
+
+
+module-whatis "Genome Analysis Toolkit Variant Discovery in High-Throughput Sequencing Data "
+
+proc ModulesHelp { } {
+puts stderr "Genome Analysis Toolkit Variant Discovery in High-Throughput Sequencing"
+puts stderr "Data"
+}
+
+conflict gatk
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gatk-4.0.8.1-jt4cdz73xkzf7iy7njovezvwo6ug6ldb/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gatk-4.0.8.1-jt4cdz73xkzf7iy7njovezvwo6ug6ldb/"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+prepend-path GATK "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gatk-4.0.8.1-jt4cdz73xkzf7iy7njovezvwo6ug6ldb/bin/GenomeAnalysisTK.jar"
+

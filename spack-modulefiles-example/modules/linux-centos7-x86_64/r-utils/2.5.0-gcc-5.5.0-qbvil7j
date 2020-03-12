@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:39.225226
+##
+## r-utils@2.5.0%gcc@5.5.0 arch=linux-centos7-x86_64 /qbvil7j
+##
+
+
+module-whatis "Utility functions useful when programming and developing R packages."
+
+proc ModulesHelp { } {
+puts stderr "Utility functions useful when programming and developing R packages."
+}
+
+conflict r-utils
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-utils-2.5.0-qbvil7jcqw7wo2kli7j4y2zjvvv4khex/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-utils-2.5.0-qbvil7jcqw7wo2kli7j4y2zjvvv4khex/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-utils-2.5.0-qbvil7jcqw7wo2kli7j4y2zjvvv4khex/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

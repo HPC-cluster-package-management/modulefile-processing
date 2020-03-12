@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:39.160066
+##
+## r-cli@1.0.0%gcc@5.5.0 arch=linux-centos7-x86_64 /wtbx2w5
+##
+
+
+module-whatis "A suite of tools designed to build attractive command line interfaces ('CLIs'). Includes tools for drawing rules, boxes, trees, and 'Unicode' symbols with 'ASCII' alternatives."
+
+proc ModulesHelp { } {
+puts stderr "A suite of tools designed to build attractive command line interfaces"
+puts stderr "('CLIs'). Includes tools for drawing rules, boxes, trees, and 'Unicode'"
+puts stderr "symbols with 'ASCII' alternatives."
+}
+
+conflict r-cli
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cli-1.0.0-wtbx2w5iej2edqwojrlqq7buymwcnem6/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cli-1.0.0-wtbx2w5iej2edqwojrlqq7buymwcnem6/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-cli-1.0.0-wtbx2w5iej2edqwojrlqq7buymwcnem6/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

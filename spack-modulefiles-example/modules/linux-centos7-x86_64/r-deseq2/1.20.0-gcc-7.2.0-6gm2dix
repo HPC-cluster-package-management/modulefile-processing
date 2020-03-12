@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:07.346192
+##
+## r-deseq2@1.20.0%gcc@7.2.0 arch=linux-centos7-x86_64 /6gm2dix
+##
+
+
+module-whatis "Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution."
+
+proc ModulesHelp { } {
+puts stderr "Estimate variance-mean dependence in count data from high-throughput"
+puts stderr "sequencing assays and test for differential expression based on a model"
+puts stderr "using the negative binomial distribution."
+}
+
+conflict r-deseq2
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-deseq2-1.20.0-6gm2dixvmmhvlpcxavo5bl2gifly5ilj/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-deseq2-1.20.0-6gm2dixvmmhvlpcxavo5bl2gifly5ilj/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-deseq2-1.20.0-6gm2dixvmmhvlpcxavo5bl2gifly5ilj/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

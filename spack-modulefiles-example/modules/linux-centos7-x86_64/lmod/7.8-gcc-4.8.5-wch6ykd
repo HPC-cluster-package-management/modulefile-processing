@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:51.550254
+##
+## lmod@7.8%gcc@4.8.5 arch=linux-centos7-x86_64 /wch6ykd
+##
+
+
+module-whatis "Lmod is a Lua based module system that easily handles the MODULEPATH Hierarchical problem. Environment Modules provide a convenient way to dynamically change the users' environment through modulefiles. This includes easily adding or removing directories to the PATH environment variable. Modulefiles for Library packages provide environment variables that specify where the library and header files can be found. "
+
+proc ModulesHelp { } {
+puts stderr "Lmod is a Lua based module system that easily handles the MODULEPATH"
+puts stderr "Hierarchical problem. Environment Modules provide a convenient way to"
+puts stderr "dynamically change the users' environment through modulefiles. This"
+puts stderr "includes easily adding or removing directories to the PATH environment"
+puts stderr "variable. Modulefiles for Library packages provide environment variables"
+puts stderr "that specify where the library and header files can be found."
+}
+
+conflict lmod
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/lmod-7.8-wch6ykd3gz3o7fiwsw3deubpwdpsny5r/"
+

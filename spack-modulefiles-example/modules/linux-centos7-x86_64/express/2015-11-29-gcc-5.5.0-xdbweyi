@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:58.332527
+##
+## express@2015-11-29%gcc@5.5.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /xdbweyi
+##
+
+
+module-whatis "eXpress is a streaming tool for quantifying the abundances of a set of target sequences from sampled subsequences."
+
+proc ModulesHelp { } {
+puts stderr "eXpress is a streaming tool for quantifying the abundances of a set of"
+puts stderr "target sequences from sampled subsequences."
+}
+
+conflict express
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/express-2015-11-29-xdbweyinongjrvwjzy2aqvtwtnpy46g2/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/express-2015-11-29-xdbweyinongjrvwjzy2aqvtwtnpy46g2/"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.490485
+##
+## libbsd@0.8.6%gcc@5.5.0 arch=linux-centos7-x86_64 /bikbht2
+##
+
+
+module-whatis "This library provides useful functions commonly found on BSD systems, and lacking on others like GNU systems, thus making it easier to port projects with strong BSD origins, without needing to embed the same code over and over again on each project. "
+
+proc ModulesHelp { } {
+puts stderr "This library provides useful functions commonly found on BSD systems,"
+puts stderr "and lacking on others like GNU systems, thus making it easier to port"
+puts stderr "projects with strong BSD origins, without needing to embed the same code"
+puts stderr "over and over again on each project."
+}
+
+conflict libbsd
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libbsd-0.8.6-bikbht27zjotzxcv2qyoqmsw75dcagw3/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libbsd-0.8.6-bikbht27zjotzxcv2qyoqmsw75dcagw3/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libbsd-0.8.6-bikbht27zjotzxcv2qyoqmsw75dcagw3/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libbsd-0.8.6-bikbht27zjotzxcv2qyoqmsw75dcagw3/"
+

@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:50.828987
+##
+## libxvmc@1.0.9%gcc@5.5.0 arch=linux-centos7-x86_64 /hrt7lmg
+##
+
+
+module-whatis "X.org libXvMC library."
+
+proc ModulesHelp { } {
+puts stderr "X.org libXvMC library."
+}
+
+conflict libxvmc
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxvmc-1.0.9-hrt7lmgjwrcn4623dcd3we3a2iyjqjqr/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxvmc-1.0.9-hrt7lmgjwrcn4623dcd3we3a2iyjqjqr/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxvmc-1.0.9-hrt7lmgjwrcn4623dcd3we3a2iyjqjqr/"
+

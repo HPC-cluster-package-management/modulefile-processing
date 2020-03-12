@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:16.564509
+##
+## pcre@8.42%gcc@5.5.0~jit+utf arch=linux-centos7-x86_64 /4ykpfb7
+##
+## Configure options: --enable-utf --enable-unicode-properties
+##
+
+
+module-whatis "The PCRE package contains Perl Compatible Regular Expression libraries. These are useful for implementing regular expression pattern matching using the same syntax and semantics as Perl 5."
+
+proc ModulesHelp { } {
+puts stderr "The PCRE package contains Perl Compatible Regular Expression libraries."
+puts stderr "These are useful for implementing regular expression pattern matching"
+puts stderr "using the same syntax and semantics as Perl 5."
+}
+
+conflict pcre
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pcre-8.42-4ykpfb7lzrrox4nxjevlgqjxgidp7gk6/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pcre-8.42-4ykpfb7lzrrox4nxjevlgqjxgidp7gk6/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pcre-8.42-4ykpfb7lzrrox4nxjevlgqjxgidp7gk6/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pcre-8.42-4ykpfb7lzrrox4nxjevlgqjxgidp7gk6/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pcre-8.42-4ykpfb7lzrrox4nxjevlgqjxgidp7gk6/"
+

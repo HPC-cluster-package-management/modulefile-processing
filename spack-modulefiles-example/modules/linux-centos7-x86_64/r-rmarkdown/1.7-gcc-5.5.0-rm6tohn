@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:33.386768
+##
+## r-rmarkdown@1.7%gcc@5.5.0 arch=linux-centos7-x86_64 /rm6tohn
+##
+
+
+module-whatis "Convert R Markdown documents into a variety of formats."
+
+proc ModulesHelp { } {
+puts stderr "Convert R Markdown documents into a variety of formats."
+}
+
+conflict r-rmarkdown
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmarkdown-1.7-rm6tohn6h42si6cpcz7cgufvuw57pswq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmarkdown-1.7-rm6tohn6h42si6cpcz7cgufvuw57pswq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rmarkdown-1.7-rm6tohn6h42si6cpcz7cgufvuw57pswq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

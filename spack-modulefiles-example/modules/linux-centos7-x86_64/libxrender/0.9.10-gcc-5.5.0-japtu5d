@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:48.136983
+##
+## libxrender@0.9.10%gcc@5.5.0 arch=linux-centos7-x86_64 /japtu5d
+##
+
+
+module-whatis "libXrender - library for the Render Extension to the X11 protocol."
+
+proc ModulesHelp { } {
+puts stderr "libXrender - library for the Render Extension to the X11 protocol."
+}
+
+conflict libxrender
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxrender-0.9.10-japtu5djbbwr6z3rmboeu73i7r6srbbo/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxrender-0.9.10-japtu5djbbwr6z3rmboeu73i7r6srbbo/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxrender-0.9.10-japtu5djbbwr6z3rmboeu73i7r6srbbo/"
+

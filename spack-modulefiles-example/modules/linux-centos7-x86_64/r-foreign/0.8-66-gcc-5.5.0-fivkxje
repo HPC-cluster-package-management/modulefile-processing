@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:26.495085
+##
+## r-foreign@0.8-66%gcc@5.5.0 arch=linux-centos7-x86_64 /fivkxje
+##
+
+
+module-whatis "Functions for reading and writing data stored by some versions of Epi Info, Minitab, S, SAS, SPSS, Stata, Systat and Weka and for reading and writing some dBase files."
+
+proc ModulesHelp { } {
+puts stderr "Functions for reading and writing data stored by some versions of Epi"
+puts stderr "Info, Minitab, S, SAS, SPSS, Stata, Systat and Weka and for reading and"
+puts stderr "writing some dBase files."
+}
+
+conflict r-foreign
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-foreign-0.8-66-fivkxjellqdv4nr6kabfiyjsabhdwq7s/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-foreign-0.8-66-fivkxjellqdv4nr6kabfiyjsabhdwq7s/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-foreign-0.8-66-fivkxjellqdv4nr6kabfiyjsabhdwq7s/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

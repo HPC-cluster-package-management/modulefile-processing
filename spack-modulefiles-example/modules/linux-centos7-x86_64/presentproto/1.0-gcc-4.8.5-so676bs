@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:21.564439
+##
+## presentproto@1.0%gcc@4.8.5 arch=linux-centos7-x86_64 /so676bs
+##
+
+
+module-whatis "Present protocol specification and Xlib/Xserver headers."
+
+proc ModulesHelp { } {
+puts stderr "Present protocol specification and Xlib/Xserver headers."
+}
+
+conflict presentproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/presentproto-1.0-so676bshkzyhoythbttkgjf7bnmuq3js/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/presentproto-1.0-so676bshkzyhoythbttkgjf7bnmuq3js/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/presentproto-1.0-so676bshkzyhoythbttkgjf7bnmuq3js/"
+

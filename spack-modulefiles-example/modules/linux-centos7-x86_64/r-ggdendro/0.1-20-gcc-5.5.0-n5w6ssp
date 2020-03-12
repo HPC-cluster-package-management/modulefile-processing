@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:03.714029
+##
+## r-ggdendro@0.1-20%gcc@5.5.0 arch=linux-centos7-x86_64 /n5w6ssp
+##
+
+
+module-whatis "This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggplot2' philosophy is to clearly separate data from the presentation. Unfortunately the plot method for dendrograms plots directly to a plot device without exposing the data. The 'ggdendro' package resolves this by making available functions that extract the dendrogram plot data. The package provides implementations for tree, rpart, as well as diana and agnes cluster diagrams."
+
+proc ModulesHelp { } {
+puts stderr "This is a set of tools for dendrograms and tree plots using 'ggplot2'."
+puts stderr "The 'ggplot2' philosophy is to clearly separate data from the"
+puts stderr "presentation. Unfortunately the plot method for dendrograms plots"
+puts stderr "directly to a plot device without exposing the data. The 'ggdendro'"
+puts stderr "package resolves this by making available functions that extract the"
+puts stderr "dendrogram plot data. The package provides implementations for tree,"
+puts stderr "rpart, as well as diana and agnes cluster diagrams."
+}
+
+conflict r-ggdendro
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggdendro-0.1-20-n5w6sspnekkuzmb54poptd67f2c42cwi/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggdendro-0.1-20-n5w6sspnekkuzmb54poptd67f2c42cwi/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-ggdendro-0.1-20-n5w6sspnekkuzmb54poptd67f2c42cwi/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

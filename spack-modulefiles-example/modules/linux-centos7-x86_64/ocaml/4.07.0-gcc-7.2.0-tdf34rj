@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:07.872969
+##
+## ocaml@4.07.0%gcc@7.2.0 arch=linux-centos7-x86_64 /tdf34rj
+##
+
+
+module-whatis "OCaml is an industrial strength programming language supporting functional, imperative and object-oriented styles"
+
+proc ModulesHelp { } {
+puts stderr "OCaml is an industrial strength programming language supporting"
+puts stderr "functional, imperative and object-oriented styles"
+}
+
+conflict ocaml
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ocaml-4.07.0-tdf34rjc25r2gdmwtm4ihmscihgfa32m/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ocaml-4.07.0-tdf34rjc25r2gdmwtm4ihmscihgfa32m/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ocaml-4.07.0-tdf34rjc25r2gdmwtm4ihmscihgfa32m/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ocaml-4.07.0-tdf34rjc25r2gdmwtm4ihmscihgfa32m/"
+

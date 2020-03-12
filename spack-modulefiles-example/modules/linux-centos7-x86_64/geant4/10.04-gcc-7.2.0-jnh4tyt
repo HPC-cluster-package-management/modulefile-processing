@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:07.145666
+##
+## geant4@10.04%gcc@7.2.0 build_type=RelWithDebInfo +cxx11~cxx14~motif~opengl~qt+threads~vecgeom~x11 arch=linux-centos7-x86_64 /jnh4tyt
+##
+## Configure options: -DGEANT4_USE_GDML=ON -DGEANT4_USE_SYSTEM_CLHEP=ON -DGEANT4_USE_G3TOG4=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_BUILD_TLS_MODEL=global-dynamic -DGEANT4_USE_SYSTEM_EXPAT=ON -DGEANT4_USE_SYSTEM_ZLIB=ON -DXERCESC_ROOT_DIR:STRING=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xerces-c-3.2.2-ttj75z35mrv3jlynbi6cszcj5oxievm5 -DGEANT4_BUILD_CXXSTD=c++11 -DGEANT4_BUILD_MULTITHREADED=ON
+##
+
+
+module-whatis "Geant4 is a toolkit for the simulation of the passage of particles through matter. Its areas of application include high energy, nuclear and accelerator physics, as well as studies in medical and space science."
+
+proc ModulesHelp { } {
+puts stderr "Geant4 is a toolkit for the simulation of the passage of particles"
+puts stderr "through matter. Its areas of application include high energy, nuclear"
+puts stderr "and accelerator physics, as well as studies in medical and space"
+puts stderr "science."
+}
+
+conflict geant4
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geant4-10.04-jnh4tytztck7btxbqke557atuucmdbm6/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geant4-10.04-jnh4tytztck7btxbqke557atuucmdbm6/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geant4-10.04-jnh4tytztck7btxbqke557atuucmdbm6/"
+

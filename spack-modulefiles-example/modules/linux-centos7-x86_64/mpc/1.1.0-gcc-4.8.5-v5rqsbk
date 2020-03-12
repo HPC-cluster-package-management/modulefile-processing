@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:58.266455
+##
+## mpc@1.1.0%gcc@4.8.5 arch=linux-centos7-x86_64 /v5rqsbk
+##
+## Configure options: --with-mpfr=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/mpfr-3.1.6-kflyoj7nrj2mht5pf4z7mtkdp4hcbs5v --with-gmp=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gmp-6.1.2-6bsovvkqwx6zscwtbvjj6egrgizbyycm
+##
+
+
+module-whatis "Gnu Mpc is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result."
+
+proc ModulesHelp { } {
+puts stderr "Gnu Mpc is a C library for the arithmetic of complex numbers with"
+puts stderr "arbitrarily high precision and correct rounding of the result."
+}
+
+conflict mpc
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/mpc-1.1.0-v5rqsbkr3zbia475v33ndowqhecvcvzn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/mpc-1.1.0-v5rqsbkr3zbia475v33ndowqhecvcvzn/"
+

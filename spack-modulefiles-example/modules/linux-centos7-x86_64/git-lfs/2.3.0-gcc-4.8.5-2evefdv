@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:08.925778
+##
+## git-lfs@2.3.0%gcc@4.8.5 arch=linux-centos7-x86_64 /2evefdv
+##
+
+
+module-whatis "Git LFS is a system for managing and versioning large files in association with a Git repository. Instead of storing the large files within the Git repository as blobs, Git LFS stores special 'pointer files' in the repository, while storing the actual file contents on a Git LFS server."
+
+proc ModulesHelp { } {
+puts stderr "Git LFS is a system for managing and versioning large files in"
+puts stderr "association with a Git repository. Instead of storing the large files"
+puts stderr "within the Git repository as blobs, Git LFS stores special "pointer"
+puts stderr "files" in the repository, while storing the actual file contents on a"
+puts stderr "Git LFS server."
+}
+
+conflict git-lfs
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/git-lfs-2.3.0-2evefdvr36cpt6dcuvvkg7w7k5nwhmkn/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/git-lfs-2.3.0-2evefdvr36cpt6dcuvvkg7w7k5nwhmkn/"
+

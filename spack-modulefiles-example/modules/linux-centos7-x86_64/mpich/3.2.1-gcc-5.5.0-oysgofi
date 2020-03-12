@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:58.889450
+##
+## mpich@3.2.1%gcc@5.5.0 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-centos7-x86_64 /oysgofi
+##
+## Configure options: --enable-shared --with-pm=hydra --with-pmi=yes --enable-romio --without-ibverbs --with-device=ch3:nemesis:tcp
+##
+
+
+module-whatis "MPICH is a high performance and widely portable implementation of the Message Passing Interface (MPI) standard."
+
+proc ModulesHelp { } {
+puts stderr "MPICH is a high performance and widely portable implementation of the"
+puts stderr "Message Passing Interface (MPI) standard."
+}
+
+conflict mpich
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/mpich-3.2.1-oysgofiyp7rmhjxp7fhvslhxzkhsmpwi/"
+

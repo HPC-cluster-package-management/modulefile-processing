@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:31.392569
+##
+## jellyfish@2.2.7%gcc@7.2.0 arch=linux-centos7-x86_64 /aw3u3qs
+##
+
+
+module-whatis "JELLYFISH is a tool for fast, memory-efficient counting of k-mers in DNA."
+
+proc ModulesHelp { } {
+puts stderr "JELLYFISH is a tool for fast, memory-efficient counting of k-mers in"
+puts stderr "DNA."
+}
+
+conflict jellyfish
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jellyfish-2.2.7-aw3u3qshkn76aam72xli72ksebd4kgx4/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jellyfish-2.2.7-aw3u3qshkn76aam72xli72ksebd4kgx4/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jellyfish-2.2.7-aw3u3qshkn76aam72xli72ksebd4kgx4/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jellyfish-2.2.7-aw3u3qshkn76aam72xli72ksebd4kgx4/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jellyfish-2.2.7-aw3u3qshkn76aam72xli72ksebd4kgx4/"
+

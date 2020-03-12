@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:50.728429
+##
+## r-rtracklayer@1.40.5%gcc@5.5.0 arch=linux-centos7-x86_64 /m6ji6ax
+##
+
+
+module-whatis "Extensible framework for interacting with multiple genome browsers (currently UCSC built-in) and manipulating annotation tracks in various formats (currently GFF, BED, bedGraph, BED15, WIG, BigWig and 2bit built-in). The user may export/import tracks to/from the supported browsers, as well as query and modify the browser state, such as the current viewport."
+
+proc ModulesHelp { } {
+puts stderr "Extensible framework for interacting with multiple genome browsers"
+puts stderr "(currently UCSC built-in) and manipulating annotation tracks in various"
+puts stderr "formats (currently GFF, BED, bedGraph, BED15, WIG, BigWig and 2bit"
+puts stderr "built-in). The user may export/import tracks to/from the supported"
+puts stderr "browsers, as well as query and modify the browser state, such as the"
+puts stderr "current viewport."
+}
+
+conflict r-rtracklayer
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rtracklayer-1.40.5-m6ji6axw7h5metffxf7chyf2u4mvasv5/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rtracklayer-1.40.5-m6ji6axw7h5metffxf7chyf2u4mvasv5/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-rtracklayer-1.40.5-m6ji6axw7h5metffxf7chyf2u4mvasv5/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

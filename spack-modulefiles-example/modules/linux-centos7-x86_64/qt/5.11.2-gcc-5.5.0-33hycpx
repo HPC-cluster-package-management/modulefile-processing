@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:37.442924
+##
+## qt@5.11.2%gcc@5.5.0~dbus~examples~gtk~krellpatch+opengl patches=7f34d48d2faaa108dc3fcc47187af1ccd1d37ee0f931b42597b820f03a99864c,c52f72dac7fdff5a296467536cc9ea024d78f94b49903286395f53fd0eb66e5e ~phonon~webkit arch=linux-centos7-x86_64 /33hycpx
+##
+
+
+module-whatis "Qt is a comprehensive cross-platform C++ application framework."
+
+proc ModulesHelp { } {
+puts stderr "Qt is a comprehensive cross-platform C++ application framework."
+}
+
+conflict qt
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/qt-5.11.2-33hycpxzo3ljtzb655lvmc7qukizd5po/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/qt-5.11.2-33hycpxzo3ljtzb655lvmc7qukizd5po/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/qt-5.11.2-33hycpxzo3ljtzb655lvmc7qukizd5po/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/qt-5.11.2-33hycpxzo3ljtzb655lvmc7qukizd5po/"
+setenv QTDIR "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/qt-5.11.2-33hycpxzo3ljtzb655lvmc7qukizd5po"
+

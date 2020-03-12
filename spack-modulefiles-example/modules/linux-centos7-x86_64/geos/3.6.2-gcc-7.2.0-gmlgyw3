@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:07.334780
+##
+## geos@3.6.2%gcc@7.2.0~python~ruby arch=linux-centos7-x86_64 /gmlgyw3
+##
+## Configure options: --disable-ruby --disable-python
+##
+
+
+module-whatis "GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology Suite (JTS). As such, it aims to contain the complete functionality of JTS in C++. This includes all the OpenGIS Simple Features for SQL spatial predicate functions and spatial operators, as well as specific JTS enhanced topology functions."
+
+proc ModulesHelp { } {
+puts stderr "GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology"
+puts stderr "Suite (JTS). As such, it aims to contain the complete functionality of"
+puts stderr "JTS in C++. This includes all the OpenGIS Simple Features for SQL"
+puts stderr "spatial predicate functions and spatial operators, as well as specific"
+puts stderr "JTS enhanced topology functions."
+}
+
+conflict geos
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geos-3.6.2-gmlgyw3uf2tsl2sesovgnth7trnvi23a/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geos-3.6.2-gmlgyw3uf2tsl2sesovgnth7trnvi23a/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/geos-3.6.2-gmlgyw3uf2tsl2sesovgnth7trnvi23a/"
+

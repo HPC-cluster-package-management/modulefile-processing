@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:16.075027
+##
+## r-dplyr@0.7.5%gcc@5.5.0 arch=linux-centos7-x86_64 /shy2cbp
+##
+
+
+module-whatis "A fast, consistent tool for working with data frame like objects, both in memory and out of memory."
+
+proc ModulesHelp { } {
+puts stderr "A fast, consistent tool for working with data frame like objects, both"
+puts stderr "in memory and out of memory."
+}
+
+conflict r-dplyr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dplyr-0.7.5-shy2cbpf2qancrei5shpym7tan6lotac/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dplyr-0.7.5-shy2cbpf2qancrei5shpym7tan6lotac/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-dplyr-0.7.5-shy2cbpf2qancrei5shpym7tan6lotac/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

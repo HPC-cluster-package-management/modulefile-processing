@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:41.111690
+##
+## libxau@1.0.8%gcc@4.8.5 arch=linux-centos7-x86_64 /kku56cg
+##
+
+
+module-whatis "The libXau package contains a library implementing the X11 Authorization Protocol. This is useful for restricting client access to the display."
+
+proc ModulesHelp { } {
+puts stderr "The libXau package contains a library implementing the X11 Authorization"
+puts stderr "Protocol. This is useful for restricting client access to the display."
+}
+
+conflict libxau
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libxau-1.0.8-kku56cgglvfdwf363fa65en25dbcesso/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libxau-1.0.8-kku56cgglvfdwf363fa65en25dbcesso/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libxau-1.0.8-kku56cgglvfdwf363fa65en25dbcesso/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libxau-1.0.8-kku56cgglvfdwf363fa65en25dbcesso/"
+

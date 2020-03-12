@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:29.130056
+##
+## inputproto@2.3.2%gcc@5.5.0 arch=linux-centos7-x86_64 /7uc55x4
+##
+
+
+module-whatis "X Input Extension."
+
+proc ModulesHelp { } {
+puts stderr "X Input Extension. This extension defines a protocol to provide"
+puts stderr "additional input devices management such as graphic tablets."
+}
+
+conflict inputproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/inputproto-2.3.2-7uc55x4lyx6phgpsrghz6h5dxh3p6mux/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/inputproto-2.3.2-7uc55x4lyx6phgpsrghz6h5dxh3p6mux/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/inputproto-2.3.2-7uc55x4lyx6phgpsrghz6h5dxh3p6mux/"
+

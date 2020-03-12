@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:28.766026
+##
+## icu4c@60.1%gcc@7.2.0 arch=linux-centos7-x86_64 /3zgs7km
+##
+
+
+module-whatis "ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU4C is the C/C++ interface."
+
+proc ModulesHelp { } {
+puts stderr "ICU is a mature, widely used set of C/C++ and Java libraries providing"
+puts stderr "Unicode and Globalization support for software applications. ICU4C is"
+puts stderr "the C/C++ interface."
+}
+
+conflict icu4c
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/icu4c-60.1-3zgs7kmuslsjglibp7e3t5tgdjgkzktx/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/icu4c-60.1-3zgs7kmuslsjglibp7e3t5tgdjgkzktx/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/icu4c-60.1-3zgs7kmuslsjglibp7e3t5tgdjgkzktx/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/icu4c-60.1-3zgs7kmuslsjglibp7e3t5tgdjgkzktx/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/icu4c-60.1-3zgs7kmuslsjglibp7e3t5tgdjgkzktx/"
+

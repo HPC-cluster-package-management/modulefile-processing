@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:56.801028
+##
+## elpa@2016.11.001.pre%gcc@7.2.0~openmp+optflags arch=linux-centos7-x86_64 /64xrta4
+##
+## Configure options: FCFLAGS=-O2 -march=native -ffree-line-length-none CFLAGS=-O2 -march=native -mavx -mfma -funsafe-loop-optimizations -funsafe-math-optimizations -ftree-vect-loop-version -ftree-vectorize
+##
+
+
+module-whatis "Eigenvalue solvers for Petaflop-Applications (ELPA)"
+
+proc ModulesHelp { } {
+puts stderr "Eigenvalue solvers for Petaflop-Applications (ELPA)"
+}
+
+conflict elpa
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/elpa-2016.11.001.pre-64xrta4kf4otsm267y37xvojmjrcugrt/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/elpa-2016.11.001.pre-64xrta4kf4otsm267y37xvojmjrcugrt/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/elpa-2016.11.001.pre-64xrta4kf4otsm267y37xvojmjrcugrt/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/elpa-2016.11.001.pre-64xrta4kf4otsm267y37xvojmjrcugrt/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/elpa-2016.11.001.pre-64xrta4kf4otsm267y37xvojmjrcugrt/"
+

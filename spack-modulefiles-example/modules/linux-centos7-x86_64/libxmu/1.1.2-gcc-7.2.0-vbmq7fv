@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:47.090127
+##
+## libxmu@1.1.2%gcc@7.2.0 arch=linux-centos7-x86_64 /vbmq7fv
+##
+
+
+module-whatis "This library contains miscellaneous utilities and is not part of the Xlib standard. It contains routines which only use public interfaces so that it may be layered on top of any proprietary implementation of Xlib or Xt."
+
+proc ModulesHelp { } {
+puts stderr "This library contains miscellaneous utilities and is not part of the"
+puts stderr "Xlib standard. It contains routines which only use public interfaces so"
+puts stderr "that it may be layered on top of any proprietary implementation of Xlib"
+puts stderr "or Xt."
+}
+
+conflict libxmu
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxmu-1.1.2-vbmq7fvao6nplory7dthuped6khypqd2/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxmu-1.1.2-vbmq7fvao6nplory7dthuped6khypqd2/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxmu-1.1.2-vbmq7fvao6nplory7dthuped6khypqd2/"
+

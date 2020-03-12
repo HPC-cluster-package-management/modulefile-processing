@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:05.803421
+##
+## r-lattice@0.20-35%gcc@7.2.0 arch=linux-centos7-x86_64 /cnct4qc
+##
+
+
+module-whatis "A powerful and elegant high-level data visualization system inspired by Trellis graphics, with an emphasis on multivariate data. Lattice is sufficient for typical graphics needs, and is also flexible enough to handle most nonstandard requirements. See ?Lattice for an introduction."
+
+proc ModulesHelp { } {
+puts stderr "A powerful and elegant high-level data visualization system inspired by"
+puts stderr "Trellis graphics, with an emphasis on multivariate data. Lattice is"
+puts stderr "sufficient for typical graphics needs, and is also flexible enough to"
+puts stderr "handle most nonstandard requirements. See ?Lattice for an introduction."
+}
+
+conflict r-lattice
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-lattice-0.20-35-cnct4qcrx53xcqueou7ev2iwfhwmlguw/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-lattice-0.20-35-cnct4qcrx53xcqueou7ev2iwfhwmlguw/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-lattice-0.20-35-cnct4qcrx53xcqueou7ev2iwfhwmlguw/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

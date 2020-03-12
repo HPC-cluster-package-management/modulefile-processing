@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:56.465871
+##
+## meson@0.42.0%gcc@7.2.0+ninjabuild arch=linux-centos7-x86_64 /rakocj2
+##
+
+
+module-whatis "Meson is a portable open source build system meant to be both extremely fast, and as user friendly as possible."
+
+proc ModulesHelp { } {
+puts stderr "Meson is a portable open source build system meant to be both extremely"
+puts stderr "fast, and as user friendly as possible."
+}
+
+conflict meson
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/meson-0.42.0-rakocj27boqcgkjvxexqzuh745prniw4/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/meson-0.42.0-rakocj27boqcgkjvxexqzuh745prniw4/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/meson-0.42.0-rakocj27boqcgkjvxexqzuh745prniw4/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/meson-0.42.0-rakocj27boqcgkjvxexqzuh745prniw4/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/meson-0.42.0-rakocj27boqcgkjvxexqzuh745prniw4/lib/python3.7/site-packages"
+

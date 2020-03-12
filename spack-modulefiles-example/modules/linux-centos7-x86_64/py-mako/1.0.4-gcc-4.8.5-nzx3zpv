@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:25.476989
+##
+## py-mako@1.0.4%gcc@4.8.5 arch=linux-centos7-x86_64 /nzx3zpv
+##
+
+
+module-whatis "A super-fast templating language that borrows the best ideas from the existing templating languages."
+
+proc ModulesHelp { } {
+puts stderr "A super-fast templating language that borrows the best ideas from the"
+puts stderr "existing templating languages."
+}
+
+conflict py-mako
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/py-mako-1.0.4-nzx3zpv6bpm4rvbcwag2ynm3czi3oqek/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/py-mako-1.0.4-nzx3zpv6bpm4rvbcwag2ynm3czi3oqek/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/py-mako-1.0.4-nzx3zpv6bpm4rvbcwag2ynm3czi3oqek/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/py-mako-1.0.4-nzx3zpv6bpm4rvbcwag2ynm3czi3oqek/lib/python2.7/site-packages"
+

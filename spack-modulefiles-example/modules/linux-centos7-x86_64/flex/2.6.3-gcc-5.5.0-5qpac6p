@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:00.166200
+##
+## flex@2.6.3%gcc@5.5.0+lex arch=linux-centos7-x86_64 /5qpac6p
+##
+
+
+module-whatis "Flex is a tool for generating scanners."
+
+proc ModulesHelp { } {
+puts stderr "Flex is a tool for generating scanners."
+}
+
+conflict flex
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/flex-2.6.3-5qpac6pkig3v7m4bgva2wyonvsq4qcnb/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/flex-2.6.3-5qpac6pkig3v7m4bgva2wyonvsq4qcnb/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/flex-2.6.3-5qpac6pkig3v7m4bgva2wyonvsq4qcnb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/flex-2.6.3-5qpac6pkig3v7m4bgva2wyonvsq4qcnb/"
+

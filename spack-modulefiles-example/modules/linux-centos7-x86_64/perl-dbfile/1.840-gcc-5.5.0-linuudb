@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:17.287587
+##
+## perl-dbfile@1.840%gcc@5.5.0 arch=linux-centos7-x86_64 /linuudb
+##
+
+
+module-whatis "DB_File is a module which allows Perl programs to make use of the facilities provided by Berkeley DB version 1.x (if you have a newer version of DB, see 'Using DB_File with Berkeley DB version 2 or greater'). It is assumed that you have a copy of the Berkeley DB manual pages at hand when reading this documentation. The interface defined here mirrors the Berkeley DB interface closely."
+
+proc ModulesHelp { } {
+puts stderr "DB_File is a module which allows Perl programs to make use of the"
+puts stderr "facilities provided by Berkeley DB version 1.x (if you have a newer"
+puts stderr "version of DB, see "Using DB_File with Berkeley DB version 2 or"
+puts stderr "greater"). It is assumed that you have a copy of the Berkeley DB manual"
+puts stderr "pages at hand when reading this documentation. The interface defined"
+puts stderr "here mirrors the Berkeley DB interface closely."
+}
+
+conflict perl-dbfile
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-dbfile-1.840-linuudbi2oqlx6bd57l2dulk6g7oklgn/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-dbfile-1.840-linuudbi2oqlx6bd57l2dulk6g7oklgn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-dbfile-1.840-linuudbi2oqlx6bd57l2dulk6g7oklgn/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-dbfile-1.840-linuudbi2oqlx6bd57l2dulk6g7oklgn/bin"
+prepend-path PERL5LIB "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/perl-dbfile-1.840-linuudbi2oqlx6bd57l2dulk6g7oklgn/lib/perl5"
+

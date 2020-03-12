@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:43.791787
+##
+## libxdmcp@1.1.2%gcc@7.2.0 arch=linux-centos7-x86_64 /vna7k5v
+##
+
+
+module-whatis "libXdmcp - X Display Manager Control Protocol library."
+
+proc ModulesHelp { } {
+puts stderr "libXdmcp - X Display Manager Control Protocol library."
+}
+
+conflict libxdmcp
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdmcp-1.1.2-vna7k5vznqwyguh7owb3jlynomtz7czh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdmcp-1.1.2-vna7k5vznqwyguh7owb3jlynomtz7czh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxdmcp-1.1.2-vna7k5vznqwyguh7owb3jlynomtz7czh/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:28.406050
+##
+## hypre@2.15.1%gcc@7.2.0~debug~int64~internal-superlu+mpi+shared arch=linux-centos7-x86_64 /hbi467b
+##
+
+
+module-whatis "Hypre is a library of high performance preconditioners that features parallel multigrid methods for both structured and unstructured grid problems."
+
+proc ModulesHelp { } {
+puts stderr "Hypre is a library of high performance preconditioners that features"
+puts stderr "parallel multigrid methods for both structured and unstructured grid"
+puts stderr "problems."
+}
+
+conflict hypre
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hypre-2.15.1-hbi467bi4urpqea3n2ark6pq2bokc7l3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/hypre-2.15.1-hbi467bi4urpqea3n2ark6pq2bokc7l3/"
+

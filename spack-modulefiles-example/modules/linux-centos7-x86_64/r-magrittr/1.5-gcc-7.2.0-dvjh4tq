@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:18.576262
+##
+## r-magrittr@1.5%gcc@7.2.0 arch=linux-centos7-x86_64 /dvjh4tq
+##
+
+
+module-whatis "Provides a mechanism for chaining commands with a new forward-pipe operator, %>%. This operator will forward a value, or the result of an expression, into the next function call/expression. There is flexible support for the type of right-hand side expressions. For more information, see package vignette."
+
+proc ModulesHelp { } {
+puts stderr "Provides a mechanism for chaining commands with a new forward-pipe"
+puts stderr "operator, %>%. This operator will forward a value, or the result of an"
+puts stderr "expression, into the next function call/expression. There is flexible"
+puts stderr "support for the type of right-hand side expressions. For more"
+puts stderr "information, see package vignette."
+}
+
+conflict r-magrittr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-magrittr-1.5-dvjh4tqpgujhicdltwviiq6ejebujroq/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-magrittr-1.5-dvjh4tqpgujhicdltwviiq6ejebujroq/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-magrittr-1.5-dvjh4tqpgujhicdltwviiq6ejebujroq/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

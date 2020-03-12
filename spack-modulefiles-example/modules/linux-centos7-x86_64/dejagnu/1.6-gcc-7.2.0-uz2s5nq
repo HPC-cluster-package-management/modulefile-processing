@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:54.164838
+##
+## dejagnu@1.6%gcc@7.2.0 arch=linux-centos7-x86_64 /uz2s5nq
+##
+
+
+module-whatis "DejaGnu is a framework for testing other programs. Its purpose is to provide a single front end for all tests."
+
+proc ModulesHelp { } {
+puts stderr "DejaGnu is a framework for testing other programs. Its purpose is to"
+puts stderr "provide a single front end for all tests."
+}
+
+conflict dejagnu
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dejagnu-1.6-uz2s5nqmvvjc6piykv2k5wi7hbr5qqep/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dejagnu-1.6-uz2s5nqmvvjc6piykv2k5wi7hbr5qqep/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dejagnu-1.6-uz2s5nqmvvjc6piykv2k5wi7hbr5qqep/"
+

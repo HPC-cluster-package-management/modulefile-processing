@@ -1,0 +1,18 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:52.182831
+##
+## cdbfasta@2017-03-16%gcc@7.2.0 arch=linux-centos7-x86_64 /6n4l6vi
+##
+
+
+module-whatis "Fast indexing and retrieval of fasta records from flat file databases"
+
+proc ModulesHelp { } {
+puts stderr "Fast indexing and retrieval of fasta records from flat file databases"
+}
+
+conflict cdbfasta
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cdbfasta-2017-03-16-6n4l6vispsfxrvgpk3ip2tecwjirthot/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/cdbfasta-2017-03-16-6n4l6vispsfxrvgpk3ip2tecwjirthot/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:47.397288
+##
+## libxpm@3.5.12%gcc@5.5.0 arch=linux-centos7-x86_64 /mf62jpz
+##
+
+
+module-whatis "libXpm - X Pixmap (XPM) image file format library."
+
+proc ModulesHelp { } {
+puts stderr "libXpm - X Pixmap (XPM) image file format library."
+}
+
+conflict libxpm
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxpm-3.5.12-mf62jpzq6jicgj7fqgfpybsssgl55hci/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxpm-3.5.12-mf62jpzq6jicgj7fqgfpybsssgl55hci/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxpm-3.5.12-mf62jpzq6jicgj7fqgfpybsssgl55hci/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxpm-3.5.12-mf62jpzq6jicgj7fqgfpybsssgl55hci/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxpm-3.5.12-mf62jpzq6jicgj7fqgfpybsssgl55hci/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:26.340934
+##
+## wannier90@2.1.0%gcc@7.2.0 arch=linux-centos7-x86_64 /kul7uaf
+##
+
+
+module-whatis "Wannier90 calculates maximally-localised Wannier functions (MLWFs)."
+
+proc ModulesHelp { } {
+puts stderr "Wannier90 calculates maximally-localised Wannier functions (MLWFs)."
+puts stderr "Wannier90 is released under the GNU General Public License."
+}
+
+conflict wannier90
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/wannier90-2.1.0-kul7uafn6su6bqnqb6ma7iyzi2vrsnuf/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/wannier90-2.1.0-kul7uafn6su6bqnqb6ma7iyzi2vrsnuf/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/wannier90-2.1.0-kul7uafn6su6bqnqb6ma7iyzi2vrsnuf/"
+

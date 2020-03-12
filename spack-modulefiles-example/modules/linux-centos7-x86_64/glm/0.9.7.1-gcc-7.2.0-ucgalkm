@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:11.622310
+##
+## glm@0.9.7.1%gcc@7.2.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64 /ucgalkm
+##
+
+
+module-whatis "OpenGL Mathematics (GLM) is a header only C++ mathematics library for graphics software based on the OpenGL Shading Language (GLSL) specification "
+
+proc ModulesHelp { } {
+puts stderr "OpenGL Mathematics (GLM) is a header only C++ mathematics library for"
+puts stderr "graphics software based on the OpenGL Shading Language (GLSL)"
+puts stderr "specification"
+}
+
+conflict glm
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glm-0.9.7.1-ucgalkmaemrvgbcen5gdwy6wkeqsvzgj/lib64"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glm-0.9.7.1-ucgalkmaemrvgbcen5gdwy6wkeqsvzgj/"
+

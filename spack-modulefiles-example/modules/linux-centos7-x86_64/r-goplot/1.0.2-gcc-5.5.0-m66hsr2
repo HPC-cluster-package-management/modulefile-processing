@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:13.370061
+##
+## r-goplot@1.0.2%gcc@5.5.0 arch=linux-centos7-x86_64 /m66hsr2
+##
+
+
+module-whatis "Implementation of multilayered visualizations for enhanced graphical representation of functional analysis data. It combines and integrates omics data derived from expression and functional annotation enrichment analyses. Its plotting functions have been developed with an hierarchical structure in mind: starting from a general overview to identify the most enriched categories (modified bar plot, bubble plot) to a more detailed one displaying different types of relevant information for the molecules in a given set of categories (circle plot, chord plot, cluster plot, Venn diagram, heatmap)."
+
+proc ModulesHelp { } {
+puts stderr "Implementation of multilayered visualizations for enhanced graphical"
+puts stderr "representation of functional analysis data. It combines and integrates"
+puts stderr "omics data derived from expression and functional annotation enrichment"
+puts stderr "analyses. Its plotting functions have been developed with an"
+puts stderr "hierarchical structure in mind: starting from a general overview to"
+puts stderr "identify the most enriched categories (modified bar plot, bubble plot)"
+puts stderr "to a more detailed one displaying different types of relevant"
+puts stderr "information for the molecules in a given set of categories (circle plot,"
+puts stderr "chord plot, cluster plot, Venn diagram, heatmap)."
+}
+
+conflict r-goplot
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-goplot-1.0.2-m66hsr26b3xg3hxnnujdu4xrnswpzgi3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-goplot-1.0.2-m66hsr26b3xg3hxnnujdu4xrnswpzgi3/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-goplot-1.0.2-m66hsr26b3xg3hxnnujdu4xrnswpzgi3/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

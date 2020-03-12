@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:59.871141
+##
+## r-progress@1.1.2%gcc@5.5.0 arch=linux-centos7-x86_64 /lxryhsj
+##
+
+
+module-whatis "Configurable Progress bars, they may include percentage, elapsed time, and/or the estimated completion time. They work in terminals, in 'Emacs' 'ESS', 'RStudio', 'Windows' 'Rgui' and the 'macOS' 'R.app'. The package also provides a 'C++' 'API', that works with or without 'Rcpp'."
+
+proc ModulesHelp { } {
+puts stderr "Configurable Progress bars, they may include percentage, elapsed time,"
+puts stderr "and/or the estimated completion time. They work in terminals, in 'Emacs'"
+puts stderr "'ESS', 'RStudio', 'Windows' 'Rgui' and the 'macOS' 'R.app'. The package"
+puts stderr "also provides a 'C++' 'API', that works with or without 'Rcpp'."
+}
+
+conflict r-progress
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-progress-1.1.2-lxryhsjliu7mrqn5ur7kucinqnpdpumy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-progress-1.1.2-lxryhsjliu7mrqn5ur7kucinqnpdpumy/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-progress-1.1.2-lxryhsjliu7mrqn5ur7kucinqnpdpumy/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

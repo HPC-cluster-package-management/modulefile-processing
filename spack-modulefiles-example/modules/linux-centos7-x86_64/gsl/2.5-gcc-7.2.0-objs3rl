@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:18.521350
+##
+## gsl@2.5%gcc@7.2.0 arch=linux-centos7-x86_64 /objs3rl
+##
+
+
+module-whatis "The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers. It is free software under the GNU General Public License. The library provides a wide range of mathematical routines such as random number generators, special functions and least-squares fitting. There are over 1000 functions in total with an extensive test suite."
+
+proc ModulesHelp { } {
+puts stderr "The GNU Scientific Library (GSL) is a numerical library for C and C++"
+puts stderr "programmers. It is free software under the GNU General Public License."
+puts stderr "The library provides a wide range of mathematical routines such as"
+puts stderr "random number generators, special functions and least-squares fitting."
+puts stderr "There are over 1000 functions in total with an extensive test suite."
+}
+
+conflict gsl
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gsl-2.5-objs3rlgk4zho3gex3u2pwquxlw723wy/"
+

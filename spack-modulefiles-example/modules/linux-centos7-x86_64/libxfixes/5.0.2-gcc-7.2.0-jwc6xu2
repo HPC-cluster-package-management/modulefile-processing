@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:44.969831
+##
+## libxfixes@5.0.2%gcc@7.2.0 arch=linux-centos7-x86_64 /jwc6xu2
+##
+
+
+module-whatis "This package contains header files and documentation for the XFIXES extension. Library and server implementations are separate."
+
+proc ModulesHelp { } {
+puts stderr "This package contains header files and documentation for the XFIXES"
+puts stderr "extension. Library and server implementations are separate."
+}
+
+conflict libxfixes
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxfixes-5.0.2-jwc6xu22gr4htanboyck3twsdqoogjmc/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxfixes-5.0.2-jwc6xu22gr4htanboyck3twsdqoogjmc/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxfixes-5.0.2-jwc6xu22gr4htanboyck3twsdqoogjmc/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxfixes-5.0.2-jwc6xu22gr4htanboyck3twsdqoogjmc/"
+

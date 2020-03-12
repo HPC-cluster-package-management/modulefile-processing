@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.085894
+##
+## spark@2.3.0%gcc@7.2.0~hadoop arch=linux-centos7-x86_64 /6wrnon4
+##
+
+
+module-whatis "Apache Spark is a fast and general engine for large-scale data processing. "
+
+proc ModulesHelp { } {
+puts stderr "Apache Spark is a fast and general engine for large-scale data"
+puts stderr "processing."
+}
+
+conflict spark
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/spark-2.3.0-6wrnon4qtcdlwecywk4qusfzxx7qvuwf/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/spark-2.3.0-6wrnon4qtcdlwecywk4qusfzxx7qvuwf/"
+

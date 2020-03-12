@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:42.440150
+##
+## libxc@3.0.0%gcc@7.2.0 arch=linux-centos7-x86_64 /mltmdsz
+##
+## Configure options: --enable-shared
+##
+
+
+module-whatis "Libxc is a library of exchange-correlation functionals for density-functional theory."
+
+proc ModulesHelp { } {
+puts stderr "Libxc is a library of exchange-correlation functionals for density-"
+puts stderr "functional theory."
+}
+
+conflict libxc
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxc-3.0.0-mltmdszlvkzbhsikk7aosr6p3ui3uedr/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxc-3.0.0-mltmdszlvkzbhsikk7aosr6p3ui3uedr/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxc-3.0.0-mltmdszlvkzbhsikk7aosr6p3ui3uedr/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxc-3.0.0-mltmdszlvkzbhsikk7aosr6p3ui3uedr/"
+

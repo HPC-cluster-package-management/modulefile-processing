@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:08.479746
+##
+## openbabel@2.4.1%gcc@7.2.0 build_type=RelWithDebInfo patches=a8c813c41815f03cbe20ecf9b727e7b5b87b698205e0ab2bb854b1f552acbb60,ad13b352345019d53f58079dd77c05ba73210e514674eacafc6b05bcd20fd74e +python arch=linux-centos7-x86_64 /pezttye
+##
+## Configure options: -DPYTHON_BINDINGS=ON -DPYTHON_EXECUTABLE=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/python-2.7.15-uypkqaoscdqusojb67o7b724cycfi7j2/bin/python2.7
+##
+
+
+module-whatis "Open Babel is a chemical toolbox designed to speak the many languages of chemical data. It's an open, collaborative project allowing anyone to search, convert, analyze, or store data from molecular modeling, chemistry, solid-state materials, biochemistry, or related areas."
+
+proc ModulesHelp { } {
+puts stderr "Open Babel is a chemical toolbox designed to speak the many languages of"
+puts stderr "chemical data. It's an open, collaborative project allowing anyone to"
+puts stderr "search, convert, analyze, or store data from molecular modeling,"
+puts stderr "chemistry, solid-state materials, biochemistry, or related areas."
+}
+
+conflict openbabel
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/openbabel-2.4.1-pezttye3y3jj4bfmgox5jkgdyrou7yig/lib/python2.7/site-packages"
+

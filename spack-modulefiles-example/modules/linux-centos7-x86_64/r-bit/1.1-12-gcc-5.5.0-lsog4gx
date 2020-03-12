@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:20.796919
+##
+## r-bit@1.1-12%gcc@5.5.0 arch=linux-centos7-x86_64 /lsog4gx
+##
+
+
+module-whatis " A class for vectors of 1-bit booleans."
+
+proc ModulesHelp { } {
+puts stderr " A class for vectors of 1-bit booleans."
+}
+
+conflict r-bit
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit-1.1-12-lsog4gxbtxppbty2uqucf237dx5alvdb/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit-1.1-12-lsog4gxbtxppbty2uqucf237dx5alvdb/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bit-1.1-12-lsog4gxbtxppbty2uqucf237dx5alvdb/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:46.353440
+##
+## libxml2@2.7.8%gcc@7.2.0~python arch=linux-centos7-x86_64 /pj5ryik
+##
+## Configure options: --with-lzma=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/xz-5.2.4-tn4b4qxe4pvdtnee5qbbpldysgkgmzzh --without-python
+##
+
+
+module-whatis "Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License."
+
+proc ModulesHelp { } {
+puts stderr "Libxml2 is the XML C parser and toolkit developed for the Gnome project"
+puts stderr "(but usable outside of the Gnome platform), it is free software"
+puts stderr "available under the MIT License."
+}
+
+conflict libxml2
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxml2-2.7.8-pj5ryikaggvygscxy5we2lfshnvcdhg5/"
+

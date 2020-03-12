@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:52.255657
+##
+## lz4@1.8.1.2%gcc@7.2.0 arch=linux-centos7-x86_64 /flktxhb
+##
+
+
+module-whatis "LZ4 is lossless compression algorithm, providing compression speed at 400 MB/s per core, scalable with multi-cores CPU. It also features an extremely fast decoder, with speed in multiple GB/s per core, typically reaching RAM speed limits on multi-core systems."
+
+proc ModulesHelp { } {
+puts stderr "LZ4 is lossless compression algorithm, providing compression speed at"
+puts stderr "400 MB/s per core, scalable with multi-cores CPU. It also features an"
+puts stderr "extremely fast decoder, with speed in multiple GB/s per core, typically"
+puts stderr "reaching RAM speed limits on multi-core systems."
+}
+
+conflict lz4
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lz4-1.8.1.2-flktxhbvimu3vovtedqojogulexne2hn/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lz4-1.8.1.2-flktxhbvimu3vovtedqojogulexne2hn/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lz4-1.8.1.2-flktxhbvimu3vovtedqojogulexne2hn/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lz4-1.8.1.2-flktxhbvimu3vovtedqojogulexne2hn/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lz4-1.8.1.2-flktxhbvimu3vovtedqojogulexne2hn/"
+

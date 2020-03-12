@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:07.880922
+##
+## structure@2.3.4%gcc@7.2.0 arch=linux-centos7-x86_64 /oxrqglw
+##
+
+
+module-whatis "Structure is a free software package for using multi-locus genotype data to investigate population structure."
+
+proc ModulesHelp { } {
+puts stderr "Structure is a free software package for using multi-locus genotype data"
+puts stderr "to investigate population structure."
+}
+
+conflict structure
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/structure-2.3.4-oxrqglwx3e2oykfsdskgrgbq4njjzf6x/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/structure-2.3.4-oxrqglwx3e2oykfsdskgrgbq4njjzf6x/"
+

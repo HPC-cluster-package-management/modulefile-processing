@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:59.650495
+##
+## r-selectr@0.3-1%gcc@5.5.0 arch=linux-centos7-x86_64 /c6nx66i
+##
+
+
+module-whatis "Translates a CSS3 selector into an equivalent XPath expression. This allows us to use CSS selectors when working with the XML package as it can only evaluate XPath expressions. Also provided are convenience functions useful for using CSS selectors on XML nodes. This package is a port of the Python package 'cssselect' (<https://pythonhosted.org/cssselect/>)."
+
+proc ModulesHelp { } {
+puts stderr "Translates a CSS3 selector into an equivalent XPath expression. This"
+puts stderr "allows us to use CSS selectors when working with the XML package as it"
+puts stderr "can only evaluate XPath expressions. Also provided are convenience"
+puts stderr "functions useful for using CSS selectors on XML nodes. This package is a"
+puts stderr "port of the Python package 'cssselect'"
+puts stderr "(<https://pythonhosted.org/cssselect/>)."
+}
+
+conflict r-selectr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-selectr-0.3-1-c6nx66itc57futktlrabraw7wyyj2i7t/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-selectr-0.3-1-c6nx66itc57futktlrabraw7wyyj2i7t/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-selectr-0.3-1-c6nx66itc57futktlrabraw7wyyj2i7t/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

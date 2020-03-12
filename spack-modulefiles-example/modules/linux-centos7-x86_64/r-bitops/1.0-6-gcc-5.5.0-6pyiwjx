@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:05:25.398107
+##
+## r-bitops@1.0-6%gcc@5.5.0 arch=linux-centos7-x86_64 /6pyiwjx
+##
+
+
+module-whatis "Functions for bitwise operations on integer vectors."
+
+proc ModulesHelp { } {
+puts stderr "Functions for bitwise operations on integer vectors."
+}
+
+conflict r-bitops
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bitops-1.0-6-6pyiwjx77aqmr4rmfhoiqcwvvq6wu2kt/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bitops-1.0-6-6pyiwjx77aqmr4rmfhoiqcwvvq6wu2kt/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-bitops-1.0-6-6pyiwjx77aqmr4rmfhoiqcwvvq6wu2kt/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

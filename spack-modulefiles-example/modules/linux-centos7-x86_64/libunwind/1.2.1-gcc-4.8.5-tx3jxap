@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:40.296952
+##
+## libunwind@1.2.1%gcc@4.8.5~xz arch=linux-centos7-x86_64 /tx3jxap
+##
+## Configure options: --disable-minidebuginfo
+##
+
+
+module-whatis "A portable and efficient C programming interface (API) to determine the call-chain of a program."
+
+proc ModulesHelp { } {
+puts stderr "A portable and efficient C programming interface (API) to determine the"
+puts stderr "call-chain of a program."
+}
+
+conflict libunwind
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libunwind-1.2.1-tx3jxapeb4j2nr4uwzq3cjkaq7atilig/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libunwind-1.2.1-tx3jxapeb4j2nr4uwzq3cjkaq7atilig/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libunwind-1.2.1-tx3jxapeb4j2nr4uwzq3cjkaq7atilig/"
+

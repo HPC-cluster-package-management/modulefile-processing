@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:42.073096
+##
+## atlas@3.10.2%gcc@7.2.0+shared threads=none arch=linux-centos7-x86_64 /h2boyh7
+##
+
+
+module-whatis "Automatically Tuned Linear Algebra Software, generic shared ATLAS is an approach for the automatic generation and optimization of numerical software. Currently ATLAS supplies optimized versions for the complete set of linear algebra kernels known as the Basic Linear Algebra Subroutines (BLAS), and a subset of the linear algebra routines in the LAPACK library. "
+
+proc ModulesHelp { } {
+puts stderr "Automatically Tuned Linear Algebra Software, generic shared ATLAS is an"
+puts stderr "approach for the automatic generation and optimization of numerical"
+puts stderr "software. Currently ATLAS supplies optimized versions for the complete"
+puts stderr "set of linear algebra kernels known as the Basic Linear Algebra"
+puts stderr "Subroutines (BLAS), and a subset of the linear algebra routines in the"
+puts stderr "LAPACK library."
+}
+
+conflict atlas
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atlas-3.10.2-h2boyh75s5bgq2o7eqlxbxnhl45qwn6k/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atlas-3.10.2-h2boyh75s5bgq2o7eqlxbxnhl45qwn6k/"
+

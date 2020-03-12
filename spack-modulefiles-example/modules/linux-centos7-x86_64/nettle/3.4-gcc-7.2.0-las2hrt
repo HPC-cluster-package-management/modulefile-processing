@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:06.663667
+##
+## nettle@3.4%gcc@7.2.0 arch=linux-centos7-x86_64 /las2hrt
+##
+
+
+module-whatis "The Nettle package contains the low-level cryptographic library that is designed to fit easily in many contexts."
+
+proc ModulesHelp { } {
+puts stderr "The Nettle package contains the low-level cryptographic library that is"
+puts stderr "designed to fit easily in many contexts."
+}
+
+conflict nettle
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nettle-3.4-las2hrtk3vsqpd3ifys56imjq6twk5en/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nettle-3.4-las2hrtk3vsqpd3ifys56imjq6twk5en/lib64"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nettle-3.4-las2hrtk3vsqpd3ifys56imjq6twk5en/lib64/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nettle-3.4-las2hrtk3vsqpd3ifys56imjq6twk5en/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:37.955364
+##
+## ant@1.10.0%gcc@7.2.0 arch=linux-centos7-x86_64 /3ty4kwl
+##
+
+
+module-whatis "Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other "
+
+proc ModulesHelp { } {
+puts stderr "Apache Ant is a Java library and command-line tool whose mission is to"
+puts stderr "drive processes described in build files as targets and extension points"
+puts stderr "dependent upon each other"
+}
+
+conflict ant
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ant-1.10.0-3ty4kwl4kvggwb3hijzfa3j2ecs4tnum/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ant-1.10.0-3ty4kwl4kvggwb3hijzfa3j2ecs4tnum/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/ant-1.10.0-3ty4kwl4kvggwb3hijzfa3j2ecs4tnum/"
+

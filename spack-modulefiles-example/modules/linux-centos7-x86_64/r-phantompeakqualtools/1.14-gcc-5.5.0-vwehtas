@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:46.281640
+##
+## r-phantompeakqualtools@1.14%gcc@5.5.0 arch=linux-centos7-x86_64 /vwehtas
+##
+
+
+module-whatis "Computes informative enrichment and quality measures for ChIP-seq/DNase-seq/FAIRE-seq/MNase-seq data. This is a modified version of r-spp to be used in conjunction with the phantompeakqualtools package."
+
+proc ModulesHelp { } {
+puts stderr "Computes informative enrichment and quality measures for ChIP-seq/DNase-"
+puts stderr "seq/FAIRE-seq/MNase-seq data. This is a modified version of r-spp to be"
+puts stderr "used in conjunction with the phantompeakqualtools package."
+}
+
+conflict r-phantompeakqualtools
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-phantompeakqualtools-1.14-vwehtasqypoog7mknoqhteq4cizbza5g/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-phantompeakqualtools-1.14-vwehtasqypoog7mknoqhteq4cizbza5g/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-phantompeakqualtools-1.14-vwehtasqypoog7mknoqhteq4cizbza5g/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

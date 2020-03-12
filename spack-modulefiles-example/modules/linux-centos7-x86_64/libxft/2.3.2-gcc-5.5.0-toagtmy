@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:45.197634
+##
+## libxft@2.3.2%gcc@5.5.0 arch=linux-centos7-x86_64 /toagtmy
+##
+
+
+module-whatis "X FreeType library."
+
+proc ModulesHelp { } {
+puts stderr "X FreeType library. Xft version 2.1 was the first stand alone release of"
+puts stderr "Xft, a library that connects X applications with the FreeType font"
+puts stderr "rasterization library. Xft uses fontconfig to locate fonts so it has no"
+puts stderr "configuration files."
+}
+
+conflict libxft
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxft-2.3.2-toagtmyvazg6lh2rrr2gc5s4zvvkinjm/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxft-2.3.2-toagtmyvazg6lh2rrr2gc5s4zvvkinjm/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxft-2.3.2-toagtmyvazg6lh2rrr2gc5s4zvvkinjm/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/libxft-2.3.2-toagtmyvazg6lh2rrr2gc5s4zvvkinjm/"
+

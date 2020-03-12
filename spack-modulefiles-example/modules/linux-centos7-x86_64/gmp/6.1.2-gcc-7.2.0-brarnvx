@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:12.564018
+##
+## gmp@6.1.2%gcc@7.2.0 arch=linux-centos7-x86_64 /brarnvx
+##
+## Configure options: --enable-cxx
+##
+
+
+module-whatis "GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers."
+
+proc ModulesHelp { } {
+puts stderr "GMP is a free library for arbitrary precision arithmetic, operating on"
+puts stderr "signed integers, rational numbers, and floating-point numbers."
+}
+
+conflict gmp
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmp-6.1.2-brarnvxzlyhcfay55p6kzimevuosxwkn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gmp-6.1.2-brarnvxzlyhcfay55p6kzimevuosxwkn/"
+

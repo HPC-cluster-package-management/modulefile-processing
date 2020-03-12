@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:09:13.845892
+##
+## r-rcpp@0.12.16%gcc@7.2.0 arch=linux-centos7-x86_64 /vn3zwal
+##
+
+
+module-whatis "The 'Rcpp' package provides R functions as well as C++ classes which offer a seamless integration of R and C++. Many R data types and objects can be mapped back and forth to C++ equivalents which facilitates both writing of new code as well as easier integration of third-party libraries. Documentation about 'Rcpp' is provided by several vignettes included in this package, via the 'Rcpp Gallery' site at <http://gallery.rcpp.org>, the paper by Eddelbuettel and Francois (2011, JSS), and the book by Eddelbuettel (2013, Springer); see 'citation('Rcpp')' for details on these last two."
+
+proc ModulesHelp { } {
+puts stderr "The 'Rcpp' package provides R functions as well as C++ classes which"
+puts stderr "offer a seamless integration of R and C++. Many R data types and objects"
+puts stderr "can be mapped back and forth to C++ equivalents which facilitates both"
+puts stderr "writing of new code as well as easier integration of third-party"
+puts stderr "libraries. Documentation about 'Rcpp' is provided by several vignettes"
+puts stderr "included in this package, via the 'Rcpp Gallery' site at"
+puts stderr "<http://gallery.rcpp.org>, the paper by Eddelbuettel and Francois (2011,"
+puts stderr "JSS), and the book by Eddelbuettel (2013, Springer); see"
+puts stderr "'citation("Rcpp")' for details on these last two."
+}
+
+conflict r-rcpp
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpp-0.12.16-vn3zwal5tsdj6nauxpo5gr2oesy4o7al/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpp-0.12.16-vn3zwal5tsdj6nauxpo5gr2oesy4o7al/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-rcpp-0.12.16-vn3zwal5tsdj6nauxpo5gr2oesy4o7al/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

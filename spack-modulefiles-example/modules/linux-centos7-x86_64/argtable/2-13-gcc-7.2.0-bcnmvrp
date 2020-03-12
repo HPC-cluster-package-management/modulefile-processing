@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:38.360357
+##
+## argtable@2-13%gcc@7.2.0 arch=linux-centos7-x86_64 /bcnmvrp
+##
+
+
+module-whatis "Argtable is an ANSI C library for parsing GNU style command line options with a minimum of fuss. "
+
+proc ModulesHelp { } {
+puts stderr "Argtable is an ANSI C library for parsing GNU style command line options"
+puts stderr "with a minimum of fuss."
+}
+
+conflict argtable
+
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/argtable-2-13-bcnmvrpm57uefp27q6hvlni6dfvqeoof/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/argtable-2-13-bcnmvrpm57uefp27q6hvlni6dfvqeoof/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/argtable-2-13-bcnmvrpm57uefp27q6hvlni6dfvqeoof/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/argtable-2-13-bcnmvrpm57uefp27q6hvlni6dfvqeoof/"
+

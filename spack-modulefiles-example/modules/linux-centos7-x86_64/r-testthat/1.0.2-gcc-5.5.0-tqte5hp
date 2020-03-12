@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:26.677731
+##
+## r-testthat@1.0.2%gcc@5.5.0 arch=linux-centos7-x86_64 /tqte5hp
+##
+
+
+module-whatis "A unit testing system designed to be fun, flexible and easy to set up."
+
+proc ModulesHelp { } {
+puts stderr "A unit testing system designed to be fun, flexible and easy to set up."
+}
+
+conflict r-testthat
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-testthat-1.0.2-tqte5hprpaalv22ix4arbr3zsb5cmoin/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-testthat-1.0.2-tqte5hprpaalv22ix4arbr3zsb5cmoin/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-testthat-1.0.2-tqte5hprpaalv22ix4arbr3zsb5cmoin/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

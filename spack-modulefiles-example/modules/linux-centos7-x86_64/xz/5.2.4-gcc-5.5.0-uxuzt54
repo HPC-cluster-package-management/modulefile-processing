@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:28.500235
+##
+## xz@5.2.4%gcc@5.5.0 arch=linux-centos7-x86_64 /uxuzt54
+##
+
+
+module-whatis "XZ Utils is free general-purpose data compression software with high compression ratio. XZ Utils were written for POSIX-like systems, but also work on some not-so-POSIX systems. XZ Utils are the successor to LZMA Utils."
+
+proc ModulesHelp { } {
+puts stderr "XZ Utils is free general-purpose data compression software with high"
+puts stderr "compression ratio. XZ Utils were written for POSIX-like systems, but"
+puts stderr "also work on some not-so-POSIX systems. XZ Utils are the successor to"
+puts stderr "LZMA Utils."
+}
+
+conflict xz
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xz-5.2.4-uxuzt54iyczw6ncihfcqiunruohylj6i/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xz-5.2.4-uxuzt54iyczw6ncihfcqiunruohylj6i/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xz-5.2.4-uxuzt54iyczw6ncihfcqiunruohylj6i/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xz-5.2.4-uxuzt54iyczw6ncihfcqiunruohylj6i/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/xz-5.2.4-uxuzt54iyczw6ncihfcqiunruohylj6i/"
+

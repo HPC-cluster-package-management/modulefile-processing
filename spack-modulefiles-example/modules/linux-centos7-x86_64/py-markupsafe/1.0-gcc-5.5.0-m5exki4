@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:27.548759
+##
+## py-markupsafe@1.0%gcc@5.5.0 arch=linux-centos7-x86_64 /m5exki4
+##
+
+
+module-whatis "MarkupSafe is a library for Python that implements a unicode string that is aware of HTML escaping rules and can be used to implement automatic string escaping. It is used by Jinja 2, the Mako templating engine, the Pylons web framework and many more."
+
+proc ModulesHelp { } {
+puts stderr "MarkupSafe is a library for Python that implements a unicode string that"
+puts stderr "is aware of HTML escaping rules and can be used to implement automatic"
+puts stderr "string escaping. It is used by Jinja 2, the Mako templating engine, the"
+puts stderr "Pylons web framework and many more."
+}
+
+conflict py-markupsafe
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-markupsafe-1.0-m5exki4gphowoy2ujhqlusj4w24jnjxo/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-markupsafe-1.0-m5exki4gphowoy2ujhqlusj4w24jnjxo/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-markupsafe-1.0-m5exki4gphowoy2ujhqlusj4w24jnjxo/lib/python2.7/site-packages"
+

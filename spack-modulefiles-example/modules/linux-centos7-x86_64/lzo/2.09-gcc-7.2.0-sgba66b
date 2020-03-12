@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:52.378860
+##
+## lzo@2.09%gcc@7.2.0 arch=linux-centos7-x86_64 /sgba66b
+##
+## Configure options: --disable-dependency-tracking --enable-shared
+##
+
+
+module-whatis "Real-time data compression library"
+
+proc ModulesHelp { } {
+puts stderr "Real-time data compression library"
+}
+
+conflict lzo
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lzo-2.09-sgba66bjpqzrw3ux5uw7avrkywzggvic/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lzo-2.09-sgba66bjpqzrw3ux5uw7avrkywzggvic/"
+

@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.366081
+##
+## libatomic-ops@7.4.4%gcc@7.2.0 arch=linux-centos7-x86_64 /bqojgj7
+##
+## Configure options: --enable-shared
+##
+
+
+module-whatis "This package provides semi-portable access to hardware-provided atomic memory update operations on a number architectures."
+
+proc ModulesHelp { } {
+puts stderr "This package provides semi-portable access to hardware-provided atomic"
+puts stderr "memory update operations on a number architectures."
+}
+
+conflict libatomic-ops
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libatomic-ops-7.4.4-bqojgj7yprg4xmzzwq76cabvdyqj5pqz/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libatomic-ops-7.4.4-bqojgj7yprg4xmzzwq76cabvdyqj5pqz/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libatomic-ops-7.4.4-bqojgj7yprg4xmzzwq76cabvdyqj5pqz/"
+

@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:08.142915
+##
+## octopus@7.3%gcc@7.2.0~arpack~metis~netcdf~parmetis~scalapack arch=linux-centos7-x86_64 /joidfw4
+##
+
+
+module-whatis "A real-space finite-difference (time-dependent) density-functional theory code."
+
+proc ModulesHelp { } {
+puts stderr "A real-space finite-difference (time-dependent) density-functional"
+puts stderr "theory code."
+}
+
+conflict octopus
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/octopus-7.3-joidfw44mmiodcsoi3rtbjd6rzn44ujh/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/octopus-7.3-joidfw44mmiodcsoi3rtbjd6rzn44ujh/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/octopus-7.3-joidfw44mmiodcsoi3rtbjd6rzn44ujh/"
+

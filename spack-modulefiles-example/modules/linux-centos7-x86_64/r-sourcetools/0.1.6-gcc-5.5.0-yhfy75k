@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:10:10.520004
+##
+## r-sourcetools@0.1.6%gcc@5.5.0 arch=linux-centos7-x86_64 /yhfy75k
+##
+
+
+module-whatis "Tools for Reading, Tokenizing and Parsing R Code."
+
+proc ModulesHelp { } {
+puts stderr "Tools for Reading, Tokenizing and Parsing R Code."
+}
+
+conflict r-sourcetools
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sourcetools-0.1.6-yhfy75ka6oq5oaf3lnrqqfl4poea26pj/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sourcetools-0.1.6-yhfy75ka6oq5oaf3lnrqqfl4poea26pj/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-sourcetools-0.1.6-yhfy75ka6oq5oaf3lnrqqfl4poea26pj/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

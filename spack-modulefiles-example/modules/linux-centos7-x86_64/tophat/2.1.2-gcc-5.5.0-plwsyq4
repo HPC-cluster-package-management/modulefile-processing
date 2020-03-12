@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:11.519553
+##
+## tophat@2.1.2%gcc@5.5.0 arch=linux-centos7-x86_64 /plwsyq4
+##
+## Configure options: --with-boost=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/boost-1.68.0-srkrlms47eozzfkwj6h2ksavxyajogmb
+##
+
+
+module-whatis "Spliced read mapper for RNA-Seq."
+
+proc ModulesHelp { } {
+puts stderr "Spliced read mapper for RNA-Seq."
+}
+
+conflict tophat
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/tophat-2.1.2-plwsyq4opjxrapzusp37vx5otresrcpo/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/tophat-2.1.2-plwsyq4opjxrapzusp37vx5otresrcpo/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/tophat-2.1.2-plwsyq4opjxrapzusp37vx5otresrcpo/"
+

@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:42.141939
+##
+## atompaw@4.0.0.13%gcc@7.2.0 arch=linux-centos7-x86_64 /lymkqpz
+##
+
+
+module-whatis "A Projector Augmented Wave (PAW) code for generating atom-centered functions."
+
+proc ModulesHelp { } {
+puts stderr "A Projector Augmented Wave (PAW) code for generating atom-centered"
+puts stderr "functions. Official website: http://pwpaw.wfu.edu User's guide: ~/doc"
+puts stderr "/atompaw-usersguide.pdf"
+}
+
+conflict atompaw
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atompaw-4.0.0.13-lymkqpzzcjiif2kdtxvxjplsh7tsx4zz/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atompaw-4.0.0.13-lymkqpzzcjiif2kdtxvxjplsh7tsx4zz/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atompaw-4.0.0.13-lymkqpzzcjiif2kdtxvxjplsh7tsx4zz/"
+

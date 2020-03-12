@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:48.949367
+##
+## libxsmm@1.9%gcc@7.2.0~debug~header-only arch=linux-centos7-x86_64 /6nevtfa
+##
+
+
+module-whatis "Library targeting Intel Architecture for small, dense or sparse matrix multiplications, and small convolutions."
+
+proc ModulesHelp { } {
+puts stderr "Library targeting Intel Architecture for small, dense or sparse matrix"
+puts stderr "multiplications, and small convolutions."
+}
+
+conflict libxsmm
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxsmm-1.9-6nevtfaklhbbslv75qpromqoncyprzd3/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libxsmm-1.9-6nevtfaklhbbslv75qpromqoncyprzd3/"
+

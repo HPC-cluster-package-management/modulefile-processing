@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:37.277351
+##
+## libgpg-error@1.27%gcc@7.2.0 arch=linux-centos7-x86_64 /zkbc77m
+##
+
+
+module-whatis "Libgpg-error is a small library that defines common error values for all GnuPG components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly more in the future. "
+
+proc ModulesHelp { } {
+puts stderr "Libgpg-error is a small library that defines common error values for all"
+puts stderr "GnuPG components. Among these are GPG, GPGSM, GPGME, GPG-Agent,"
+puts stderr "libgcrypt, Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly"
+puts stderr "more in the future."
+}
+
+conflict libgpg-error
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgpg-error-1.27-zkbc77mvpsudmn6an3qada4oq4te5grv/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgpg-error-1.27-zkbc77mvpsudmn6an3qada4oq4te5grv/share/man"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgpg-error-1.27-zkbc77mvpsudmn6an3qada4oq4te5grv/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgpg-error-1.27-zkbc77mvpsudmn6an3qada4oq4te5grv/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/libgpg-error-1.27-zkbc77mvpsudmn6an3qada4oq4te5grv/"
+

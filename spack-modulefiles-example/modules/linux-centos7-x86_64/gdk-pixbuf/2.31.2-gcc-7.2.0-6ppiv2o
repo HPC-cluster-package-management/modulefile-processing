@@ -1,0 +1,25 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:05.079940
+##
+## gdk-pixbuf@2.31.2%gcc@7.2.0 arch=linux-centos7-x86_64 /6ppiv2o
+##
+
+
+module-whatis "The Gdk Pixbuf is a toolkit for image loading and pixel buffer manipulation. It is used by GTK+ 2 and GTK+ 3 to load and manipulate images. In the past it was distributed as part of GTK+ 2 but it was split off into a separate package in preparation for the change to GTK+ 3."
+
+proc ModulesHelp { } {
+puts stderr "The Gdk Pixbuf is a toolkit for image loading and pixel buffer"
+puts stderr "manipulation. It is used by GTK+ 2 and GTK+ 3 to load and manipulate"
+puts stderr "images. In the past it was distributed as part of GTK+ 2 but it was"
+puts stderr "split off into a separate package in preparation for the change to GTK+"
+puts stderr "3."
+}
+
+conflict gdk-pixbuf
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdk-pixbuf-2.31.2-6ppiv2o3cvatyqpy7mitkjfyvht2ddkg/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdk-pixbuf-2.31.2-6ppiv2o3cvatyqpy7mitkjfyvht2ddkg/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdk-pixbuf-2.31.2-6ppiv2o3cvatyqpy7mitkjfyvht2ddkg/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdk-pixbuf-2.31.2-6ppiv2o3cvatyqpy7mitkjfyvht2ddkg/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gdk-pixbuf-2.31.2-6ppiv2o3cvatyqpy7mitkjfyvht2ddkg/"
+

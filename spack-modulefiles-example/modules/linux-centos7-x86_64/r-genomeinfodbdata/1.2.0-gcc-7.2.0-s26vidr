@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:53.380394
+##
+## r-genomeinfodbdata@1.2.0%gcc@7.2.0 arch=linux-centos7-x86_64 /s26vidr
+##
+
+
+module-whatis "for mapping between NCBI taxonomy ID and species. Used by functions in the GenomeInfoDb package."
+
+proc ModulesHelp { } {
+puts stderr "for mapping between NCBI taxonomy ID and species. Used by functions in"
+puts stderr "the GenomeInfoDb package."
+}
+
+conflict r-genomeinfodbdata
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-genomeinfodbdata-1.2.0-s26vidrgflwbzjsybk6fukn4xotj3e5g/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-genomeinfodbdata-1.2.0-s26vidrgflwbzjsybk6fukn4xotj3e5g/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/r-genomeinfodbdata-1.2.0-s26vidrgflwbzjsybk6fukn4xotj3e5g/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/pango-1.41.0-hexufkrpcwcsq65ak5yytme5jru3frnr/share"
+

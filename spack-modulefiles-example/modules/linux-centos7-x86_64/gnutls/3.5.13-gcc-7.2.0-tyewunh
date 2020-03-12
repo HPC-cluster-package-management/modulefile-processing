@@ -1,0 +1,28 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:13.965857
+##
+## gnutls@3.5.13%gcc@7.2.0+zlib arch=linux-centos7-x86_64 /tyewunh
+##
+## Configure options: --enable-static --with-included-libtasn1 --with-included-unistring --without-p11-kit --with-zlib --disable-tests --disable-valgrind-tests --disable-full-test-suite
+##
+
+
+module-whatis "GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure communications protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and other required structures. It is aimed to be portable and efficient with focus on security and interoperability."
+
+proc ModulesHelp { } {
+puts stderr "GnuTLS is a secure communications library implementing the SSL, TLS and"
+puts stderr "DTLS protocols and technologies around them. It provides a simple C"
+puts stderr "language application programming interface (API) to access the secure"
+puts stderr "communications protocols as well as APIs to parse and write X.509, PKCS"
+puts stderr "#12, OpenPGP and other required structures. It is aimed to be portable"
+puts stderr "and efficient with focus on security and interoperability."
+}
+
+conflict gnutls
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gnutls-3.5.13-tyewunhshts3q32bp465lvec4kraibi6/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gnutls-3.5.13-tyewunhshts3q32bp465lvec4kraibi6/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gnutls-3.5.13-tyewunhshts3q32bp465lvec4kraibi6/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gnutls-3.5.13-tyewunhshts3q32bp465lvec4kraibi6/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/gnutls-3.5.13-tyewunhshts3q32bp465lvec4kraibi6/"
+

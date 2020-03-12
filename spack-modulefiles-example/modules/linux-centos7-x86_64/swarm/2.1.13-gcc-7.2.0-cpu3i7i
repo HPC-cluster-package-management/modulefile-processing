@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:09.461237
+##
+## swarm@2.1.13%gcc@7.2.0 arch=linux-centos7-x86_64 /cpu3i7i
+##
+
+
+module-whatis "A robust and fast clustering method for amplicon-based studies."
+
+proc ModulesHelp { } {
+puts stderr "A robust and fast clustering method for amplicon-based studies."
+}
+
+conflict swarm
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/swarm-2.1.13-cpu3i7ihxiqjj7q3qkm5x2bmtg26b6jg/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/swarm-2.1.13-cpu3i7ihxiqjj7q3qkm5x2bmtg26b6jg/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/swarm-2.1.13-cpu3i7ihxiqjj7q3qkm5x2bmtg26b6jg/"
+

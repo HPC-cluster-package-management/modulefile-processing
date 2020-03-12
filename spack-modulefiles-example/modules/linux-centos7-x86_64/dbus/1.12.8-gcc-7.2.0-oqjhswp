@@ -1,0 +1,26 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:54.061468
+##
+## dbus@1.12.8%gcc@7.2.0 arch=linux-centos7-x86_64 /oqjhswp
+##
+
+
+module-whatis "D-Bus is a message bus system, a simple way for applications to talk to one another. D-Bus supplies both a system daemon (for events such new hardware device printer queue ) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two applications to communicate directly (without going through the message bus daemon)."
+
+proc ModulesHelp { } {
+puts stderr "D-Bus is a message bus system, a simple way for applications to talk to"
+puts stderr "one another. D-Bus supplies both a system daemon (for events such new"
+puts stderr "hardware device printer queue ) and a per-user-login-session daemon (for"
+puts stderr "general IPC needs among user applications). Also, the message bus is"
+puts stderr "built on top of a general one-to-one message passing framework, which"
+puts stderr "can be used by any two applications to communicate directly (without"
+puts stderr "going through the message bus daemon)."
+}
+
+conflict dbus
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dbus-1.12.8-oqjhswp3cytk5h5ku6jdocl45szaddnn/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dbus-1.12.8-oqjhswp3cytk5h5ku6jdocl45szaddnn/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dbus-1.12.8-oqjhswp3cytk5h5ku6jdocl45szaddnn/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/dbus-1.12.8-oqjhswp3cytk5h5ku6jdocl45szaddnn/"
+

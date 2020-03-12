@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:38.927754
+##
+## libpthread-stubs@0.4%gcc@4.8.5 arch=linux-centos7-x86_64 /xcpin5a
+##
+
+
+module-whatis "The libpthread-stubs package provides weak aliases for pthread functions not provided in libc or otherwise available by default."
+
+proc ModulesHelp { } {
+puts stderr "The libpthread-stubs package provides weak aliases for pthread functions"
+puts stderr "not provided in libc or otherwise available by default."
+}
+
+conflict libpthread-stubs
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpthread-stubs-0.4-xcpin5akez4dtdrjelv2pxq6y4hqwydh/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpthread-stubs-0.4-xcpin5akez4dtdrjelv2pxq6y4hqwydh/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpthread-stubs-0.4-xcpin5akez4dtdrjelv2pxq6y4hqwydh/"
+

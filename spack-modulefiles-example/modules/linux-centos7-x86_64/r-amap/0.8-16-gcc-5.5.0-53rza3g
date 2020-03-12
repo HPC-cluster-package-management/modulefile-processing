@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:44.599696
+##
+## r-amap@0.8-16%gcc@5.5.0 arch=linux-centos7-x86_64 /53rza3g
+##
+
+
+module-whatis "Tools for Clustering and Principal Component Analysis (With robust methods, and parallelized functions)."
+
+proc ModulesHelp { } {
+puts stderr "Tools for Clustering and Principal Component Analysis (With robust"
+puts stderr "methods, and parallelized functions)."
+}
+
+conflict r-amap
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-amap-0.8-16-53rza3gx3ij3zddqaftcakroecfkpfru/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-amap-0.8-16-53rza3gx3ij3zddqaftcakroecfkpfru/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-amap-0.8-16-53rza3gx3ij3zddqaftcakroecfkpfru/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

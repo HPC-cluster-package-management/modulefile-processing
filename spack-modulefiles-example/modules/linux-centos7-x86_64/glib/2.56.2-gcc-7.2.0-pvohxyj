@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:10.521583
+##
+## glib@2.56.2%gcc@7.2.0~libmount patches=c325997b72a205ad1638bb3e3ba0e5b73e3d32ce63b2d0d3282f3e3a2ff4663c tracing= arch=linux-centos7-x86_64 /pvohxyj
+##
+## Configure options: --disable-libmount --with-python=python2.7 --disable-dtrace --disable-systemtap
+##
+
+
+module-whatis "GLib provides the core application building blocks for libraries and applications written in C."
+
+proc ModulesHelp { } {
+puts stderr "GLib provides the core application building blocks for libraries and"
+puts stderr "applications written in C. The GLib package contains a low-level"
+puts stderr "libraries useful for providing data structure handling for C,"
+puts stderr "portability wrappers and interfaces for such runtime functionality as an"
+puts stderr "event loop, threads, dynamic loading and an object system."
+}
+
+conflict glib
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glib-2.56.2-pvohxyjzrbohvn6ulepdnp3s2elw73np/bin"
+prepend-path ACLOCAL_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glib-2.56.2-pvohxyjzrbohvn6ulepdnp3s2elw73np/share/aclocal"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glib-2.56.2-pvohxyjzrbohvn6ulepdnp3s2elw73np/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glib-2.56.2-pvohxyjzrbohvn6ulepdnp3s2elw73np/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/glib-2.56.2-pvohxyjzrbohvn6ulepdnp3s2elw73np/"
+

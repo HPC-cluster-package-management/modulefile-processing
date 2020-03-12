@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:47.587683
+##
+## bowtie@1.2%gcc@5.5.0~tbb arch=linux-centos7-x86_64 /bm4xila
+##
+
+
+module-whatis "Bowtie is an ultrafast, memory-efficient short read aligner for short DNA sequences (reads) from next-gen sequencers."
+
+proc ModulesHelp { } {
+puts stderr "Bowtie is an ultrafast, memory-efficient short read aligner for short"
+puts stderr "DNA sequences (reads) from next-gen sequencers."
+}
+
+conflict bowtie
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/bowtie-1.2-bm4xilabundsz5hm5zvrldlg2bpt4pkd/bin"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/bowtie-1.2-bm4xilabundsz5hm5zvrldlg2bpt4pkd/"
+

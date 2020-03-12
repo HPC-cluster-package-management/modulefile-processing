@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:02:41.122332
+##
+## atk@2.28.1%gcc@7.2.0 arch=linux-centos7-x86_64 /imzv6pb
+##
+
+
+module-whatis "ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications."
+
+proc ModulesHelp { } {
+puts stderr "ATK provides the set of accessibility interfaces that are implemented by"
+puts stderr "other toolkits and applications. Using the ATK interfaces, accessibility"
+puts stderr "tools have full access to view and control running applications."
+}
+
+conflict atk
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atk-2.28.1-imzv6pbsqwqwp5twpqnfsvtzom2td36v/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atk-2.28.1-imzv6pbsqwqwp5twpqnfsvtzom2td36v/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/atk-2.28.1-imzv6pbsqwqwp5twpqnfsvtzom2td36v/"
+

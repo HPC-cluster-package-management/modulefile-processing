@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:08:50.453970
+##
+## r-plogr@0.2.0%gcc@5.5.0 arch=linux-centos7-x86_64 /x4tshzl
+##
+
+
+module-whatis "A simple header-only logging library for C++. Add 'LinkingTo: plogr' to 'DESCRIPTION', and '#include <plogr.h>' in your C++ modules to use it."
+
+proc ModulesHelp { } {
+puts stderr "A simple header-only logging library for C++. Add 'LinkingTo: plogr' to"
+puts stderr "'DESCRIPTION', and '#include <plogr.h>' in your C++ modules to use it."
+}
+
+conflict r-plogr
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-plogr-0.2.0-x4tshzlayy2znprf5trqdqfydcanfs7b/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-plogr-0.2.0-x4tshzlayy2znprf5trqdqfydcanfs7b/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-plogr-0.2.0-x4tshzlayy2znprf5trqdqfydcanfs7b/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

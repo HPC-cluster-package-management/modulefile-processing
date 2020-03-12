@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:25.412286
+##
+## r-haven@1.1.0%gcc@5.5.0 arch=linux-centos7-x86_64 /jeuegqz
+##
+
+
+module-whatis "Import foreign statistical formats into R via the embedded 'ReadStat' C library, <https://github.com/WizardMac/ReadStat>."
+
+proc ModulesHelp { } {
+puts stderr "Import foreign statistical formats into R via the embedded 'ReadStat' C"
+puts stderr "library, <https://github.com/WizardMac/ReadStat>."
+}
+
+conflict r-haven
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-haven-1.1.0-jeuegqzdlsrpgoot3zrqplfaj42upluy/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-haven-1.1.0-jeuegqzdlsrpgoot3zrqplfaj42upluy/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-haven-1.1.0-jeuegqzdlsrpgoot3zrqplfaj42upluy/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

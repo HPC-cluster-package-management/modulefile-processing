@@ -1,0 +1,21 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:05.370642
+##
+## scons@3.0.1%gcc@7.2.0 arch=linux-centos7-x86_64 /o6bfb67
+##
+
+
+module-whatis "SCons is a software construction tool"
+
+proc ModulesHelp { } {
+puts stderr "SCons is a software construction tool"
+}
+
+conflict scons
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scons-3.0.1-o6bfb67bdibocvje7igri4n7sr3l46py/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scons-3.0.1-o6bfb67bdibocvje7igri4n7sr3l46py/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scons-3.0.1-o6bfb67bdibocvje7igri4n7sr3l46py/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scons-3.0.1-o6bfb67bdibocvje7igri4n7sr3l46py/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/scons-3.0.1-o6bfb67bdibocvje7igri4n7sr3l46py/lib/python2.7/site-packages"
+

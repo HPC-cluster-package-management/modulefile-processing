@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:31.784092
+##
+## jmol@14.8.0%gcc@7.2.0 arch=linux-centos7-x86_64 /hgsfmt4
+##
+
+
+module-whatis "Jmol: an open-source Java viewer for chemical structures in 3D with features for chemicals, crystals, materials and biomolecules."
+
+proc ModulesHelp { } {
+puts stderr "Jmol: an open-source Java viewer for chemical structures in 3D with"
+puts stderr "features for chemicals, crystals, materials and biomolecules."
+}
+
+conflict jmol
+
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jmol-14.8.0-hgsfmt4azj4ch7blk7ujmodf47zfllri/"
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jmol-14.8.0-hgsfmt4azj4ch7blk7ujmodf47zfllri"
+setenv JMOL_HOME "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/jmol-14.8.0-hgsfmt4azj4ch7blk7ujmodf47zfllri"
+

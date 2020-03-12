@@ -1,0 +1,22 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:29.959270
+##
+## isl@0.15%gcc@4.8.5 arch=linux-centos7-x86_64 /s7aaz6b
+##
+## Configure options: --with-gmp-prefix=/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gmp-6.1.2-6bsovvkqwx6zscwtbvjj6egrgizbyycm
+##
+
+
+module-whatis "isl (Integer Set Library) is a thread-safe C library for manipulating sets and relations of integer points bounded by affine constraints."
+
+proc ModulesHelp { } {
+puts stderr "isl (Integer Set Library) is a thread-safe C library for manipulating"
+puts stderr "sets and relations of integer points bounded by affine constraints."
+}
+
+conflict isl
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/isl-0.15-s7aaz6bqazbsomr7qfstukyfnyiktfjo/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/isl-0.15-s7aaz6bqazbsomr7qfstukyfnyiktfjo/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/isl-0.15-s7aaz6bqazbsomr7qfstukyfnyiktfjo/"
+

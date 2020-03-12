@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:12.061054
+##
+## glproto@1.4.17%gcc@4.8.5 arch=linux-centos7-x86_64 /jxmh23v
+##
+
+
+module-whatis "OpenGL Extension to the X Window System."
+
+proc ModulesHelp { } {
+puts stderr "OpenGL Extension to the X Window System. This extension defines a"
+puts stderr "protocol for the client to send 3D rendering commands to the X server."
+}
+
+conflict glproto
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/glproto-1.4.17-jxmh23vmxykjo6nwlhs3xj7ybfhsx2jv/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/glproto-1.4.17-jxmh23vmxykjo6nwlhs3xj7ybfhsx2jv/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/glproto-1.4.17-jxmh23vmxykjo6nwlhs3xj7ybfhsx2jv/"
+

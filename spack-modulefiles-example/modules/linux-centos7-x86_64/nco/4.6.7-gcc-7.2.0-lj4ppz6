@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:03.170812
+##
+## nco@4.6.7%gcc@7.2.0~doc patches=512fe1dffb433c89eb2596e72f5109a308c761622a5d59782a1200f852f9fe2c arch=linux-centos7-x86_64 /lj4ppz6
+##
+## Configure options: --disable-doc
+##
+
+
+module-whatis "The NCO toolkit manipulates and analyzes data stored in netCDF-accessible formats"
+
+proc ModulesHelp { } {
+puts stderr "The NCO toolkit manipulates and analyzes data stored in netCDF-"
+puts stderr "accessible formats"
+}
+
+conflict nco
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nco-4.6.7-lj4ppz6uajdykki2xyimfbh7rmrd5law/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nco-4.6.7-lj4ppz6uajdykki2xyimfbh7rmrd5law/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nco-4.6.7-lj4ppz6uajdykki2xyimfbh7rmrd5law/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/nco-4.6.7-lj4ppz6uajdykki2xyimfbh7rmrd5law/"
+

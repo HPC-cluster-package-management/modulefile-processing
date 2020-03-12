@@ -1,0 +1,20 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:11:09.598679
+##
+## tar@1.30%gcc@4.8.5 arch=linux-centos7-x86_64 /puva6ro
+##
+
+
+module-whatis "GNU Tar provides the ability to create tar archives, as well as various other kinds of manipulation."
+
+proc ModulesHelp { } {
+puts stderr "GNU Tar provides the ability to create tar archives, as well as various"
+puts stderr "other kinds of manipulation."
+}
+
+conflict tar
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/tar-1.30-puva6rockyblvc3emnjgqfalwd4yt5xo/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/tar-1.30-puva6rockyblvc3emnjgqfalwd4yt5xo/share/man"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/tar-1.30-puva6rockyblvc3emnjgqfalwd4yt5xo/"
+

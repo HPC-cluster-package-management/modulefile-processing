@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:30.471829
+##
+## jdk@11.0.1%gcc@5.5.0 arch=linux-centos7-x86_64 /l7iqihi
+##
+
+
+module-whatis "The Java Development Kit (JDK) released by Oracle Corporation in the form of a binary product aimed at Java developers. Includes a complete JRE plus tools for developing, debugging, and monitoring Java applications."
+
+proc ModulesHelp { } {
+puts stderr "The Java Development Kit (JDK) released by Oracle Corporation in the"
+puts stderr "form of a binary product aimed at Java developers. Includes a complete"
+puts stderr "JRE plus tools for developing, debugging, and monitoring Java"
+puts stderr "applications."
+}
+
+conflict jdk
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/jdk-11.0.1-l7iqihixpes5cl43nwps4qioskpzldni/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/jdk-11.0.1-l7iqihixpes5cl43nwps4qioskpzldni/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/jdk-11.0.1-l7iqihixpes5cl43nwps4qioskpzldni/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/jdk-11.0.1-l7iqihixpes5cl43nwps4qioskpzldni/"
+setenv JAVA_HOME "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/jdk-11.0.1-l7iqihixpes5cl43nwps4qioskpzldni"
+

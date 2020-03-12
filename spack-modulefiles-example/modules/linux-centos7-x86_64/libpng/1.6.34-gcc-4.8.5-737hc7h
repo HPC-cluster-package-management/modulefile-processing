@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:38.628621
+##
+## libpng@1.6.34%gcc@4.8.5 arch=linux-centos7-x86_64 /737hc7h
+##
+## Configure options: CPPFLAGS=-I/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/zlib-1.2.11-64vg6e4evdrlqgx7iicwhu2hs7lv6gpz/include LDFLAGS=-L/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/zlib-1.2.11-64vg6e4evdrlqgx7iicwhu2hs7lv6gpz/lib
+##
+
+
+module-whatis "libpng is the official PNG reference library."
+
+proc ModulesHelp { } {
+puts stderr "libpng is the official PNG reference library."
+}
+
+conflict libpng
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpng-1.6.34-737hc7hnrfzzecjak3ziopsm37bp5li4/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpng-1.6.34-737hc7hnrfzzecjak3ziopsm37bp5li4/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpng-1.6.34-737hc7hnrfzzecjak3ziopsm37bp5li4/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpng-1.6.34-737hc7hnrfzzecjak3ziopsm37bp5li4/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-4.8.5/libpng-1.6.34-737hc7hnrfzzecjak3ziopsm37bp5li4/"
+

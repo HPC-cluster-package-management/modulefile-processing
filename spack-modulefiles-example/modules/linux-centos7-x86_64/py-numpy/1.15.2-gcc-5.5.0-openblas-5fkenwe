@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:28.724190
+##
+## py-numpy@1.15.2%gcc@5.5.0+blas+lapack arch=linux-centos7-x86_64 /5fkenwe
+##
+
+
+module-whatis "NumPy is the fundamental package for scientific computing with Python. It contains among other things: a powerful N-dimensional array object, sophisticated (broadcasting) functions, tools for integrating C/C++ and Fortran code, and useful linear algebra, Fourier transform, and random number capabilities"
+
+proc ModulesHelp { } {
+puts stderr "NumPy is the fundamental package for scientific computing with Python."
+puts stderr "It contains among other things: a powerful N-dimensional array object,"
+puts stderr "sophisticated (broadcasting) functions, tools for integrating C/C++ and"
+puts stderr "Fortran code, and useful linear algebra, Fourier transform, and random"
+puts stderr "number capabilities"
+}
+
+conflict py-numpy
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-numpy-1.15.2-5fkenwehyehzmcdwlgc3ncauzlbv7tgx/bin"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-numpy-1.15.2-5fkenwehyehzmcdwlgc3ncauzlbv7tgx/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-numpy-1.15.2-5fkenwehyehzmcdwlgc3ncauzlbv7tgx/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/py-numpy-1.15.2-5fkenwehyehzmcdwlgc3ncauzlbv7tgx/lib/python2.7/site-packages"
+

@@ -1,0 +1,23 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:03:34.141431
+##
+## lcms@2.9%gcc@7.2.0 arch=linux-centos7-x86_64 /j6alu44
+##
+
+
+module-whatis "Little cms is a color management library. Implements fast transforms between ICC profiles. It is focused on speed, and is portable across several platforms (MIT license)."
+
+proc ModulesHelp { } {
+puts stderr "Little cms is a color management library. Implements fast transforms"
+puts stderr "between ICC profiles. It is focused on speed, and is portable across"
+puts stderr "several platforms (MIT license)."
+}
+
+conflict lcms
+
+prepend-path PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lcms-2.9-j6alu44nafqrjr3gtfhdh4jexyjwrglc/bin"
+prepend-path MANPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lcms-2.9-j6alu44nafqrjr3gtfhdh4jexyjwrglc/share/man"
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lcms-2.9-j6alu44nafqrjr3gtfhdh4jexyjwrglc/lib"
+prepend-path PKG_CONFIG_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lcms-2.9-j6alu44nafqrjr3gtfhdh4jexyjwrglc/lib/pkgconfig"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/lcms-2.9-j6alu44nafqrjr3gtfhdh4jexyjwrglc/"
+

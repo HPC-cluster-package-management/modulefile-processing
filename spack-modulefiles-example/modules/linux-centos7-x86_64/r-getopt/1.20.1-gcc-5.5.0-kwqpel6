@@ -1,0 +1,24 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:02.543508
+##
+## r-getopt@1.20.1%gcc@5.5.0 arch=linux-centos7-x86_64 /kwqpel6
+##
+
+
+module-whatis "Package designed to be used with Rscript to write '#!' shebang scripts that accept short and long flags/options. Many users will prefer using instead the packages optparse or argparse which add extra features like automatically generated help option and usage, support for default values, positional argument support, etc."
+
+proc ModulesHelp { } {
+puts stderr "Package designed to be used with Rscript to write "#!" shebang scripts"
+puts stderr "that accept short and long flags/options. Many users will prefer using"
+puts stderr "instead the packages optparse or argparse which add extra features like"
+puts stderr "automatically generated help option and usage, support for default"
+puts stderr "values, positional argument support, etc."
+}
+
+conflict r-getopt
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-getopt-1.20.1-kwqpel6a3rvym7mqfwgd5srg6mjfchwi/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-getopt-1.20.1-kwqpel6a3rvym7mqfwgd5srg6mjfchwi/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-getopt-1.20.1-kwqpel6a3rvym7mqfwgd5srg6mjfchwi/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

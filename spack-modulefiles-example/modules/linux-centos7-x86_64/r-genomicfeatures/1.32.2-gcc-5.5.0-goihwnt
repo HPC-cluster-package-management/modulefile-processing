@@ -1,0 +1,27 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:06:56.525725
+##
+## r-genomicfeatures@1.32.2%gcc@5.5.0 arch=linux-centos7-x86_64 /goihwnt
+##
+
+
+module-whatis "A set of tools and methods for making and manipulating transcript centric annotations. With these tools the user can easily download the genomic locations of the transcripts, exons and cds of a given organism, from either the UCSC Genome Browser or a BioMart database (more sources will be supported in the future). This information is then stored in a local database that keeps track of the relationship between transcripts, exons, cds and genes. Flexible methods are provided for extracting the desired features in a convenient format."
+
+proc ModulesHelp { } {
+puts stderr "A set of tools and methods for making and manipulating transcript"
+puts stderr "centric annotations. With these tools the user can easily download the"
+puts stderr "genomic locations of the transcripts, exons and cds of a given organism,"
+puts stderr "from either the UCSC Genome Browser or a BioMart database (more sources"
+puts stderr "will be supported in the future). This information is then stored in a"
+puts stderr "local database that keeps track of the relationship between transcripts,"
+puts stderr "exons, cds and genes. Flexible methods are provided for extracting the"
+puts stderr "desired features in a convenient format."
+}
+
+conflict r-genomicfeatures
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomicfeatures-1.32.2-goihwnt6lczrh7ryro5zbozjy7f744ok/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomicfeatures-1.32.2-goihwnt6lczrh7ryro5zbozjy7f744ok/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-genomicfeatures-1.32.2-goihwnt6lczrh7ryro5zbozjy7f744ok/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

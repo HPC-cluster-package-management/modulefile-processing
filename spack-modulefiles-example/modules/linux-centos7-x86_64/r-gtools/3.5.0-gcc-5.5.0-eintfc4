@@ -1,0 +1,40 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:07:24.262171
+##
+## r-gtools@3.5.0%gcc@5.5.0 arch=linux-centos7-x86_64 /eintfc4
+##
+
+
+module-whatis "Functions to assist in R programming, including: - assist in developing, updating, and maintaining R and R packages ('ask', 'checkRVersion', 'getDependencies', 'keywords', 'scat'), - calculate the logit and inverse logit transformations ('logit', 'inv.logit'), - test if a value is missing, empty or contains only NA and NULL values ('invalid'), - manipulate R's .Last function ('addLast'), - define macros ('defmacro'), - detect odd and even integers ('odd', 'even'), - convert strings containing non-ASCII characters (like single quotes) to plain ASCII ('ASCIIfy'), - perform a binary search ('binsearch'), - sort strings containing both numeric and character components ('mixedsort'), - create a factor variable from the quantiles of a continuous variable ('quantcut'), - enumerate permutations and combinations ('combinations', 'permutation'), - calculate and convert between fold-change and log-ratio ('foldchange', 'logratio2foldchange', 'foldchange2logratio'), - calculate probabilities and generate random numbers from Dirichlet distributions ('rdirichlet', 'ddirichlet'), - apply a function over adjacent subsets of a vector ('running'), - modify the TCP\_NODELAY ('de-Nagle') flag for socket objects, - efficient 'rbind' of data frames, even if the column names don't match ('smartbind'), - generate significance stars from p-values ('stars.pval'), - convert characters to/from ASCII codes."
+
+proc ModulesHelp { } {
+puts stderr "Functions to assist in R programming, including: - assist in developing,"
+puts stderr "updating, and maintaining R and R packages ('ask', 'checkRVersion',"
+puts stderr "'getDependencies', 'keywords', 'scat'), - calculate the logit and"
+puts stderr "inverse logit transformations ('logit', 'inv.logit'), - test if a value"
+puts stderr "is missing, empty or contains only NA and NULL values ('invalid'), -"
+puts stderr "manipulate R's .Last function ('addLast'), - define macros ('defmacro'),"
+puts stderr "- detect odd and even integers ('odd', 'even'), - convert strings"
+puts stderr "containing non-ASCII characters (like single quotes) to plain ASCII"
+puts stderr "('ASCIIfy'), - perform a binary search ('binsearch'), - sort strings"
+puts stderr "containing both numeric and character components ('mixedsort'), - create"
+puts stderr "a factor variable from the quantiles of a continuous variable"
+puts stderr "('quantcut'), - enumerate permutations and combinations ('combinations',"
+puts stderr "'permutation'), - calculate and convert between fold-change and log-"
+puts stderr "ratio ('foldchange', 'logratio2foldchange', 'foldchange2logratio'), -"
+puts stderr "calculate probabilities and generate random numbers from Dirichlet"
+puts stderr "distributions ('rdirichlet', 'ddirichlet'), - apply a function over"
+puts stderr "adjacent subsets of a vector ('running'), - modify the TCP\_NODELAY"
+puts stderr "('de-Nagle') flag for socket objects, - efficient 'rbind' of data"
+puts stderr "frames, even if the column names don't match ('smartbind'), - generate"
+puts stderr "significance stars from p-values ('stars.pval'), - convert characters"
+puts stderr "to/from ASCII codes."
+}
+
+conflict r-gtools
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtools-3.5.0-eintfc4deaufrvdmolmdos3jvwuq2sab/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtools-3.5.0-eintfc4deaufrvdmolmdos3jvwuq2sab/"
+prepend-path R_LIBS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/r-gtools-3.5.0-eintfc4deaufrvdmolmdos3jvwuq2sab/rlib/R/library"
+prepend-path XDG_DATA_DIRS "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-5.5.0/pango-1.41.0-43ieu7cr4heyqb4ltevhxgyf2uphjnd5/share"
+

@@ -1,0 +1,19 @@
+#%Module1.0
+## Module file created by spack (https://github.com/spack/spack) on 2019-09-27 13:04:24.283426
+##
+## py-cffi@1.11.5%gcc@7.2.0 arch=linux-centos7-x86_64 /npt67pe
+##
+
+
+module-whatis "Foreign Function Interface for Python calling C code"
+
+proc ModulesHelp { } {
+puts stderr "Foreign Function Interface for Python calling C code"
+}
+
+conflict py-cffi
+
+prepend-path LD_LIBRARY_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-cffi-1.11.5-npt67pecvoiephrqsz4wp6mmzr4yebgn/lib"
+prepend-path CMAKE_PREFIX_PATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-cffi-1.11.5-npt67pecvoiephrqsz4wp6mmzr4yebgn/"
+prepend-path PYTHONPATH "/u/local/spack/0.12/opt/spack/linux-centos7-x86_64/gcc-7.2.0/py-cffi-1.11.5-npt67pecvoiephrqsz4wp6mmzr4yebgn/lib/python2.7/site-packages"
+
