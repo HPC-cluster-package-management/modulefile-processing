@@ -6,7 +6,6 @@ from pprint import pprint
 import re
 from shutil import copyfile
 import json
-#import tarfile
 
 # Get the root path info from settings.ini
 import configparser
@@ -20,16 +19,10 @@ if demo_mode :
     spackmodule_all = "spack-modulefiles-example"
 else:
     spackmodule_all = settings.get('ModulePATH', 'SpackModulePATH')
-
-modulepath_new = settings.get('ModulePATH', 'NewModulePATH')
-
-### Untar the spack module files generated from the already-installed spack packages
-##spack_tar = tarfile.open('spack-modulefiles.tar.gz')
-##spack_tar.extractall(spackmodule_all)
-##spack_tar.close()
-
 tclpath_all = spackmodule_all+"/modules/linux-centos7-x86_64/"
 luapath_all = spackmodule_all+"/lmod/linux-centos7-x86_64/"
+
+modulepath_new = settings.get('ModulePATH', 'NewModulePATH')
 
 # Recreate/reset the sqlite3 database
 import sqlite3
